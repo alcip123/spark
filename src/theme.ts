@@ -118,9 +118,16 @@ export const borders = {
   accent: { borderWidth: 1.5, borderColor: colors.borderAccent },
 } as const
 
-// Georgia isn't a real font on Android; 'serif' is a genuine generic system
-// family alias there (not a placeholder), so it's a legitimate fallback.
-const fontSerif = Platform.select({ ios: 'Georgia', android: 'serif', default: 'Georgia' })
+// Baskerville is a real bundled system font on iOS/macOS, but doesn't exist
+// on Android or most Windows/Linux installs. Android keeps the generic
+// 'serif' family alias (a legitimate fallback, not a placeholder); web gets a
+// CSS-style font stack so react-native-web degrades to Georgia, then any
+// generic serif, on platforms that don't have Baskerville installed.
+const fontSerif = Platform.select({
+  ios: 'Baskerville',
+  android: 'serif',
+  default: 'Baskerville, Georgia, serif',
+})
 
 // Manrope needs distinct family names per weight in RN — it cannot synthesize
 // weights from a single loaded file the way CSS font-weight does. These names
