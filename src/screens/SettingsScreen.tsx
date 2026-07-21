@@ -1,0 +1,191 @@
+import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import { PressableScale } from '../components/PressableScale'
+import { CategoryPicker } from '../components/CategoryPicker'
+import allFacts from '../data/facts.json'
+import { useFeedStore } from '../store/feedStore'
+import { colors, radii, spacing, typography } from '../theme'
+import type { Fact, TextSize } from '../types'
+
+const TEXT_SIZES: TextSize[] = ['small', 'medium', 'large']
+const TEXT_SIZE_LABEL: Record<TextSize, string> = { small: 'Small', medium: 'Medium', large: 'Large' }
+
+// Built once: id → fact lookup so rendering the liked list doesn't scan the
+// whole corpus per liked id on every render.
+const FACT_BY_ID = new Map((allFacts as Fact[]).map((f) => [f.id, f]))
+
+interface SettingsScreenProps {
+  onClose: () => void
+}
+
+export function SettingsScreen({ onClose }: SettingsScreenProps) {
+  const insets = useSafeAreaInsets()
+  const preferredCategories = useFeedStore((s) => s.preferredCategories)
+  const setPreferredCategories = useFeedStore((s) => s.setPreferredCategories)
+  const textSize = useFeedStore((s) => s.textSize)
+  const setTextSize = useFeedStore((s) => s.setTextSize)
+  const likedFactIds = useFeedStore((s) => s.likedFactIds)
+  const toggleLike = useFeedStore((s) => s.toggleLike)
+
+  function toggleCategory(slug: string) {
+    setPreferredCategories(
+      preferredCategories.includes(slug)
+        ? preferredCategories.filter((s) => s !== slug)
+        : [...preferredCategories, slug]
+    )
+  }
+
+  // likedFactIds preserves like-order; reverse so most recently liked shows first.
+  const likedFacts = [...likedFactIds]
+    .reverse()
+    .map((id) => FACT_BY_ID.get(id))
+    .filter((f): f is Fact => f != null)
+
+  // iOS pageSheet modals already sit below the status bar; Android's Modal is
+  // full-screen, so the sheet must add the status-bar inset itself there.
+  const topInset = Platform.OS === 'android' ? insets.top + spacing.md : spacing.xl
+
+  return (
+    <View style={[styles.page, { paddingTop: topInset }]}>
+      <View style={styles.header}>
+        <Text style={typography.h2}>Settings</Text>
+        <PressableScale
+          onPress={onClose}
+          hitSlop={12}
+          accessibilityRole="button"
+          accessibilityLabel="Close settings"
+          style={styles.doneButton}
+        >
+          <Text style={[typography.button, { color: colors.accentPrimary }]}>Done</Text>
+        </PressableScale>
+      </View>
+
+      <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+        <Text style={[typography.caption, styles.sectionLabel]}>TEXT SIZE</Text>
+        <View style={styles.segmentedControl}>
+          {TEXT_SIZES.map((size) => {
+            const isActive = textSize === size
+            return (
+              <PressableScale
+                key={size}
+                onPress={() => setTextSize(size)}
+                accessibilityRole="button"
+                accessibilityLabel={`${TEXT_SIZE_LABEL[size]} text size`}
+                accessibilityState={{ selected: isActive }}
+                style={[styles.segment, isActive && styles.segmentActive]}
+              >
+                <Text
+                  style={[
+                    typography.body,
+                    { fontSize: 14, color: isActive ? colors.onAccent : colors.textPrimary },
+                  ]}
+                >
+                  {TEXT_SIZE_LABEL[size]}
+                </Text>
+              </PressableScale>
+            )
+          })}
+        </View>
+
+        <Text style={[typography.caption, styles.sectionLabel]}>FAVORITE TOPICS</Text>
+        <Text style={[typography.body, { fontSize: 14, color: colors.textSecondary, marginBottom: spacing.sm }]}>
+          Your feed always mixes in everything — favorites just show up more often.
+        </Text>
+        <CategoryPicker selected={preferredCategories} onToggle={toggleCategory} />
+
+        <Text style={[typography.caption, styles.sectionLabel]}>
+          LIKED FACTS{likedFacts.length > 0 ? ` (${likedFacts.length})` : ''}
+        </Text>
+        {likedFacts.length === 0 ? (
+          <Text style={[typography.body, { color: colors.textSecondary }]}>
+            Facts you like will show up here.
+          </Text>
+        ) : (
+          <View style={styles.likedList}>
+            {likedFacts.map((fact) => (
+              <View key={fact.id} style={styles.likedItem}>
+                <Text style={[typography.body, { fontSize: 14, flex: 1 }]}>{fact.text}</Text>
+                <PressableScale
+                  onPress={() => toggleLike(fact.id)}
+                  hitSlop={8}
+                  accessibilityRole="button"
+                  accessibilityLabel="Remove from liked facts"
+                  style={styles.likedItemRemoveButton}
+                >
+                  <Text style={styles.likedItemRemove}>♥︎</Text>
+                </PressableScale>
+              </View>
+            ))}
+          </View>
+        )}
+      </ScrollView>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    backgroundColor: colors.bg,
+    paddingHorizontal: spacing.lg,
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: spacing.lg,
+  },
+  content: {
+    paddingBottom: spacing['2xl'],
+  },
+  sectionLabel: {
+    marginBottom: spacing.sm,
+    marginTop: spacing.md,
+  },
+  segmentedControl: {
+    flexDirection: 'row',
+    backgroundColor: colors.bgAlt,
+    borderRadius: radii.pill,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing.xs,
+    marginBottom: spacing.md,
+  },
+  segment: {
+    flex: 1,
+    alignItems: 'center',
+    paddingVertical: spacing.sm,
+    borderRadius: radii.pill,
+  },
+  segmentActive: {
+    backgroundColor: colors.accentPrimary,
+  },
+  likedList: {
+    gap: spacing.sm,
+  },
+  likedItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    backgroundColor: colors.bgAlt,
+    borderRadius: radii.card,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing.md,
+  },
+  // 44×44 minimum touch target (48dp effective on Android with hitSlop)
+  likedItemRemoveButton: {
+    width: 44,
+    height: 44,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  likedItemRemove: {
+    fontSize: 18,
+    color: colors.accentPrimary,
+  },
+  doneButton: {
+    minHeight: 44,
+    justifyContent: 'center',
+  },
+})
