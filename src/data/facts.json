@@ -1,0 +1,6918 @@
+[
+  {
+    "id": "f-dc0a0c19",
+    "text": "Mario was named after Nintendo's Seattle office landlord, Mario Segale.",
+    "categorySlug": "weird",
+    "tags": [
+      "nintendo",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-bb57aee1",
+    "text": "The \"N\" in Nintendo's GameCube boot-up logo is actually built from tiny cubes.",
+    "categorySlug": "weird",
+    "tags": [
+      "nintendo",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-2cbe2dfa",
+    "text": "Pac-Man's ghosts each have a distinct personality and chase pattern coded into them.",
+    "categorySlug": "art",
+    "tags": [
+      "gaming",
+      "movies"
+    ]
+  },
+  {
+    "id": "f-a2309ca6",
+    "text": "The Wilhelm Scream has been snuck into hundreds of movies since 1951.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-8d041486",
+    "text": "Toy Story's Buzz Lightyear was almost named Lunar Larry.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "pixar"
+    ]
+  },
+  {
+    "id": "f-feb87bf8",
+    "text": "The Hollywood sign originally read \"Hollywoodland.\"",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "history"
+    ]
+  },
+  {
+    "id": "f-b46f1679",
+    "text": "Sean Connery wore a toupee in every single James Bond film.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-8f659725",
+    "text": "The Coca-Cola logo is written in a font called Spencerian script.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-622bf70a",
+    "text": "Fanta was invented in Germany during WWII when Coca-Cola syrup ran out.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-2af7beb7",
+    "text": "The red and yellow of McDonald's are chosen to trigger hunger and speed.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-84429083",
+    "text": "Ketchup was sold in the 1830s as medicine for indigestion.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-9bd1af8e",
+    "text": "A single Pop-Tart can catch fire if left in a toaster too long.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-da92cbf4",
+    "text": "The barcode was first scanned on a pack of Wrigley's chewing gum in 1974.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-89ea85ee",
+    "text": "The first item ever bought with Bitcoin was two pizzas.",
+    "categorySlug": "food",
+    "tags": [
+      "technology",
+      "food"
+    ]
+  },
+  {
+    "id": "f-9eeb014c",
+    "text": "The @ symbol is called a \"snail\" in Italian and a \"monkey tail\" in Dutch.",
+    "categorySlug": "technology",
+    "tags": [
+      "language",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-de5845d2",
+    "text": "Google was originally going to be named \"BackRub.\"",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7c2498f1",
+    "text": "The first YouTube video was an 18-second clip filmed at the San Diego Zoo.",
+    "categorySlug": "animals",
+    "tags": [
+      "technology",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-b56876aa",
+    "text": "The \"save\" icon in most apps is a floppy disk almost no one has used.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-368ac846",
+    "text": "Nokia started out as a paper mill in Finland.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-69b21fc2",
+    "text": "The PlayStation began as a failed Nintendo partnership.",
+    "categorySlug": "technology",
+    "tags": [
+      "gaming",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-4dbb1c53",
+    "text": "Sonic the Hedgehog was originally going to be a rabbit.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "nintendo"
+    ]
+  },
+  {
+    "id": "f-ebabe81d",
+    "text": "Tetris was created by a Soviet programmer who earned nothing from it for years.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c474f8b3",
+    "text": "A group of pugs is called a grumble.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-ca3bffae",
+    "text": "Octopuses have three hearts and blue blood.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-5f602744",
+    "text": "Wombat poop is cube-shaped.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-3dc18686",
+    "text": "A shrimp's heart is located in its head.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-038208c1",
+    "text": "Cows have best friends and get stressed when separated.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-6e53ea99",
+    "text": "Flamingos are born gray and turn pink from their diet.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "food"
+    ]
+  },
+  {
+    "id": "f-17814c70",
+    "text": "A cat's purr vibrates at a frequency that can help heal bones.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-28520a29",
+    "text": "Sea otters hold hands while sleeping so they don't drift apart.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-8bf1c1b8",
+    "text": "Sloths can hold their breath longer than dolphins.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-1d70e1ab",
+    "text": "The Eiffel Tower grows about six inches taller in summer heat.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-ca42a7ea",
+    "text": "There's enough gold inside Earth's core to coat the whole planet knee-deep.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-cd011872",
+    "text": "Russia spans eleven time zones.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-ce5d1954",
+    "text": "The Sahara Desert gets occasional snowfall.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-d2a9b311",
+    "text": "Australia is wider than the moon.",
+    "categorySlug": "space",
+    "tags": [
+      "geography",
+      "space"
+    ]
+  },
+  {
+    "id": "f-aaf05a11",
+    "text": "Canada has more lakes than the rest of the world combined.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-41f6789b",
+    "text": "Venus is the only planet that spins clockwise.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-1d4128b9",
+    "text": "A day on Venus is longer than its year.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-874defee",
+    "text": "Neptune was discovered through math before anyone actually saw it.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "history"
+    ]
+  },
+  {
+    "id": "f-2107cc13",
+    "text": "There are more stars in the universe than grains of sand on Earth.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-e297ad49",
+    "text": "Astronauts grow up to two inches taller in space.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d6c423de",
+    "text": "Footprints on the moon will stay there for millions of years.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "history"
+    ]
+  },
+  {
+    "id": "f-3240cae5",
+    "text": "Bananas are radioactive, just barely.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-10b740dc",
+    "text": "Honey never spoils and has been found edible in ancient tombs.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-03c45d10",
+    "text": "The dot over a lowercase \"i\" is called a tittle.",
+    "categorySlug": "language",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "id": "f-900b815a",
+    "text": "\"Set\" has more definitions than any other word in English.",
+    "categorySlug": "language",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "id": "f-d25a2fbe",
+    "text": "The shortest war in history lasted 38 minutes.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-40247222",
+    "text": "Cleopatra lived closer in time to the moon landing than to the pyramids.",
+    "categorySlug": "space",
+    "tags": [
+      "history",
+      "space"
+    ]
+  },
+  {
+    "id": "f-7ea291a3",
+    "text": "The Olympic gold medal is mostly silver.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-042964d4",
+    "text": "Strawberries aren't true berries, but bananas and watermelons are.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-181ee33b",
+    "text": "Sharks are older than trees.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-5e2be387",
+    "text": "The King of Hearts is the only king in a deck without a mustache.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-e3017f3d",
+    "text": "The \"#\" symbol is properly called an octothorpe.",
+    "categorySlug": "technology",
+    "tags": [
+      "language",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-89183e96",
+    "text": "Nutmeg becomes mildly hallucinogenic in large amounts.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-1de14384",
+    "text": "The inventor of the Frisbee was cremated and molded into a Frisbee.",
+    "categorySlug": "weird",
+    "tags": [
+      "weird"
+    ]
+  },
+  {
+    "id": "f-46b0f126",
+    "text": "A \"jiffy\" is an actual measurable unit of time.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "language"
+    ]
+  },
+  {
+    "id": "f-ada9d60a",
+    "text": "The smell of rain hitting dry ground is called petrichor.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "language"
+    ]
+  },
+  {
+    "id": "f-49fbc131",
+    "text": "Barbie's full name is Barbara Millicent Roberts.",
+    "categorySlug": "art",
+    "tags": [
+      "culture",
+      "movies"
+    ]
+  },
+  {
+    "id": "f-c7277ca6",
+    "text": "The microwave was discovered when radar melted a candy bar in a scientist's pocket.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-4d524857",
+    "text": "Velcro was invented after a man studied burrs clinging to his dog.",
+    "categorySlug": "science",
+    "tags": [
+      "technology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-40d09715",
+    "text": "Mr. Potato Head was the first toy ever advertised on television.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-f2e59a00",
+    "text": "Cashews are in the same plant family as poison ivy.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-1df56b2f",
+    "text": "Coca-Cola would be green without its added coloring.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1db4b300",
+    "text": "White chocolate contains no actual chocolate.",
+    "categorySlug": "food",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "f-bbe5481c",
+    "text": "The tomato is a fruit botanically but was ruled a vegetable by a US court.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d2a17fb8",
+    "text": "Froot Loops are all the same flavor despite the different colors.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-04944a1d",
+    "text": "Astronauts' hearts become more spherical in space.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "body"
+    ]
+  },
+  {
+    "id": "f-56e3fa5f",
+    "text": "A flamingo can only eat with its head turned upside down.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-f089fa8f",
+    "text": "Saturn has a giant six-sided storm at its north pole.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-1750250e",
+    "text": "There is a single tree grafted to grow forty different kinds of fruit.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "food"
+    ]
+  },
+  {
+    "id": "f-fe859bf8",
+    "text": "The closest point to space on Earth is a mountain in Ecuador, not Everest.",
+    "categorySlug": "space",
+    "tags": [
+      "geography",
+      "space"
+    ]
+  },
+  {
+    "id": "f-02c362c0",
+    "text": "The Amazon rainforest generates much of its own rainfall.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-e4704cef",
+    "text": "New York City sits farther south than Rome.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-1caf94eb",
+    "text": "A cat has 32 muscles in each ear.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-ecc25dfe",
+    "text": "Tardigrades can survive the vacuum of space.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-3b572700",
+    "text": "Some cats are allergic to humans.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-58309741",
+    "text": "A crocodile physically cannot stick out its tongue.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-f7fe6cdf",
+    "text": "Cows kill more people each year than sharks do.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-23e6368b",
+    "text": "Your stomach lining replaces itself every few days so it won't digest itself.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-882b1ae9",
+    "text": "Goosebumps are a leftover reflex from when humans had thicker fur.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-c0d95b64",
+    "text": "The strongest muscle in your body for its size is in your jaw.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-013296f8",
+    "text": "Humans are bioluminescent, but glow far too faintly to see.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-4f97bd6a",
+    "text": "The Slinky was invented by accident when a spring fell off a desk.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-341f2cd9",
+    "text": "The \"ZIP\" in ZIP code stands for Zone Improvement Plan.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "language"
+    ]
+  },
+  {
+    "id": "f-10f8e243",
+    "text": "The arrow next to a car's fuel gauge points to the side with the gas cap.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-4a26d3b1",
+    "text": "The Mona Lisa has no eyebrows.",
+    "categorySlug": "art",
+    "tags": [
+      "art",
+      "history"
+    ]
+  },
+  {
+    "id": "f-feea0818",
+    "text": "Gustave Eiffel built a secret private apartment at the top of the Eiffel Tower.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "art"
+    ]
+  },
+  {
+    "id": "f-cddbf7bb",
+    "text": "Play-Doh was originally made to clean wallpaper.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-872adf50",
+    "text": "The color orange was named after the fruit, not the other way around.",
+    "categorySlug": "food",
+    "tags": [
+      "language",
+      "food"
+    ]
+  },
+  {
+    "id": "f-5e8b1c17",
+    "text": "\"Dreamt\" is the only common English word ending in \"mt.\"",
+    "categorySlug": "language",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "id": "f-d0ccc1d0",
+    "text": "Sunflowers turn to face each other when there is no sun.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-76ac98a5",
+    "text": "A watermelon is 92 percent water.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-b42321c1",
+    "text": "A baby puffin is called a puffling.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-216f4020",
+    "text": "A hummingbird weighs less than a single penny.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-83ed5529",
+    "text": "The Eiffel Tower was meant to be torn down after 20 years.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-e95288a5",
+    "text": "Ketchup was once so thick that a bottle could take a full minute to pour.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-fcdeb0dc",
+    "text": "The small space between your eyebrows is called the glabella.",
+    "categorySlug": "language",
+    "tags": [
+      "body",
+      "language"
+    ]
+  },
+  {
+    "id": "f-a615e460",
+    "text": "Lobsters taste with their legs and hear with their bodies.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-265fa24b",
+    "text": "A bolt of lightning is hotter than the surface of the sun.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "physics",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-056b158a",
+    "text": "Scotland's national animal is the unicorn.",
+    "categorySlug": "animals",
+    "tags": [
+      "geography",
+      "animals",
+      "countries"
+    ]
+  },
+  {
+    "id": "f-be7bb045",
+    "text": "A group of flamingos is called a flamboyance.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-90e6132e",
+    "text": "Bubble wrap was originally sold as wallpaper.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "inventions"
+    ]
+  },
+  {
+    "id": "f-2d77751d",
+    "text": "Cats can't taste sweetness.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-c3bc0b8a",
+    "text": "Venus spins in the opposite direction of most planets.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d41acdbb",
+    "text": "Butterflies taste with their feet.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-23f74627",
+    "text": "A snail can sleep for up to three years.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-f19dfd82",
+    "text": "Starfish don't have brains.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-05210eea",
+    "text": "Crocodiles can't stick out their tongues.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-adc83c8a",
+    "text": "Octopuses can taste with their arms.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology",
+      "ocean"
+    ]
+  },
+  {
+    "id": "f-79f4c989",
+    "text": "Twitter's bird logo has an official name: Larry.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-cc5816d1",
+    "text": "The inventor of the Pringles can is buried in one.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-60adf34e",
+    "text": "The Great Wall of China can't actually be seen from space with the naked eye.",
+    "categorySlug": "space",
+    "tags": [
+      "geography",
+      "history",
+      "space"
+    ]
+  },
+  {
+    "id": "f-e1e9e292",
+    "text": "Peanuts aren't technically nuts.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-d59807a5",
+    "text": "Almonds are part of the peach family.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-b14f0d40",
+    "text": "Strawberries carry their seeds on the outside.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-b9df9e11",
+    "text": "A \"moment\" was once an official unit of time equal to 90 seconds.",
+    "categorySlug": "science",
+    "tags": [
+      "language",
+      "history",
+      "measurement"
+    ]
+  },
+  {
+    "id": "f-15df93fa",
+    "text": "The plastic tips on shoelaces have a name: aglets.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "words"
+    ]
+  },
+  {
+    "id": "f-0cb6ea5c",
+    "text": "Mount Everest grows about a centimeter taller every year.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-fb144607",
+    "text": "Antarctica is technically the world's largest desert.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-d8f05c32",
+    "text": "A rhinoceros horn is made of the same protein as human hair.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-a3de9a0e",
+    "text": "Napoleon's army once lost a battle against a horde of rabbits.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-6feff6f2",
+    "text": "Kansas is scientifically flatter than a pancake.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-83766a9b",
+    "text": "A group of pandas is called an embarrassment.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-9dc2930e",
+    "text": "Dolphins call each other by unique signature whistles.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-a8935814",
+    "text": "Polar bears have black skin underneath their white fur.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-177d7056",
+    "text": "Koalas have fingerprints nearly identical to human fingerprints.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-d29021c2",
+    "text": "A hummingbird's heart can beat over 1,200 times a minute.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-4772f17c",
+    "text": "Giraffes sleep for less than an hour a day.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-25c0d5d5",
+    "text": "A tiger's skin is striped, not just its fur.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-6b178dc5",
+    "text": "Cows can walk up a flight of stairs but not down one.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-47baca55",
+    "text": "Ostriches can outrun a galloping horse.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-8e1dbe6f",
+    "text": "Chickens are the closest living relative to the Tyrannosaurus rex.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-8fb73bb3",
+    "text": "A cockroach can survive for weeks without its head.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-087f72b5",
+    "text": "Dogs can smell roughly 100,000 times better than humans.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-ff792089",
+    "text": "Camels are born with three eyelids on each eye.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-731492da",
+    "text": "Bees can recognize and remember individual human faces.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-ccfc4bff",
+    "text": "Snakes have no eyelids, which is why they never blink.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-145e0bee",
+    "text": "Oregon is the only state with a state nut, the Hazelnut.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-88ffa091",
+    "text": "Since most people are right handed, in WW2 the Germans were specifically trained to eat with their left hand, so that finding spies from other countries would be easier to spot.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-5690c7b1",
+    "text": "The word LASER stands for Light Amplification by Stimulated Emission of Radiation.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "language",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-718242f7",
+    "text": "There are more than 43 quintillion possible valid combinations of a 3x3 Rubik's Cube.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-3943d15d",
+    "text": "A thunderstorm called Hector the Convector arrives every day at 3pm.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "weather",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-2fa27728",
+    "text": "Earlobes have no biological purpose.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-7df8ba8e",
+    "text": "When you're reading, even silently, the muscles of your mouth, tongue and larynx activate.",
+    "categorySlug": "psychology",
+    "tags": [
+      "body",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-865f0458",
+    "text": "Mars isn't actually round.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-bb89f352",
+    "text": "There's no such thing as zero-calorie foods.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-296f8569",
+    "text": "Most people stroke cats the wrong way.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-77a96e4a",
+    "text": "Newborn babies don't actually see in black and white.",
+    "categorySlug": "psychology",
+    "tags": [
+      "body",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-51e794ce",
+    "text": "The raw ingredients of a human body would cost over £116,000.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-13aa42ff",
+    "text": "A cloud weighs around a million tonnes.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-c553dcae",
+    "text": "Around 8 to 10 percent of people grind their teeth at night.",
+    "categorySlug": "psychology",
+    "tags": [
+      "body",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-c8da1695",
+    "text": "All the world's bacteria stacked on top of each other would stretch for 10 billion light-years.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-00a49c1f",
+    "text": "Wearing a tie can reduce blood flow to the brain by 7.5 percent.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-a2670f44",
+    "text": "The world's oldest cat lived to 38 years and three days old.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-c3bcc05e",
+    "text": "We've only explored 0.001 percent of the ocean floor.",
+    "categorySlug": "animals",
+    "tags": [
+      "geography",
+      "science",
+      "ocean"
+    ]
+  },
+  {
+    "id": "f-409f1fa9",
+    "text": "Mount Everest isn't the tallest mountain on Earth.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d74391b8",
+    "text": "Comets smell like rotten eggs.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-d740718d",
+    "text": "The T-rex likely had feathers.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7865e8ad",
+    "text": "When you cut a worm in two, it regenerates.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-f0ac6342",
+    "text": "Wind turbines kill between 10,000 and 100,000 birds each year in the UK.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-bb995c24",
+    "text": "Playing board games can reduce your risk of dementia.",
+    "categorySlug": "science",
+    "tags": [
+      "psychology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-0949f56b",
+    "text": "A horse normally has more than one horsepower.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-dd23cb42",
+    "text": "About 60% of your body is water.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-3f5cc607",
+    "text": "In 1912, a man invented a human flying suit, jumped off the Eiffel Tower, and fell to his death.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-d15809b8",
+    "text": "Deaf people are known to use sign language in their sleep.",
+    "categorySlug": "language",
+    "tags": [
+      "psychology",
+      "language"
+    ]
+  },
+  {
+    "id": "f-145860eb",
+    "text": "Orcas wear other animals as hats.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-ab560387",
+    "text": "Pythons can swallow people whole.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-4c09b16f",
+    "text": "Finland is the happiest country on Earth.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-2756f849",
+    "text": "Hippos can't swim.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d058a54a",
+    "text": "You can yo-yo in space.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-c4d3e2f1",
+    "text": "Starfish don't have bodies.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "biology"
+    ]
+  },
+  {
+    "id": "f-46a1ef60",
+    "text": "The longest someone has been constipated is 45 days.",
+    "categorySlug": "weird",
+    "tags": [
+      "body",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-b21b4624",
+    "text": "55 Cancri e is a planet 40 light years away that is mostly made from diamonds.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-8be5ce2b",
+    "text": "Auto-brewery syndrome is a condition where your body naturally brews alcohol.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-926646da",
+    "text": "The word \"LEGO\" is a mashup of the two Danish words leg godt, which mean \"play well.\"",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1e9284ea",
+    "text": "You don't like the sound of your own voice because of the bones in your head.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-e2e10be9",
+    "text": "A rainbow on Venus is called a glory.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-b30251dc",
+    "text": "Protons look like peanuts, rugby balls, bagels, and spheres.",
+    "categorySlug": "science",
+    "tags": [
+      "science"
+    ]
+  },
+  {
+    "id": "f-0500e422",
+    "text": "Crows can recognize individual human faces and remember them for years.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "psychology"
+    ]
+  },
+  {
+    "id": "f-4c500c6d",
+    "text": "Mount Everest contains marine rocks, proving that it was once at the bottom of the ocean.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science",
+      "history"
+    ]
+  },
+  {
+    "id": "f-87efd0e9",
+    "text": "Angelina Jolie is a fully licensed pilot.",
+    "categorySlug": "art",
+    "tags": [
+      "culture",
+      "movies"
+    ]
+  },
+  {
+    "id": "f-b0e16134",
+    "text": "Ozempic exists because of a venomous lizard that eats twice a year.",
+    "categorySlug": "animals",
+    "tags": [
+      "science",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-b8f628b7",
+    "text": "The eyes of a donkey are positioned in such a way that all four of its legs are always within its field of vision.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-539ff2f2",
+    "text": "Nintendo was founded in 1889 and sold playing cards for almost a century before video games.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-2416d17c",
+    "text": "Kirby is named after John Kirby, the lawyer who saved Nintendo in the Donkey Kong lawsuit.",
+    "categorySlug": "weird",
+    "tags": [
+      "nintendo",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-b085dd06",
+    "text": "Donkey Kong got his name because \"donkey\" was meant to convey stubbornness.",
+    "categorySlug": "weird",
+    "tags": [
+      "nintendo",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-b1f863b4",
+    "text": "A Game Boy that was burned in a Gulf War bombing still powered on and became a museum piece.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-982acbf7",
+    "text": "The Legend of Zelda was inspired by Shigeru Miyamoto's childhood exploring caves around Kyoto.",
+    "categorySlug": "weird",
+    "tags": [
+      "nintendo",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-d88727b8",
+    "text": "Minecraft has sold over 300 million copies, more than any other video game in history.",
+    "categorySlug": "technology",
+    "tags": [
+      "gaming",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-33554cc8",
+    "text": "The Xbox was almost named the \"DirectX Box.\"",
+    "categorySlug": "technology",
+    "tags": [
+      "gaming",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-f2919dc0",
+    "text": "Millions of unsold E.T. game cartridges were buried in a New Mexico landfill, then dug up in 2014.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-3823fcf2",
+    "text": "RollerCoaster Tycoon was coded almost entirely in assembly language by a single person.",
+    "categorySlug": "technology",
+    "tags": [
+      "gaming",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-a869054b",
+    "text": "The Konami Code — up, up, down, down, left, right, left, right, B, A — is hidden in hundreds of games.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-c4dd9f3f",
+    "text": "Pac-Man was designed to attract women to arcades by being about eating instead of shooting.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-21ceb8ab",
+    "text": "Pokemon is the highest-grossing media franchise on Earth, ahead of Star Wars and Marvel.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-c6c7bd3b",
+    "text": "The PlayStation button symbols have meanings: triangle is viewpoint, square is documents, circle and X are yes and no.",
+    "categorySlug": "technology",
+    "tags": [
+      "gaming",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-9629b3e9",
+    "text": "The snow in The Wizard of Oz was made of asbestos.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-3223cc9d",
+    "text": "Toy Story 2 was accidentally deleted during production and rescued from an employee's home backup.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "pixar"
+    ]
+  },
+  {
+    "id": "f-8fb11fc3",
+    "text": "The Matrix's falling green code is actually sushi recipes scanned from a Japanese cookbook.",
+    "categorySlug": "technology",
+    "tags": [
+      "movies",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-666284b4",
+    "text": "Michael Myers' mask in Halloween is a William Shatner mask spray-painted white.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-68ce5304",
+    "text": "Chris Farley recorded most of Shrek's dialogue before the role was recast to Mike Myers.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-f080f7fa",
+    "text": "Darth Vader's breathing sound was created with a scuba regulator.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-537b787e",
+    "text": "James Cameron himself drew Jack's sketches in Titanic.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-247d0443",
+    "text": "Mickey Mouse was almost named Mortimer.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "history"
+    ]
+  },
+  {
+    "id": "f-e7009f3a",
+    "text": "Walt Disney won more Oscars than anyone else in history — 22.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c233ecb9",
+    "text": "Disneyland's Pirates of the Caribbean ride originally used real human skeletons.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-b8df5fa7",
+    "text": "Psycho was the first American movie to show a toilet flushing.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7e41984a",
+    "text": "E.T.'s voice was mostly performed by a chain-smoking grandmother.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-ee65c55a",
+    "text": "Gandalf smacking his head in Bag End was a real accident they kept in the film.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-59c18394",
+    "text": "The cat in The Godfather was a stray that wandered onto the studio lot.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-9ac90697",
+    "text": "France was still executing people by guillotine when Star Wars hit theaters.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "movies"
+    ]
+  },
+  {
+    "id": "f-115d6b84",
+    "text": "The Beatles were rejected by a label that said \"guitar groups are on the way out.\"",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "history"
+    ]
+  },
+  {
+    "id": "f-eecb5868",
+    "text": "Michael Jackson patented special shoes to pull off his gravity-defying Smooth Criminal lean.",
+    "categorySlug": "technology",
+    "tags": [
+      "music",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-f37477a0",
+    "text": "Metallica has performed on all seven continents, including Antarctica.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-4ceae0c7",
+    "text": "\"Jingle Bells\" was originally written as a Thanksgiving song.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "history"
+    ]
+  },
+  {
+    "id": "f-b0239299",
+    "text": "Elvis Presley never performed a concert outside North America.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d75530db",
+    "text": "An organ in Germany is playing a single piece so slowly it won't finish until the year 2640.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-7db82f30",
+    "text": "The Rolling Stones' tongue logo was designed by an art student for 50 pounds.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "art"
+    ]
+  },
+  {
+    "id": "f-df29e5a4",
+    "text": "The Michelin Guide's stars were created by a tire company to get people to drive more.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-2aa901a9",
+    "text": "M&M's were invented so soldiers could carry chocolate that wouldn't melt.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-4d6a0446",
+    "text": "Hawaiian pizza was invented in Canada.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-85c77b6a",
+    "text": "Nutella was born when a chocolate shortage forced an Italian baker to stretch cocoa with hazelnuts.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5fcf71ee",
+    "text": "Red Bull is based on a Thai energy drink called Krating Daeng.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-c7b39471",
+    "text": "Fortune cookies come from California, not China.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-dbdafadc",
+    "text": "The Nike swoosh was designed by a college student for 35 dollars.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5c5c48c1",
+    "text": "Spiciness isn't a taste — your brain registers it as pain.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-a64a705d",
+    "text": "Apples float because they're about 25 percent air.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-4b0cf5da",
+    "text": "Lamborghini started building supercars after Ferrari insulted its founder, a tractor maker.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-16f0bc68",
+    "text": "Adidas and Puma were founded by two feuding brothers in the same small German town.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-275d220e",
+    "text": "7-Eleven got its name from its original hours: 7 a.m. to 11 p.m.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-946f7fad",
+    "text": "WD-40 stands for \"Water Displacement, 40th formula.\"",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "language"
+    ]
+  },
+  {
+    "id": "f-fe89e3b3",
+    "text": "Samsung started out selling dried fish and noodles.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-aae891df",
+    "text": "Amazon was almost called \"Cadabra,\" but it sounded too much like \"cadaver.\"",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d14a8aa4",
+    "text": "\"Firefox\" is actually another name for the red panda.",
+    "categorySlug": "animals",
+    "tags": [
+      "technology",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-fd6f9f6c",
+    "text": "The first alarm clock could only ring at one time: 4 a.m.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-780be80c",
+    "text": "YouTube was originally designed as a video dating site.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-2041fa06",
+    "text": "Instagram started as a check-in app called Burbn.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f5c61ba3",
+    "text": "\"OMG\" was first used in a 1917 letter to Winston Churchill.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-45834b30",
+    "text": "Dr. Seuss coined the word \"nerd.\"",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-503bc170",
+    "text": "Wi-Fi doesn't stand for anything — it's a made-up marketing name.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "language"
+    ]
+  },
+  {
+    "id": "f-7ddd29bb",
+    "text": "Golf is the only sport that's been played on the Moon.",
+    "categorySlug": "space",
+    "tags": [
+      "sports",
+      "space"
+    ]
+  },
+  {
+    "id": "f-f8ac89f0",
+    "text": "The Stanley Cup travels with its own full-time bodyguards.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-f0efb018",
+    "text": "Usain Bolt ate around 1,000 chicken nuggets during the Beijing Olympics.",
+    "categorySlug": "food",
+    "tags": [
+      "sports",
+      "food"
+    ]
+  },
+  {
+    "id": "f-6be7a8f7",
+    "text": "There's a basketball court above the US Supreme Court — \"the highest court in the land.\"",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-6e2fb2bf",
+    "text": "The Catholic Church once classified beavers as fish so they could be eaten during Lent.",
+    "categorySlug": "animals",
+    "tags": [
+      "history",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-e7495fc6",
+    "text": "Big Ben is the name of the bell, not the tower.",
+    "categorySlug": "language",
+    "tags": [
+      "geography",
+      "language"
+    ]
+  },
+  {
+    "id": "f-d9cf7550",
+    "text": "Betty White was older than sliced bread.",
+    "categorySlug": "history",
+    "tags": [
+      "culture",
+      "history"
+    ]
+  },
+  {
+    "id": "f-72f9db89",
+    "text": "Anne Frank and Martin Luther King Jr. were born in the same year.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-6b68a363",
+    "text": "You can't hum while holding your nose closed.",
+    "categorySlug": "weird",
+    "tags": [
+      "body",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-8731699b",
+    "text": "Your nostrils take turns doing most of the breathing.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-56c8b970",
+    "text": "Saudi Arabia imports camels from Australia.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-f62866f8",
+    "text": "The current US flag was designed by a 17-year-old for a school project. He got a B minus.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-d2b6f7df",
+    "text": "Shakespeare popularized hundreds of English words, including \"swagger\" and \"eyeball.\"",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-43102745",
+    "text": "The world's shortest commercial flight, in Scotland, lasts about 90 seconds.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-6189930d",
+    "text": "The original Star Wars lightsaber hilts were built from vintage Graflex camera flashguns.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-16e528d8",
+    "text": "Jurassic Park's dinosaur roars were partly created from tortoises mating and a baby elephant sneezing.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-15e6711d",
+    "text": "The \"All work and no play\" script pages in The Shining were retyped in different languages for each country's release.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-aaf2101b",
+    "text": "The Wizard of Oz's ruby slippers were silver in the original book.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "history"
+    ]
+  },
+  {
+    "id": "f-67d8a186",
+    "text": "Avatar's Na'vi language was invented from scratch by USC linguist Paul Frommer.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-defca0e7",
+    "text": "The Lion King's story draws heavily on Hamlet.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-124cfa47",
+    "text": "Jaws' mechanical shark was nicknamed \"Bruce,\" after Steven Spielberg's lawyer.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-568bac21",
+    "text": "James Earl Jones was paid about $7,000 to voice Darth Vader in the original Star Wars.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "history"
+    ]
+  },
+  {
+    "id": "f-030da7c9",
+    "text": "Queen's \"Bohemian Rhapsody\" famously has no chorus.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-505c5089",
+    "text": "\"Happy Birthday to You\" wasn't confirmed public domain until a 2015 court ruling.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "history"
+    ]
+  },
+  {
+    "id": "f-de35f9b1",
+    "text": "Prince briefly changed his name to an unpronounceable symbol during a dispute with his record label.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "history"
+    ]
+  },
+  {
+    "id": "f-006af103",
+    "text": "ABBA reportedly turned down close to a billion dollars to reunite and tour.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-c0f03a49",
+    "text": "Alfred Hitchcock never won a competitive Oscar for directing.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "history"
+    ]
+  },
+  {
+    "id": "f-478ef21e",
+    "text": "Pringles contain less than half real potato, which is why some countries don't classify them as potato chips.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-4c6e3c11",
+    "text": "Peanut butter was originally marketed as a health food for people who couldn't chew meat.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-3c54d10e",
+    "text": "Kellogg's Corn Flakes were invented as part of a health movement meant to curb sexual urges.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-67597837",
+    "text": "Life Savers candy is named for its resemblance to a life preserver ring.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-6f8f941f",
+    "text": "Mars ran a long-running ad campaign debating \"left Twix\" versus \"right Twix,\" despite both coming off the same production line.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-f15d1a47",
+    "text": "Oreo is the best-selling cookie brand in the world.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-af2d6d51",
+    "text": "Coca-Cola's 1930s ad campaigns helped cement the modern image of Santa Claus in his red-and-white suit.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1caa11f2",
+    "text": "Traditional root beer contained sassafras root, an ingredient later banned in the US as a carcinogen.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-04607d0c",
+    "text": "The mantis shrimp can see far more colors than humans, thanks to up to 16 types of color receptors.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-fb6b15e8",
+    "text": "A shark can detect a single drop of blood diluted in roughly 25 gallons of water.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-0ba1e124",
+    "text": "Penguins are known to propose to their mates with a pebble.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-0fb73b3b",
+    "text": "Farmers in parts of Africa use beehive fences to keep elephants out of crops, since elephants are afraid of bees.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-292073d2",
+    "text": "Naked mole rats are nearly immune to cancer and can survive without oxygen for roughly 18 minutes.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-acfaba16",
+    "text": "Jupiter's Great Red Spot is a storm larger than the entire Earth.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-0e039d9b",
+    "text": "The Hubble Space Telescope circles the Earth roughly once every 95 minutes.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-02ffd210",
+    "text": "Bolivia's Salar de Uyuni salt flat turns into a giant natural mirror after rain.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-01552719",
+    "text": "Oxford University had already been teaching for centuries before the Aztec Empire was founded.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-5464dd67",
+    "text": "Napoleon wasn't actually short — he was roughly average height for his era, and the \"short\" myth came from British wartime caricatures.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-d1c71bfb",
+    "text": "London's Great Fire of 1666 destroyed most of the city but has only a handful of officially recorded deaths.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-d6a95c7c",
+    "text": "The word \"quarantine\" comes from the Italian for \"forty days,\" the length ships had to wait offshore during plague outbreaks.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1b07b4da",
+    "text": "The word \"robot\" comes from a 1920s Czech play, where it originally meant \"forced labor.\"",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-24ae2345",
+    "text": "The Olympic marathon's odd distance, 26.2 miles, was set at the 1908 London Games so the race could finish in front of the royal box.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c0791ab3",
+    "text": "Table tennis began as a Victorian parlor game played with books as paddles and a wine cork as a ball.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f295de84",
+    "text": "The five Olympic rings represent the world's inhabited continents rather than any specific set of colors.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d9200130",
+    "text": "Basketball was invented by a single PE teacher, James Naismith, using a peach basket as the goal.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-9f8f3f40",
+    "text": "The first computer mouse, built by Doug Engelbart, had a wooden shell.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-3b840002",
+    "text": "QWERTY keyboards are widely believed to have been designed to slow typists down and prevent mechanical typewriters from jamming.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f3440ac9",
+    "text": "The Statue of Liberty's copper was originally shiny brown before oxidizing to its current green over decades.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "art"
+    ]
+  },
+  {
+    "id": "f-884ccb77",
+    "text": "A \"blue moon\" doesn't actually appear blue — the term refers to a second full moon in a single calendar month.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "language"
+    ]
+  },
+  {
+    "id": "f-d60fd206",
+    "text": "Sunlight takes about eight minutes to travel from the Sun's surface to Earth.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-f3fe683a",
+    "text": "The Sinclair ZX Spectrum outsold the Commodore 64 in the UK during the 1980s home computer boom.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-8e6a024d",
+    "text": "Monopoly was based on an earlier game called The Landlord's Game, created to warn against the dangers of monopolies.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-083bdc71",
+    "text": "Mount Thor in Nunavut, Canada has the tallest purely vertical rock drop on Earth.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-82233dbf",
+    "text": "The Antikythera mechanism, recovered from a Greek shipwreck, is considered the world's first known analog computer, built over 2,000 years ago.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-f51542b8",
+    "text": "Competitive Scrabble players often memorize entire word lists without knowing what the words mean.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-8e5d3680",
+    "text": "The board game Clue was invented in the UK, where it's still known as Cluedo.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-50c96f3f",
+    "text": "The Sahara Desert was green and dotted with lakes and rivers as recently as about 10,000 years ago.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "history"
+    ]
+  },
+  {
+    "id": "f-0f22a7b3",
+    "text": "The Colosseum in Rome could be flooded to stage mock naval battles.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-74094437",
+    "text": "Vikings never actually wore horned helmets — that image came from 19th-century opera costumes.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-a4739421",
+    "text": "Silly Putty was invented by accident while trying to create a rubber substitute during WWII.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-6cff29eb",
+    "text": "The inventor of the Segway died by riding one off a cliff.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-bf45c67d",
+    "text": "The original Apple logo featured Isaac Newton sitting under a tree.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-4a13f8bb",
+    "text": "IBM built a chess-playing computer, Deep Blue, that beat world champion Garry Kasparov in 1997.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-0623c7a3",
+    "text": "The world's first computer bug was an actual moth stuck in a Harvard Mark II relay.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-9549f97e",
+    "text": "Concorde could cross the Atlantic faster than the speed of the Earth's own rotation.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-254883ff",
+    "text": "The Titanic's sister ship, the Britannic, also sank, but as a hospital ship in WWI.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-32da25a1",
+    "text": "A single Boeing 747 contains about six million individual parts.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology"
+    ]
+  },
+  {
+    "id": "f-ed114a75",
+    "text": "The London Underground has parts that are not actually underground.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-7014ab1c",
+    "text": "Chicago is nicknamed the \"Windy City\" for its political blowhards, not its weather, according to one popular theory.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-cea0a0d1",
+    "text": "The Netherlands is partly below sea level and relies on an extensive system of dikes to stay dry.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-60d8d313",
+    "text": "Mount Fuji last erupted in the early 1700s and is still considered an active volcano.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-763eaa65",
+    "text": "A day on the dwarf planet Pluto lasts about 6.4 Earth days.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-97430cdc",
+    "text": "The footprints left by Apollo astronauts on the Moon include one from a hammer accidentally dropped during a moonwalk.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7bd7cc4a",
+    "text": "Mercury has almost no atmosphere, so its surface swings from extreme heat to extreme cold within hours.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-128c9ed6",
+    "text": "Sea otters use rocks as tools to crack open shellfish.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-e14ae3aa",
+    "text": "Elephants have been observed apparently mourning their dead.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-be4b1dd5",
+    "text": "Wolves howl not at the moon specifically, but to communicate location to distant pack members.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-c02435e9",
+    "text": "Chameleons change color mainly to communicate mood and temperature, not just to camouflage.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-f1bab90a",
+    "text": "Peanut allergies are rare in countries where peanuts are introduced to babies early, like Israel.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-dd2080bd",
+    "text": "Saffron is the most expensive spice by weight because each flower only yields three usable threads.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-320ea274",
+    "text": "The Caesar salad was invented in Mexico, not Italy or ancient Rome.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-0a7e3aba",
+    "text": "Chewing gum has been chewed by humans in some form for thousands of years, dating back to tree resin.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-baa18e58",
+    "text": "The piano has more strings than keys, since most notes use two or three strings each.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "art"
+    ]
+  },
+  {
+    "id": "f-d31ba4f2",
+    "text": "A full orchestra performance can involve well over 100 individually tuned instruments.",
+    "categorySlug": "art",
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "id": "f-76042c30",
+    "text": "The world's largest pipe organ has over 33,000 pipes.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "art"
+    ]
+  },
+  {
+    "id": "f-ee18573c",
+    "text": "Vincent van Gogh sold only one painting during his lifetime.",
+    "categorySlug": "art",
+    "tags": [
+      "art",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d26f42db",
+    "text": "Leonardo da Vinci wrote many of his notebooks in mirror-image handwriting.",
+    "categorySlug": "art",
+    "tags": [
+      "art",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ce8f6818",
+    "text": "The longest word in major English dictionaries describes a lung disease caused by inhaling fine ash and dust.",
+    "categorySlug": "language",
+    "tags": [
+      "language"
+    ]
+  },
+  {
+    "id": "f-c34cf687",
+    "text": "Competitive eating events are officially sanctioned and ranked by an organization called Major League Eating.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-88727481",
+    "text": "The dot on top of a die always adds up to seven with the number on the opposite side.",
+    "categorySlug": "science",
+    "tags": [
+      "gaming",
+      "science"
+    ]
+  },
+  {
+    "id": "f-7d7e06dd",
+    "text": "The Suez Canal has no locks, since the Mediterranean and Red Sea sit at roughly the same elevation.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7614c0f3",
+    "text": "Copper is naturally antimicrobial, which is part of why it was historically used for doorknobs in hospitals.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "history"
+    ]
+  },
+  {
+    "id": "f-66313644",
+    "text": "The Curiosity rover on Mars is roughly the size of a small car.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-54e91c5b",
+    "text": "Tardigrades were first described by a German pastor in the 18th century, long before their extreme resilience was understood.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5ed4923f",
+    "text": "The proboscis monkey is named for its unusually large, drooping nose.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-9c776dfd",
+    "text": "Honey badgers are famously resistant to snake venom.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-0646add0",
+    "text": "The croissant did not originate in France, but is believed to have roots in Austrian pastry.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-a2427110",
+    "text": "The world's hottest chili pepper on record was bred specifically to top the Scoville scale.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-5faaf609",
+    "text": "Beethoven's Ninth Symphony premiered after he had gone completely deaf.",
+    "categorySlug": "art",
+    "tags": [
+      "music",
+      "history"
+    ]
+  },
+  {
+    "id": "f-70378fdb",
+    "text": "The word \"assassin\" is believed to derive from \"hashashin,\" a historical sect associated with hashish use.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-b136dbe5",
+    "text": "The Grand Canyon is not the deepest canyon on Earth — that title belongs to Nepal's Kali Gandaki Gorge.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-5c828b78",
+    "text": "A \"murmuration\" describes the swirling, coordinated flight patterns of large starling flocks.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-da504a5f",
+    "text": "The Komodo dragon is the largest living species of lizard.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-d22481c9",
+    "text": "The narwhal's long spiral tusk is actually an oversized tooth that can grow up to 10 feet long.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-e57ca3b4",
+    "text": "The Berlin Wall was actually two walls with a heavily guarded no-man's-land, nicknamed the \"death strip,\" in between.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-89a55e61",
+    "text": "The word \"quiz\" is rumored to have originated from a bet by a Dublin theater manager to invent a nonsense word overnight.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1c8b1ef9",
+    "text": "Neptune's winds are the fastest recorded in the solar system, reaching over 1,200 miles per hour.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-bed916e1",
+    "text": "The Wilhelm Scream sound effect was first recorded for a 1951 film about alligators.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "film"
+    ]
+  },
+  {
+    "id": "f-f0541cae",
+    "text": "Stan Lee's real name was Stanley Lieber.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-39a82a2c",
+    "text": "The Simpsons predicted several real-world events years before they happened, including a Trump presidency.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-30417cf7",
+    "text": "Keanu Reeves reportedly gave away much of his Matrix salary to the film's stunt and effects crew.",
+    "categorySlug": "art",
+    "tags": [
+      "movies",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-c46fbea8",
+    "text": "The video game Pong was originally built as a training exercise for an Atari employee.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5a64e732",
+    "text": "Halo's Master Chief never removes his helmet on screen throughout the original trilogy.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-2e38ff2e",
+    "text": "World of Warcraft once had a plague outbreak in-game so severe that epidemiologists studied it as a model for real pandemics.",
+    "categorySlug": "science",
+    "tags": [
+      "gaming",
+      "science"
+    ]
+  },
+  {
+    "id": "f-c866789f",
+    "text": "The original Angry Birds was inspired by a swine flu outbreak that killed a lot of pigs in the news at the time.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c5a1d21d",
+    "text": "Grand Theft Auto V made over $800 million on its first day of release.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-ccff450c",
+    "text": "The inventor of the modern crossword puzzle published the first one in a New York newspaper in 1913.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-8f35b547",
+    "text": "The first product to have a barcode wasn't food — it was a pack of gum.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-57b188cb",
+    "text": "Silly Bandz, a mid-2000s toy fad, were banned in some US schools for causing distraction.",
+    "categorySlug": "history",
+    "tags": [
+      "culture",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5d88bb29",
+    "text": "The Rubik's Cube was originally called the \"Magic Cube\" when it was invented in Hungary.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-df4987a2",
+    "text": "Beanie Babies were once so popular that some were resold for thousands of dollars during the 1990s craze.",
+    "categorySlug": "history",
+    "tags": [
+      "culture",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d4f241dc",
+    "text": "The world's first roller coaster in the US was built to move coal, not thrill riders.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-f7271a2e",
+    "text": "The card game Uno was invented by a barber in Ohio.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-3c6a6fbc",
+    "text": "Jenga was invented by a woman who grew up playing with wooden blocks in West Africa.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f1331bc7",
+    "text": "The Etch A Sketch was invented by a French electrician and was initially rejected by toy buyers before becoming a holiday hit.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-69c6ea0c",
+    "text": "Scrabble was rejected by every major game company before finally becoming a hit.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5572ec39",
+    "text": "Legos are precise enough that a brick made in 1958 will still fit one made today.",
+    "categorySlug": "technology",
+    "tags": [
+      "gaming",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-d7e23625",
+    "text": "A single Lego brick can support the weight of nearly 375,000 other Lego bricks stacked on top of it.",
+    "categorySlug": "science",
+    "tags": [
+      "gaming",
+      "science"
+    ]
+  },
+  {
+    "id": "f-7b7aea0f",
+    "text": "The world record for most Rubik's Cubes solved underwater on a single breath is over 10.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-50f217dc",
+    "text": "Competitive yo-yoing is an organized sport with its own world championship.",
+    "categorySlug": "sports",
+    "tags": [
+      "gaming",
+      "sports"
+    ]
+  },
+  {
+    "id": "f-41633b36",
+    "text": "The inventor of the modern flush toilet was named Thomas Crapper, though the word \"crap\" predates him.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-58b18cd6",
+    "text": "The first product Amazon ever sold was a book about artificial intelligence.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-24baaa80",
+    "text": "eBay's original name was AuctionWeb.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-75760b30",
+    "text": "PayPal was originally founded to send money between Palm Pilots.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-01ac70cb",
+    "text": "The first webpage ever published is still online today.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-80f38b86",
+    "text": "Craigslist began as an email list among friends in San Francisco.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-8534f975",
+    "text": "The dot-com company Pets.com spent millions on Super Bowl ads before folding within two years.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-2abe8d3d",
+    "text": "The first item ever mailed through the US Postal Service's parcel post was a chicken.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-c9aee462",
+    "text": "Alaska was purchased from Russia for about two cents an acre.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-1e6e30c0",
+    "text": "Hawaii is the only US state that grows coffee commercially.",
+    "categorySlug": "food",
+    "tags": [
+      "geography",
+      "food"
+    ]
+  },
+  {
+    "id": "f-33904591",
+    "text": "Rhode Island is the smallest US state by area but has one of the longest official names.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "history"
+    ]
+  },
+  {
+    "id": "f-93b9531c",
+    "text": "Maine is the only US state that borders exactly one other state.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-9439a18f",
+    "text": "The Great Lakes contain about 20 percent of the world's surface fresh water.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-fec359fb",
+    "text": "Lightning never strikes the same place twice is a myth — the Empire State Building is hit around 20 times a year.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-7bd3a519",
+    "text": "The inventor of the Ferris wheel built it to rival the Eiffel Tower at the 1893 World's Fair.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-77f20d5c",
+    "text": "The world's tallest rollercoaster loop is taller than the Statue of Liberty.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-f24745e2",
+    "text": "Curling stones are all quarried from the same single island off the coast of Scotland.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1c53ee12",
+    "text": "A basketball hoop's rim height, 10 feet, was set somewhat arbitrarily by the sport's inventor.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d9c21672",
+    "text": "Ping pong was originally played with cigar box lids and champagne corks in Victorian England.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f0dc8d19",
+    "text": "The modern Olympic torch relay was introduced by Nazi Germany for the 1936 Berlin Games.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-8d6395d7",
+    "text": "Baseball's seventh-inning stretch may have originated because President Taft stood up to leave early and the crowd followed.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-459a3667",
+    "text": "Connect Four has been sold by Milton Bradley since 1974 and remains one of the best-selling strategy games ever made.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c3efebe0",
+    "text": "McDonald's drive-thrus were originally created for the military.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-a8a5135f",
+    "text": "Humans are the only animals on Earth with chins.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-dac2347a",
+    "text": "Bats aren't actually blind — most species can see just fine.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-795783e0",
+    "text": "The myth that Nero \"fiddled\" while Rome burned couldn't be literally true — the fiddle didn't exist in ancient Rome.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-2dc453cb",
+    "text": "Oxford's Bodleian Library once chained its books to the shelves to keep them from being stolen.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-96ea2582",
+    "text": "The first known census in history was conducted in ancient Babylon around 3800 BC.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-184661ff",
+    "text": "The Longbow was such a feared weapon in medieval England that laws required men to practice archery weekly.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-2374f099",
+    "text": "The Library of Alexandria's destruction happened gradually over centuries, not in a single catastrophic fire.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-8ddc2b3d",
+    "text": "The Rosetta Stone was discovered by French soldiers who found it built into an old wall in Egypt.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-a1ef8ca9",
+    "text": "The Diet of Worms in 1521 was a formal legislative assembly, not a meal — \"diet\" here means a governing council.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-68358687",
+    "text": "Ancient Roman concrete has proven more durable in seawater than much of today's concrete.",
+    "categorySlug": "science",
+    "tags": [
+      "history",
+      "science"
+    ]
+  },
+  {
+    "id": "f-9fdbb543",
+    "text": "The Code of Hammurabi is one of the earliest known written legal codes, dating to around 1750 BC.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-72c85e63",
+    "text": "Pompeii was preserved so well by volcanic ash that loaves of bread were found still sitting in ovens nearly 2,000 years later.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-cc44dfc5",
+    "text": "Imperial China's civil service exams selected government officials by merit rather than noble birth.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-dd3307a4",
+    "text": "Movable type printing was developed in Korea and China centuries before Gutenberg's press in Europe.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-fbce8f87",
+    "text": "Catherine the Great of Russia was actually born German.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-dd96f590",
+    "text": "The Aztec capital, Tenochtitlan, was larger than most European cities of its time.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-6cd26bcc",
+    "text": "The Inca built an extensive road system across the Andes without ever using wheeled transport.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-2cc0ccea",
+    "text": "Vikings reached North America roughly 500 years before Columbus, briefly settling in what's now Newfoundland.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-63d3db52",
+    "text": "The Ottoman Empire once controlled territory across three continents: Europe, Asia, and Africa.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-85e26c4a",
+    "text": "The Salem witch trials resulted in 20 executions, most by hanging rather than burning.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-93045efd",
+    "text": "The Magna Carta was originally meant to settle a dispute between King John and his barons, not to establish universal rights.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-f7f2373c",
+    "text": "The first known use of gunpowder in warfare came from China, centuries before it reached Europe.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-554a8e98",
+    "text": "The Great Sphinx's missing nose is most likely the result of centuries of erosion and deliberate damage, not a single cannon shot as legend claims.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-1911b51c",
+    "text": "One of the first recorded labor strikes in history was staged by tomb workers in ancient Egypt over unpaid wages.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-3eec61de",
+    "text": "The Domesday Book, compiled in 1086, was a massive survey of nearly all of England's land and property.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-9e25f93f",
+    "text": "Christopher Columbus never actually set foot on what is now the continental United States.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-ee58868e",
+    "text": "The Colosseum in Rome could hold roughly 50,000 spectators for its gladiatorial games.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-2cff37fd",
+    "text": "The Manhattan Project employed over 130,000 people at its peak, most with no idea what they were building.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-85e4f575",
+    "text": "One of the earliest known peace treaties in history was signed between the Egyptians and the Hittites.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-51151666",
+    "text": "Alexander the Great is said to have never lost a single battle he personally commanded.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-23ccf552",
+    "text": "The Suffragette movement in Britain used hunger strikes as a major protest tactic, leading authorities to force-feed prisoners.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-a402e267",
+    "text": "The Cuban Missile Crisis brought the US and Soviet Union closer to nuclear war than at any other point in the Cold War.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-43570751",
+    "text": "The Renaissance took root in Italy partly due to the wealth generated by trade with the Byzantine and Islamic worlds.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-d20a9933",
+    "text": "Iceland's Althing, founded around 930 AD, is often cited as one of the earliest parliaments in the world.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-4da087d4",
+    "text": "King Tutankhamun's tomb was discovered nearly intact in 1922, unlike most other pharaohs' tombs, which had been looted.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-f0145722",
+    "text": "The Chinese developed paper money centuries before it appeared in Europe.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-1bbe2ff4",
+    "text": "The Trojan War, if it happened at all, may have been based on a real conflict that was later mythologized by Homer.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-9a3e37f5",
+    "text": "Napoleon's 1812 invasion of Russia lost more soldiers to the brutal winter than to actual combat.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-ad1e9910",
+    "text": "The fall of the Berlin Wall was set in motion by a bureaucratic mix-up during a live TV announcement.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-34eb8308",
+    "text": "The oldest surviving written laws come from ancient Sumer, predating Hammurabi's code by centuries.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-7d79d33c",
+    "text": "Cleopatra ruled Egypt for about two decades before her death.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-49c7a002",
+    "text": "The Wright brothers financed their early flying experiments with profits from their bicycle shop.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-d358955e",
+    "text": "Octopuses have been observed carrying coconut shells around as portable shelters, a rare example of tool use.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-9ee1a886",
+    "text": "The world's oldest known written recipe is a beer recipe from ancient Sumeria.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-21fc5b58",
+    "text": "A trained sommelier can often identify a wine's grape, region, and rough vintage through taste and smell alone.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-d1e41d0a",
+    "text": "The Northern Lights are caused by charged solar particles colliding with Earth's upper atmosphere.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-4e58c650",
+    "text": "Antarctica has no native land mammals.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-5b0fc1b5",
+    "text": "The word \"history\" comes from the Greek \"historia,\" meaning \"inquiry\" or \"knowledge gained through investigation.\"",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-e74c982e",
+    "text": "Medieval European chess pieces like bishops and knights were modeled after real feudal social roles.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-35845628",
+    "text": "The stethoscope was invented because a doctor felt uncomfortable pressing his ear directly to a female patient's chest.",
+    "categorySlug": "science",
+    "tags": [
+      "history",
+      "science"
+    ]
+  },
+  {
+    "id": "f-1cb4b88c",
+    "text": "One of the earliest known dictionaries was compiled in ancient Mesopotamia to translate Sumerian into Akkadian.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-402b2be1",
+    "text": "The Rosetta Stone contains the same decree written in three different scripts, which is what allowed it to be deciphered.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-f36fcd25",
+    "text": "The Great Wall of China's various sections were built by different dynasties over more than a thousand years, not as one continuous project.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-b5647945",
+    "text": "Sea horses are among the only fish that swim upright.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-0e14f9ae",
+    "text": "The Greenland shark can live for several hundred years, longer than any other vertebrate.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-620129dc",
+    "text": "A group of lions is called a pride, but a group of tigers has no standard collective name.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-ad495cb5",
+    "text": "The axolotl is critically endangered in the wild despite being common in captivity worldwide.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-2a6cdc29",
+    "text": "Elephants can reportedly detect rainfall from over 150 miles away.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-9a86fb7e",
+    "text": "The world's smallest mammal is the bumblebee bat, which weighs less than a penny.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-33f33df3",
+    "text": "A sperm whale's clicks are among the loudest sounds produced by any animal, reportedly exceeding 230 decibels.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-a1d3438b",
+    "text": "Flamingos in the same flock often share a similar pink hue because their color comes from a shared diet.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-70107057",
+    "text": "The Sahara silver ant can survive surface temperatures over 158°F while foraging for food.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-4cd78df3",
+    "text": "The Portuguese man o' war isn't a single organism — it's a colony of specialized organisms working together.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-962306a7",
+    "text": "Chili peppers were once used as a form of currency in parts of ancient Mesoamerica.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7524ae68",
+    "text": "Cinnamon comes from tree bark and was once worth more than gold by weight in ancient trade.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-57d8d2a5",
+    "text": "The fortune inside a fortune cookie is printed before the cookie is folded, while it's still soft.",
+    "categorySlug": "food",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "f-934977cd",
+    "text": "The tomato was once believed to be poisonous in parts of Europe because of its ties to nightshade plants.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-88755b6d",
+    "text": "Chocolate was originally consumed as a bitter drink by the Aztecs and Maya, not eaten as candy.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-2c591681",
+    "text": "The pretzel's twisted shape is believed to date back to European monasteries over a thousand years ago.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f30c21b1",
+    "text": "The largest known star, UY Scuti, is so massive that if placed where our Sun is, it would engulf Jupiter's orbit.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-9c7c153a",
+    "text": "The largest volcano in the solar system, Olympus Mons, is on Mars and nearly three times taller than Mount Everest.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-a7f9ceb5",
+    "text": "Earth's day was only a few hours long billions of years ago, before the Moon's gravity gradually slowed the planet's spin.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-beb625a5",
+    "text": "The Kuiper Belt, home to Pluto, holds a vast number of icy bodies beyond Neptune's orbit.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-cadcf5c5",
+    "text": "Betelgeuse, a massive red supergiant star, is expected to eventually explode as a supernova, though no one knows exactly when.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-7772ab34",
+    "text": "Russia is so large that when it's midnight in one part of the country, it can already be tomorrow morning in another.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-e1f69ea1",
+    "text": "Iceland has no native mosquitoes, one of the only places on Earth that can claim that.",
+    "categorySlug": "animals",
+    "tags": [
+      "geography",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-7f77580f",
+    "text": "Death Valley holds the record for the highest reliably recorded air temperature on Earth.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-bb127ed7",
+    "text": "Monaco is smaller in area than New York's Central Park.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-39828aba",
+    "text": "The first version of Microsoft Windows was released in 1985.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-b4bbc87c",
+    "text": "The emoji was invented in Japan in the late 1990s by a mobile phone designer.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-30694c6b",
+    "text": "Netflix originally mailed DVDs to subscribers before streaming existed.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-194fb7b8",
+    "text": "The video game industry generates more annual revenue than the movie and music industries combined.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-37acec0a",
+    "text": "Super Smash Bros. began as a much smaller, unofficial prototype before Nintendo turned it into an official game.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ed6b1301",
+    "text": "The original Doom was small enough to fit entirely on a single floppy disk.",
+    "categorySlug": "technology",
+    "tags": [
+      "gaming",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-975c68bb",
+    "text": "Handshakes are believed to have originated as a way to show you weren't holding a weapon.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-eb40d4e8",
+    "text": "The word \"salary\" comes from the Latin word for salt, once used to pay Roman soldiers.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-b9e311f2",
+    "text": "Left-handed people have historically been forced to write with their right hand in many cultures and eras.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-f789ea0f",
+    "text": "The practice of applauding by clapping dates back to ancient Rome, used to show approval at public events.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-99de06ed",
+    "text": "The Terracotta Army was built to guard the tomb of China's first emperor and stayed hidden for over 2,000 years until farmers discovered it in 1974.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-adf4cbce",
+    "text": "The Hope Diamond is rumored to carry a curse, though no verified evidence supports the legend.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "art"
+    ]
+  },
+  {
+    "id": "f-6ba5ed8f",
+    "text": "The Louvre was originally built as a 12th-century fortress before later becoming a royal palace and eventually a museum.",
+    "categorySlug": "art",
+    "tags": [
+      "art",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ed896cb7",
+    "text": "The Mona Lisa is painted on a wood panel rather than canvas.",
+    "categorySlug": "art",
+    "tags": [
+      "art",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7a2619f5",
+    "text": "St. Basil's Cathedral in Moscow has a legend that its architect was blinded so he could never design anything so beautiful again, though historians dispute this.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "art"
+    ]
+  },
+  {
+    "id": "f-b04a16f0",
+    "text": "Competitive chess players can burn several hundred calories during a single tournament game from mental stress alone.",
+    "categorySlug": "science",
+    "tags": [
+      "sports",
+      "science"
+    ]
+  },
+  {
+    "id": "f-cf258aa8",
+    "text": "Bees are responsible for pollinating roughly one-third of the food humans eat.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-444eb320",
+    "text": "The card game bridge evolved from a 19th-century game called whist.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-bb577800",
+    "text": "The word \"muscle\" comes from the Latin for \"little mouse,\" since flexed muscles were thought to look like mice moving under the skin.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-9f327517",
+    "text": "The baiji, or Yangtze River dolphin, was declared functionally extinct in the mid-2000s, one of the few dolphin species driven to extinction by humans.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "history"
+    ]
+  },
+  {
+    "id": "f-40cb72a8",
+    "text": "Competitive rock-paper-scissors has organized world championship tournaments.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-d9050549",
+    "text": "Australia's 1932 \"Emu War\" saw soldiers deployed against emus damaging crops, and the emus largely won.",
+    "categorySlug": "animals",
+    "tags": [
+      "history",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-546e342b",
+    "text": "The \"five-second rule\" for dropped food has no real scientific backing — bacteria can transfer almost instantly.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-14360d63",
+    "text": "Deja vu is thought to occur when your brain briefly misfires and tags a new moment as a memory.",
+    "categorySlug": "science",
+    "tags": [
+      "psychology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-903c9029",
+    "text": "The \"Baader-Meinhof phenomenon\" is when a word or idea you just learned suddenly seems to appear everywhere.",
+    "categorySlug": "language",
+    "tags": [
+      "psychology",
+      "language"
+    ]
+  },
+  {
+    "id": "f-40b1e620",
+    "text": "Multitasking often makes people slower and more error-prone than focusing on one task at a time.",
+    "categorySlug": "science",
+    "tags": [
+      "psychology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-51c5c438",
+    "text": "Placebo pills can still produce real physical effects in some patients even when they know it's a placebo.",
+    "categorySlug": "science",
+    "tags": [
+      "psychology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-bc8de099",
+    "text": "Smiling can trigger a slight mood boost even when it's forced, according to some psychology research.",
+    "categorySlug": "science",
+    "tags": [
+      "psychology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-c3635377",
+    "text": "People tend to remember the beginning and end of a list better than the middle, a pattern called the serial position effect.",
+    "categorySlug": "science",
+    "tags": [
+      "psychology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-451a98d9",
+    "text": "The \"bystander effect\" describes how people are less likely to help someone in an emergency when more witnesses are present.",
+    "categorySlug": "science",
+    "tags": [
+      "psychology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-bdf0ab6e",
+    "text": "Color blindness is far more common in men than in women due to how the trait is inherited.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "body"
+    ]
+  },
+  {
+    "id": "f-39e4e8c0",
+    "text": "Yawning is often contagious, even across species, including between humans and dogs.",
+    "categorySlug": "animals",
+    "tags": [
+      "psychology",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-748251b4",
+    "text": "The word \"OK\" may be one of the most widely recognized words on the planet, understood in nearly every language.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-ebd91d49",
+    "text": "The Welsh town Llanfairpwllgwyngyll has one of the longest place names in Europe and is usually shortened in everyday use.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-4cfef3ff",
+    "text": "English has borrowed so many words from other languages that native Anglo-Saxon vocabulary makes up a minority of the dictionary.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-22ee6913",
+    "text": "The longest officially recorded standing ovation at an opera lasted over an hour.",
+    "categorySlug": "art",
+    "tags": [
+      "art",
+      "music"
+    ]
+  },
+  {
+    "id": "f-0baf53b4",
+    "text": "Tug of war used to be an official Olympic sport in the early 1900s.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-b44245ae",
+    "text": "The javelin throw traces its origins to ancient hunting and warfare practice.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7cb4b9f3",
+    "text": "Curling requires players to sweep the ice to control the speed and path of the stone.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports"
+    ]
+  },
+  {
+    "id": "f-04067dd9",
+    "text": "The fastest recorded tennis serve was clocked at over 160 miles per hour.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-cd6c3b35",
+    "text": "Competitive darts players can throw with pinpoint accuracy exceeding what casual players achieve by a wide margin.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-d36dc32b",
+    "text": "The first Super Bowl in 1967 didn't sell out and tickets could be bought for around $12.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-34114b87",
+    "text": "The word \"gymnasium\" comes from the ancient Greek word for \"naked,\" reflecting how athletes once trained and competed.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-38bdabf6",
+    "text": "Marathon race distances weren't officially standardized at 26.2 miles until the early 20th century.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-aa5a2214",
+    "text": "The first color television broadcasts began in the United States in the early 1950s.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ca2d5f71",
+    "text": "Fax machines were invented in the 1840s, decades before the telephone.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c750d8d1",
+    "text": "The World Wide Web and the internet are not the same thing — the internet is the infrastructure, the web is one service that runs on it.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology"
+    ]
+  },
+  {
+    "id": "f-43baeddc",
+    "text": "The first computer virus was created as an experiment and was largely harmless, just displaying a poem.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-4835dd3f",
+    "text": "Early calculators were the size of desks and cost as much as a car.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1a822d44",
+    "text": "Traffic lights were originally manually operated by police officers standing in the street.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-99df04b8",
+    "text": "The zipper took decades to catch on with the public after it was first patented.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-57616770",
+    "text": "The first mobile phone call was made in 1973 and weighed nearly two and a half pounds.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-90a58e8e",
+    "text": "Velcro's inventor got the idea while removing burrs from his dog's fur after a hike.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c658ec57",
+    "text": "The Titanic had a sister ship that safely completed decades of service, unlike the Titanic itself.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-f2ca0dcf",
+    "text": "Ancient Roman roads were engineered so well that some are still walkable today.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-d40c7769",
+    "text": "The printing press is often credited with helping spark the Protestant Reformation by spreading ideas quickly.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-002222c9",
+    "text": "The first recorded Olympic Games date back to 776 BC in ancient Greece.",
+    "categorySlug": "sports",
+    "tags": [
+      "history",
+      "sports"
+    ]
+  },
+  {
+    "id": "f-29042383",
+    "text": "Women were banned from competing in or attending the ancient Olympic Games.",
+    "categorySlug": "sports",
+    "tags": [
+      "history",
+      "sports"
+    ]
+  },
+  {
+    "id": "f-259a42bb",
+    "text": "A hot air balloon is steered mainly by changing altitude to catch different wind currents.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-8d540a96",
+    "text": "The first American in space, Alan Shepard, flew a mission that lasted just over 15 minutes.",
+    "categorySlug": "space",
+    "tags": [
+      "history",
+      "space"
+    ]
+  },
+  {
+    "id": "f-1a149832",
+    "text": "A \"leap day\" occurs because Earth's orbit doesn't divide evenly into 365 days.",
+    "categorySlug": "space",
+    "tags": [
+      "science",
+      "space"
+    ]
+  },
+  {
+    "id": "f-f867e8f7",
+    "text": "The world's first recorded speeding ticket was issued in 1896 to a driver going roughly 8 miles per hour.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-1c94bb56",
+    "text": "Static electricity is more common in winter because dry air holds less moisture to dissipate the charge.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-08adb856",
+    "text": "The color of the sky shifts toward red at sunset because shorter wavelengths of light scatter away first.",
+    "categorySlug": "science",
+    "tags": [
+      "science"
+    ]
+  },
+  {
+    "id": "f-c73a73c0",
+    "text": "Freshwater makes up less than three percent of all the water on Earth.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-2b0ea05f",
+    "text": "The human skeleton renews itself completely roughly every decade through constant bone remodeling.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-2cb7a516",
+    "text": "Your sense of taste is heavily influenced by smell, which is why food tastes bland with a stuffy nose.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-782dff7d",
+    "text": "Fingerprints form in the womb and are influenced by the amniotic fluid's movement around the fetus.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-edd515bc",
+    "text": "Tears triggered by emotion have a different chemical makeup than tears caused by irritation, like cutting an onion.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-b0e23cc1",
+    "text": "The human body contains enough carbon to fill about 9,000 pencils.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-60d9fc8e",
+    "text": "In Norse mythology, the god Odin traded one of his eyes for a drink from the well of wisdom.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-5817b7de",
+    "text": "The ancient Greek myth of Icarus warns against flying too close to the sun on wings of wax and feathers.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-33078493",
+    "text": "In Egyptian mythology, the heart of the dead was weighed against a feather to judge their worthiness in the afterlife.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-aac73be4",
+    "text": "The phoenix, a mythical bird said to be reborn from its own ashes, appears in the folklore of multiple ancient cultures independently.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-f5438c48",
+    "text": "Medusa, the Gorgon of Greek myth, was said to turn anyone who looked at her directly to stone.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-18473824",
+    "text": "In Celtic folklore, banshees were said to wail as an omen of an impending death in the family.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-e825a80d",
+    "text": "The Loch Ness Monster legend gained major popularity after a famous but later-debunked 1934 photograph.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-0c340522",
+    "text": "Bigfoot sightings have been reported across nearly every US state, despite no confirmed physical evidence.",
+    "categorySlug": "weird",
+    "tags": [
+      "culture",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-55509f93",
+    "text": "It's illegal in Switzerland to own just one guinea pig, since they're considered social animals that need companionship.",
+    "categorySlug": "weird",
+    "tags": [
+      "culture",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-2a64b342",
+    "text": "In parts of France, it's technically illegal to name a pig \"Napoleon.\"",
+    "categorySlug": "history",
+    "tags": [
+      "culture",
+      "weird",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5ae0c319",
+    "text": "Singapore banned the sale of chewing gum in 1992 to curb vandalism and littering.",
+    "categorySlug": "history",
+    "tags": [
+      "culture",
+      "history"
+    ]
+  },
+  {
+    "id": "f-e73899d9",
+    "text": "The Eiffel Tower is repainted every seven years using several tons of paint.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "art"
+    ]
+  },
+  {
+    "id": "f-d154703d",
+    "text": "The Sagrada Familia in Barcelona has been under construction for well over a century and still isn't finished.",
+    "categorySlug": "art",
+    "tags": [
+      "art",
+      "history"
+    ]
+  },
+  {
+    "id": "f-e83fc7f1",
+    "text": "The Leaning Tower of Pisa tilts due to unstable, soft ground beneath its foundation.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-25c03176",
+    "text": "The Colossus of Rhodes, one of the Seven Wonders of the Ancient World, stood for only about 56 years before an earthquake toppled it.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-f6c7d5b6",
+    "text": "Machu Picchu was built without the use of mortar, relying on precisely cut stones that fit tightly together.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-2d483f26",
+    "text": "The Taj Mahal was built as a mausoleum by an emperor for his favorite wife.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "art"
+    ]
+  },
+  {
+    "id": "f-4f36757d",
+    "text": "Stonehenge's massive stones were transported from quarries many miles away using methods still debated by historians.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-ce009bc4",
+    "text": "The Parthenon in Athens was originally painted in bright colors, not the bare white marble we see today.",
+    "categorySlug": "art",
+    "tags": [
+      "history",
+      "art"
+    ]
+  },
+  {
+    "id": "f-d7549eaf",
+    "text": "The Hanging Gardens of Babylon may never have existed in Babylon at all, according to some historians who place them elsewhere.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-63d890ae",
+    "text": "Coca-Cola was originally marketed as a medicinal tonic containing trace amounts of cocaine.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-332567a0",
+    "text": "Levi's blue jeans were originally designed for gold miners who needed durable work pants.",
+    "categorySlug": "history",
+    "tags": [
+      "culture",
+      "history"
+    ]
+  },
+  {
+    "id": "f-9e8402c5",
+    "text": "The Slinky's advertising jingle has remained largely unchanged since the 1960s.",
+    "categorySlug": "history",
+    "tags": [
+      "culture",
+      "history"
+    ]
+  },
+  {
+    "id": "f-79fd0c90",
+    "text": "Nike is named after the Greek goddess of victory.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7884d3c7",
+    "text": "The Michelin Man's official name is Bibendum.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-bd1f4876",
+    "text": "Starbucks is named after a character from the novel Moby-Dick.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-7ef8e99e",
+    "text": "The Chupa Chups lollipop logo was designed by artist Salvador Dalí.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "art"
+    ]
+  },
+  {
+    "id": "f-0eaaa8c0",
+    "text": "IKEA's product names follow a specific naming system based on categories, like Swedish place names for rugs.",
+    "categorySlug": "weird",
+    "tags": [
+      "culture"
+    ]
+  },
+  {
+    "id": "f-f85b7cbf",
+    "text": "Monopoly's mascot, the mustachioed man in a top hat, is officially named Rich Uncle Pennybags.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-1cff468e",
+    "text": "LEGO's name comes from the Danish phrase \"leg godt,\" but it also happens to mean \"I put together\" in Latin.",
+    "categorySlug": "language",
+    "tags": [
+      "gaming",
+      "language"
+    ]
+  },
+  {
+    "id": "f-2c018499",
+    "text": "A hurricane, typhoon, and cyclone are the same weather phenomenon, just named differently depending on the region.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-d50d3182",
+    "text": "Ball lightning is a rare and still not fully understood atmospheric electrical phenomenon.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-26d202ea",
+    "text": "The Bermuda Triangle's reputation for mysterious disappearances isn't backed by accident rates any higher than other busy ocean routes.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-0aa09ec9",
+    "text": "Derechos are fast-moving lines of severe thunderstorms capable of hurricane-force winds over huge distances.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-7c0ad620",
+    "text": "The driest inhabited place on Earth is a region of Chile's Atacama Desert, where some spots have never recorded rainfall.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-45edf444",
+    "text": "Frost can form even when the air temperature is above freezing, due to how heat radiates away from surfaces at night.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-30f9403d",
+    "text": "Volcanic lightning can occur within the ash plume of an erupting volcano.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-8ee1eef3",
+    "text": "The Sahara Desert once may have been more populated with lakes and vegetation before shifting into arid desert conditions.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "history"
+    ]
+  },
+  {
+    "id": "f-b777d174",
+    "text": "A microburst is a sudden, localized column of sinking air that can cause damage similar to a tornado.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-a861330c",
+    "text": "Waterspouts are essentially tornadoes that form over water instead of land.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-c1e946ea",
+    "text": "The proboscis of a mosquito has several tiny needle-like parts that work together to pierce skin.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-2a557f9d",
+    "text": "Some species of ants practice a form of agriculture, cultivating fungus for food inside their colonies.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-acb98a07",
+    "text": "A group of crows will sometimes hold what looks like a funeral, gathering around a dead member of their flock.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-dab17aad",
+    "text": "Roman emperor Caligula reportedly gave his horse, Incitatus, an official political title.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-3f1e5a43",
+    "text": "The legendary Kraken sea monster from Scandinavian folklore may have been inspired by real sightings of giant squid.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-f2673de2",
+    "text": "A \"will-o'-the-wisp\" is a folklore name for the eerie lights sometimes seen over swamps, now explained by burning marsh gases.",
+    "categorySlug": "science",
+    "tags": [
+      "history",
+      "science"
+    ]
+  },
+  {
+    "id": "f-dcca827e",
+    "text": "The tongue of a giraffe can be up to 20 inches long and is often dark blue-black to prevent sunburn.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-bd249382",
+    "text": "The Venus flytrap only snaps shut after its trigger hairs are touched at least twice in quick succession.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "nature"
+    ]
+  },
+  {
+    "id": "f-fef88cf0",
+    "text": "Some octopuses have been observed solving simple puzzles, including unscrewing jars from the inside.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-7faad71d",
+    "text": "The mimosa plant folds its leaves inward almost instantly when touched, a rare rapid movement for a plant.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "nature"
+    ]
+  },
+  {
+    "id": "f-1f97743e",
+    "text": "The human nose can distinguish between over a trillion different scent combinations, according to some research estimates.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-bf1227be",
+    "text": "Saturn's rings are made almost entirely of ice particles, ranging from tiny grains to chunks the size of a house.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-52eeb6b6",
+    "text": "The world's largest coral reef system stretches for over 1,400 miles off the coast of Australia.",
+    "categorySlug": "animals",
+    "tags": [
+      "geography",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-89dfb73a",
+    "text": "Lightning can strike the same location repeatedly, and tall structures like skyscrapers are hit dozens of times a year.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-d3f1107a",
+    "text": "The mantis shrimp can see a far wider range of colors than humans, thanks to specialized photoreceptors.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-99f75e11",
+    "text": "Maple syrup production requires roughly 40 gallons of raw tree sap to make just one gallon of finished syrup.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-535ddee7",
+    "text": "The human brain generates enough electricity to power a small light bulb.",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-f61ef94d",
+    "text": "Wombat droppings are cube-shaped, which scientists believe keeps them from rolling away and marks territory more effectively.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-b48d5c1e",
+    "text": "The world's largest desert by area is actually Antarctica, not the Sahara.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-22271abf",
+    "text": "The first speed camera was invented by a Dutch rally driver who wanted to time his own cornering speed on race circuits.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-492ca531",
+    "text": "A day on Venus is longer than a year on Venus, due to its extremely slow rotation.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-6254f1a5",
+    "text": "The first oranges weren't orange — they were closer to green, and the fruit's name predates the color's name in English.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "language"
+    ]
+  },
+  {
+    "id": "f-85f3a5e0",
+    "text": "Some species of jellyfish are considered biologically immortal, able to revert to an earlier life stage.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-0fbf8fcb",
+    "text": "The inventor of the Pringles can was, per his wishes, partially buried in one after he died.",
+    "categorySlug": "food",
+    "tags": [
+      "culture",
+      "food"
+    ]
+  },
+  {
+    "id": "f-c3e029c4",
+    "text": "Bubble wrap was originally invented as a textured wallpaper before becoming packaging material.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-50ab678b",
+    "text": "The Eiffel Tower can grow taller by several inches in summer as the metal expands in the heat.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "history"
+    ]
+  },
+  {
+    "id": "f-07d2267d",
+    "text": "A \"jiffy\" is an actual unit of time in physics, referring to the time light takes to travel one centimeter.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "language"
+    ]
+  },
+  {
+    "id": "f-8be9f2d4",
+    "text": "The world's quietest room, an anechoic chamber, is so silent that people can hear their own heartbeat and blood flow.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-5ad35fd9",
+    "text": "Hedgehogs are largely immune to the venom of certain snakes, including adders.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-be90d485",
+    "text": "The Amazon River pushes so much freshwater into the ocean that it affects salinity many miles offshore.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-127ea1d9",
+    "text": "The world's first traffic cone was introduced in the 1940s to replace wooden warning markers.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f4c7b27f",
+    "text": "Peanuts aren't technically nuts — they're legumes that grow underground.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-f3eb2812",
+    "text": "Pigeons can be trained to distinguish between paintings by different artists with surprising accuracy.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-9a67cd28",
+    "text": "A single strand of spaghetti is called a \"spaghetto\" in Italian.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "language"
+    ]
+  },
+  {
+    "id": "f-c3adcc04",
+    "text": "The shortest commercial flight in the world lasts under two minutes, connecting two nearby Scottish islands.",
+    "categorySlug": "geography",
+    "tags": [
+      "travel",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-d9046624",
+    "text": "The Great Emu War aside, Australia is home to more venomous species than any other continent.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-fc60f7d6",
+    "text": "The world's oldest continuously operating restaurant has been serving customers since the 18th century in Madrid.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f6b770f9",
+    "text": "A \"murder of crows\" and a \"parliament of owls\" are both examples of unusual collective nouns for birds.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "language"
+    ]
+  },
+  {
+    "id": "f-d168e0f7",
+    "text": "The Eiffel Tower was almost torn down for scrap metal in the early 1900s before being repurposed for radio transmissions.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-5bb1841d",
+    "text": "Polar bear fur isn't actually white — it's translucent, and appears white because it scatters visible light.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-b37c8e19",
+    "text": "The world's largest snowflake on record measured around 15 inches across, according to an unverified 1887 report.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-0a2b1fad",
+    "text": "The scientific term for brain freeze is \"sphenopalatine ganglioneuralgia.\"",
+    "categorySlug": "science",
+    "tags": [
+      "body",
+      "science"
+    ]
+  },
+  {
+    "id": "f-b3382add",
+    "text": "Parrots don't have vocal cords — they use a specialized organ called a syrinx to mimic sounds.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-cb95afa5",
+    "text": "The longest wedding veil on record stretched for miles and required dozens of people to carry it.",
+    "categorySlug": "weird",
+    "tags": [
+      "culture",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-62b22222",
+    "text": "The Statue of Liberty's copper exterior turned green over decades due to natural oxidation, not intentional design.",
+    "categorySlug": "science",
+    "tags": [
+      "history",
+      "science"
+    ]
+  },
+  {
+    "id": "f-66527fa2",
+    "text": "The first vending machine was built by a Greek engineer nearly 2,000 years ago to dispense holy water for a coin.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-ba85b4a6",
+    "text": "The word \"clue\" comes from \"clew,\" an old term for a ball of thread, referencing the thread used to navigate a maze in Greek myth.",
+    "categorySlug": "language",
+    "tags": [
+      "language",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d4e99e0d",
+    "text": "Dominoes were originally invented in China centuries before spreading to Europe as a game.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-cc1b7dca",
+    "text": "The Caspian Sea is technically the largest lake on Earth, despite its name.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography"
+    ]
+  },
+  {
+    "id": "f-14498911",
+    "text": "Cats can't taste sweetness because they lack the specific taste receptor gene that detects it.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-09d3af56",
+    "text": "The world's largest rodent, the capybara, is known for its calm temperament around other animal species.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "id": "f-20c72c04",
+    "text": "Roman gladiators were sometimes vegetarian, following a diet based mostly on barley and beans for endurance.",
+    "categorySlug": "food",
+    "tags": [
+      "history",
+      "food"
+    ]
+  },
+  {
+    "id": "f-f610c80f",
+    "text": "The dot-com boom of the late 1990s led to a massive wave of internet company valuations before the market crashed.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ed5a3425",
+    "text": "A \"group\" of unicorns has no official collective noun since they're mythical, but folklore sometimes calls it a \"blessing.\"",
+    "categorySlug": "language",
+    "tags": [
+      "culture",
+      "language"
+    ]
+  },
+  {
+    "id": "f-45d3a407",
+    "text": "The world's largest recorded pumpkin weighed over 2,700 pounds.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-a1053983",
+    "text": "The practice of shaking hands with the right hand specifically may trace back to right-handed people carrying weapons.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-6480f8ee",
+    "text": "Koalas sleep between 18 and 22 hours a day, largely to conserve energy from their low-nutrient eucalyptus diet.",
+    "categorySlug": "animals",
+    "tags": [
+      "animals",
+      "science"
+    ]
+  },
+  {
+    "id": "f-fac8109f",
+    "text": "The metric system was first adopted in France during the French Revolution to standardize measurements nationwide.",
+    "categorySlug": "science",
+    "tags": [
+      "history",
+      "science"
+    ]
+  },
+  {
+    "id": "f-ad131c91",
+    "text": "Hailstones form in layers, and cutting one open can reveal rings similar to a tree trunk showing how it grew.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-1ef2b3a2",
+    "text": "The world's largest hotel by room count is located in Saudi Arabia, built primarily for religious pilgrims.",
+    "categorySlug": "geography",
+    "tags": [
+      "travel",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-36ca8ca7",
+    "text": "Amelia Earhart set several aviation records before her disappearance in 1937 during an attempt to fly around the globe.",
+    "categorySlug": "space",
+    "tags": [
+      "history",
+      "space"
+    ]
+  },
+  {
+    "id": "f-db1cba71",
+    "text": "Construction of the Great Wall of China spanned multiple dynasties over roughly two millennia.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-bca6c4c0",
+    "text": "Atomic clocks are accurate enough that they would lose less than a second over tens of millions of years.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-81a7e8e3",
+    "text": "The world's first webcam was built at Cambridge University to monitor a coffee pot remotely.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-eaa1c2ee",
+    "text": "Bananas are naturally slightly radioactive due to their potassium content, though far too little to be harmful.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-0a87078a",
+    "text": "The Great Chicago Fire of 1871 destroyed thousands of buildings and reshaped how American cities approached fire codes.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-1763cda7",
+    "text": "Table tennis balls are required to be made of a specific lightweight plastic under official competition rules.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports"
+    ]
+  },
+  {
+    "id": "f-1482018c",
+    "text": "The Olympic rings represent the five inhabited continents joined together, not specific countries.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "history"
+    ]
+  },
+  {
+    "id": "f-667c62dc",
+    "text": "A \"grand slam\" in tennis refers to winning all four major tournaments in a single calendar year.",
+    "categorySlug": "sports",
+    "tags": [
+      "sports",
+      "language"
+    ]
+  },
+  {
+    "id": "f-fc2488ac",
+    "text": "The board game Scrabble was invented by an unemployed architect during the Great Depression.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-12315633",
+    "text": "The word \"checkers\" for the board game is known as \"draughts\" in British English.",
+    "categorySlug": "language",
+    "tags": [
+      "gaming",
+      "language"
+    ]
+  },
+  {
+    "id": "f-6d846f53",
+    "text": "Chess grandmaster titles are awarded for life and cannot be revoked, even if a player's skill later declines.",
+    "categorySlug": "weird",
+    "tags": [
+      "gaming"
+    ]
+  },
+  {
+    "id": "f-459e961d",
+    "text": "Backgammon is considered one of the oldest known board games, with archaeological evidence dating back thousands of years.",
+    "categorySlug": "history",
+    "tags": [
+      "gaming",
+      "history"
+    ]
+  },
+  {
+    "id": "f-6d10692d",
+    "text": "The world's first email was sent in 1971 between two computers sitting right next to each other.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-aa909758",
+    "text": "QWERTY keyboard layout was designed partly to slow typists down and reduce mechanical typewriter jams.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c509cff6",
+    "text": "Early mobile phone batteries could weigh several pounds and lasted only a fraction of the time modern batteries do.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ee2dc4fd",
+    "text": "The USB connector's now-familiar shape took years of design work to make it simple enough for casual users.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-df6811a5",
+    "text": "Early home internet connections relied on dial-up modems that made a distinctive handshake sound when connecting.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-84c8b2f8",
+    "text": "Ancient Babylonian mathematicians used a base-60 number system, which is why we still divide hours into 60 minutes.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "history"
+    ]
+  },
+  {
+    "id": "f-6d7c7070",
+    "text": "Roman numerals have no symbol for zero, which limited certain kinds of ancient mathematics.",
+    "categorySlug": "science",
+    "tags": [
+      "history",
+      "science"
+    ]
+  },
+  {
+    "id": "f-b68ed183",
+    "text": "The Fibonacci sequence appears frequently in nature, including the spiral patterns of sunflower seeds and pinecones.",
+    "categorySlug": "science",
+    "tags": [
+      "science",
+      "nature"
+    ]
+  },
+  {
+    "id": "f-80c851e2",
+    "text": "A \"googol\" is the number one followed by 100 zeros, and it inspired the name of the company Google.",
+    "categorySlug": "science",
+    "tags": [
+      "technology",
+      "science"
+    ]
+  },
+  {
+    "id": "f-86ed0891",
+    "text": "Pi has been calculated to trillions of digits, though only a few dozen are needed for most practical engineering.",
+    "categorySlug": "science",
+    "tags": [
+      "science"
+    ]
+  },
+  {
+    "id": "f-cc113d37",
+    "text": "The abacus is considered one of the earliest known calculating tools, dating back thousands of years.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-383a52ae",
+    "text": "The first practical typewriter was patented in the mid-1800s and initially could only type in capital letters.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ef5c07e6",
+    "text": "Morse code uses varying lengths of signals, and \"SOS\" was chosen partly because it's simple and unmistakable.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-93464568",
+    "text": "The Antikythera mechanism, an ancient Greek device, is considered one of the earliest known analog computers.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-f43470a1",
+    "text": "The world's first police force in the modern sense was established in London in 1829.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-ccdaea90",
+    "text": "The London Underground is the oldest subway system in the world, opening in 1863.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "travel"
+    ]
+  },
+  {
+    "id": "f-29ecba38",
+    "text": "The Panama Canal took over a decade to complete and required massive efforts to control tropical diseases among workers.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-aacdb6ba",
+    "text": "The Suez Canal shortened the sea route between Europe and Asia by thousands of miles when it opened in 1869.",
+    "categorySlug": "geography",
+    "tags": [
+      "history",
+      "geography"
+    ]
+  },
+  {
+    "id": "f-ba8d477a",
+    "text": "Amsterdam has over a thousand bridges spanning its extensive network of canals.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "travel"
+    ]
+  },
+  {
+    "id": "f-b8968a99",
+    "text": "The driest desert on Earth by some measures isn't hot at all — it's the polar desert of Antarctica.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-f4aca1b5",
+    "text": "Mount Everest's height is measured from sea level, but Mauna Kea in Hawaii is taller when measured base to peak.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-413fc502",
+    "text": "The Dead Sea's surface sits over 1,400 feet below sea level, making it the lowest point on land on Earth.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d37ccb59",
+    "text": "The Amazon Rainforest produces a significant portion of the world's oxygen, though estimates of the exact share vary widely.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d7aeaf87",
+    "text": "Iceland generates a large share of its electricity from geothermal energy due to its volcanic activity.",
+    "categorySlug": "science",
+    "tags": [
+      "geography",
+      "science"
+    ]
+  },
+  {
+    "id": "f-98e03bb8",
+    "text": "The Sahara Desert experiences occasional snowfall in its higher elevations.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "weather"
+    ]
+  },
+  {
+    "id": "f-407be89d",
+    "text": "A total solar eclipse is only possible because the Sun and Moon appear almost exactly the same size in Earth's sky.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-03d705d3",
+    "text": "Uranus rotates almost completely on its side, likely due to a massive collision early in its history.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-792855b8",
+    "text": "Mercury has almost no atmosphere, which causes extreme temperature swings between its day and night sides.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-2ccfc26a",
+    "text": "Jupiter's Great Red Spot is a giant storm that has been raging for at least a few hundred years.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-8516da35",
+    "text": "A neutron star can be so dense that a teaspoon of its material would weigh billions of tons on Earth.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d857bc61",
+    "text": "Astronauts can grow slightly taller in space because microgravity allows the spine to decompress.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "body"
+    ]
+  },
+  {
+    "id": "f-91ed5835",
+    "text": "Voyager 1 carries a golden record with sounds and images meant to represent life on Earth to any potential extraterrestrial finder.",
+    "categorySlug": "space",
+    "tags": [
+      "space",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-5e12b779",
+    "text": "The first successful powered submarine ocean voyage happened just five years before the Wright brothers' first flight.",
+    "categorySlug": "technology",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "id": "f-26e51686",
+    "text": "The zipper was originally marketed as a novelty and took decades before it became common on clothing.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-ff360948",
+    "text": "Velcro was inspired by the way burrs stuck to fabric and animal fur.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-51eb8119",
+    "text": "The safety pin was patented in the mid-1800s by an inventor who reportedly sold the rights for a small sum to pay off a debt.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-111d3670",
+    "text": "The world's first commercial email spam message was sent in 1978 to a group of ARPANET users.",
+    "categorySlug": "technology",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "id": "f-4da75cc6",
+    "text": "The Aztecs used cacao beans as a form of currency alongside their use in drinks and ceremonies.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-e390698d",
+    "text": "Vanilla orchids must be hand-pollinated outside their native Mexico, since the specific bee that pollinates them naturally doesn't exist elsewhere.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-cf83a74f",
+    "text": "Saffron comes from the dried stigmas of a specific crocus flower, requiring thousands of flowers per ounce.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-ac283c31",
+    "text": "The durian fruit is banned from many hotels and public transport in Southeast Asia due to its strong odor.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-679390d7",
+    "text": "Wasabi sold in most restaurants outside Japan is often a mix of horseradish, mustard, and food coloring rather than real wasabi root.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-42f2328f",
+    "text": "Coca-Cola's original recipe is kept as a closely guarded trade secret, reportedly stored in a bank vault.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-209f7e3d",
+    "text": "Champagne can only legally be called champagne if it comes from the Champagne region of France.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-32a1379d",
+    "text": "The croissant is often credited to Austria, not France, with roots in a pastry called the kipferl.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-683d48ed",
+    "text": "Soy sauce production can take several months to over a year through natural fermentation.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-811c0635",
+    "text": "Truffle hunting traditionally relies on trained dogs or pigs to sniff out the fungi underground.",
+    "categorySlug": "animals",
+    "tags": [
+      "food",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-badd3ded",
+    "text": "The Caesar salad was reportedly invented in Tijuana, Mexico, not by a chef named Caesar for Rome.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-354915bf",
+    "text": "Ancient popcorn remains found in Peru suggest people have been popping corn for thousands of years.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5d222f51",
+    "text": "The candy corn recipe has remained largely unchanged since it was first created in the 1880s.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5517f237",
+    "text": "The fortune cookie is not actually a traditional Chinese dessert — it likely originated in California or Japan.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-137168f5",
+    "text": "Marco Polo is often falsely credited with bringing pasta to Italy from China, though pasta likely existed in Italy earlier.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5ccfcca9",
+    "text": "Root beer was originally brewed with sassafras root, which was later banned as a flavoring ingredient in the US over health concerns.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-99e60007",
+    "text": "Decaffeinated coffee still contains a small amount of caffeine, just far less than a regular cup.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-c8b2e92d",
+    "text": "Ancient Romans used a fermented fish sauce called garum as a common condiment in their cooking.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-c86635ea",
+    "text": "Graham crackers were invented as part of a 19th-century dietary reform movement meant to curb unhealthy cravings.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-8a283ddd",
+    "text": "The Cornish pasty was traditionally designed with a thick crimped edge so miners could hold it without touching the food with dirty hands.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-9679d70b",
+    "text": "Chewing gum's modern form traces back to chicle, a natural gum harvested from the sapodilla tree in Central America.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-da80c3f1",
+    "text": "The world's largest pizza ever made covered an area of over 13,000 square feet.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-41dd4a2a",
+    "text": "Sriracha sauce is named after a coastal city in Thailand where similar chili sauces originated.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-4fae80bc",
+    "text": "Kimchi fermentation relies on naturally occurring bacteria that also aid digestion.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-4d366cfe",
+    "text": "The pretzel's shape is sometimes said to represent arms crossed in prayer from its monastic origins.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-7498ec37",
+    "text": "Miso paste is traditionally made by fermenting soybeans with salt and a specific mold culture over months or years.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-a7548b7a",
+    "text": "Baklava has disputed origins, claimed by multiple cultures across the former Ottoman Empire.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-d3c9c473",
+    "text": "The world record for the most cups of coffee consumed by one country per capita is often held by Nordic nations.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-ecfce81f",
+    "text": "Haggis, a traditional Scottish dish, is made from sheep's offal cooked inside the animal's stomach lining.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-6979ffef",
+    "text": "Tofu was first developed in China over a thousand years ago from curdled soy milk.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-72f900e5",
+    "text": "The world's spiciest pepper on record measures over two million Scoville heat units.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-4b5f86af",
+    "text": "Marshmallows were originally made using sap from the marsh mallow plant, not the fluffy candy recipe used today.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-76639ea8",
+    "text": "A \"sommelier\" is a trained wine steward responsible for pairing and serving wine in fine restaurants.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-a3ea6144",
+    "text": "The Maillard reaction is the chemical process responsible for the browning and flavor development in seared meat and toasted bread.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-954f03db",
+    "text": "Worcestershire sauce recipes traditionally include fermented anchovies as a key ingredient.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1235ff65",
+    "text": "The world's oldest known fermented beverage recipes date back thousands of years to ancient China.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-35153353",
+    "text": "Cheese aging in caves relies on specific temperature and humidity conditions that promote unique bacterial and mold cultures.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-80fc9cb3",
+    "text": "Nutmeg was once so valuable that European powers fought wars over control of the islands where it grew.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-40dcc7d6",
+    "text": "The bagel's hole is believed to have originated so vendors could thread them on a stick or string for easy transport.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-735cf5d7",
+    "text": "Absinthe was banned in several countries in the early 20th century over unfounded fears it caused hallucinations and madness.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-1b86804a",
+    "text": "The world's tallest cake on record stood over a hundred feet high, built in tiers for a special celebration.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-f404c215",
+    "text": "Star anise, used in both cooking and traditional medicine, is a key ingredient in Chinese five-spice powder.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-ffd5b262",
+    "text": "Rennet, an enzyme traditionally sourced from the stomach lining of young calves, is used to curdle milk in cheesemaking.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-c3ea5043",
+    "text": "Gochujang, a staple of Korean cooking, is a fermented chili paste traditionally aged in large earthenware jars outdoors.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-df6c6ab7",
+    "text": "Licorice root has been used both as a candy flavoring and in traditional medicine for centuries.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-fe53f7c4",
+    "text": "The Scoville scale measures the heat of chili peppers by quantifying the concentration of capsaicin.",
+    "categorySlug": "science",
+    "tags": [
+      "food",
+      "science"
+    ]
+  },
+  {
+    "id": "f-d5de9446",
+    "text": "Ancient Egyptian bread was often gritty from stone-ground flour, which is thought to have worn down their teeth over a lifetime.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-f2a46b5e",
+    "text": "The world's largest chocolate bar ever made weighed several tons and required a specialized mold to create.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-42f59374",
+    "text": "Chili con carne's exact origins are debated, with competing claims between Texas and Mexico.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "history"
+    ]
+  },
+  {
+    "id": "f-97d92aa1",
+    "text": "The word \"restaurant\" originally referred to a rich, restorative broth served in 18th-century Parisian eateries before it came to mean the establishment itself.",
+    "categorySlug": "food",
+    "tags": [
+      "food",
+      "language"
+    ]
+  },
+  {
+    "id": "f-649a52f5",
+    "text": "The modern expectation for women to shave their armpits began with a 1915 Gillette marketing campaign for the \"Milady Décolleté\" razor.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "marketing"
+    ]
+  },
+  {
+    "id": "f-5633e25d",
+    "text": "Diamond engagement rings only became the standard after a decades-long De Beers ad campaign beginning in the late 1930s, with the slogan \"A Diamond Is Forever\" reshaping marriage traditions worldwide.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "marketing"
+    ]
+  },
+  {
+    "id": "f-0616bde9",
+    "text": "High heels were originally worn by Persian cavalry to help riders keep their feet in stirrups, later adopted by European aristocratic men before becoming associated with women's fashion.",
+    "categorySlug": "weird",
+    "tags": [
+      "history",
+      "fashion"
+    ]
+  },
+  {
+    "id": "f-ff91741d",
+    "text": "The phrase \"the customer is always right\" originally referred only to matters of taste, not factual correctness.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-7f33fac4",
+    "text": "Wedding cakes descend from an ancient Roman tradition where a loaf of bread was broken over the bride's head as a symbol of fertility and prosperity.",
+    "categorySlug": "food",
+    "tags": [
+      "history",
+      "food"
+    ]
+  },
+  {
+    "id": "f-dbe3b3c6",
+    "text": "Forks were considered scandalous in medieval Europe, with some religious leaders arguing that eating with artificial metal fingers insulted God's design.",
+    "categorySlug": "food",
+    "tags": [
+      "history",
+      "food"
+    ]
+  },
+  {
+    "id": "f-adf58c93",
+    "text": "White wedding dresses weren't the norm until Queen Victoria wore one at her 1840 wedding; before then brides just wore their best dress in any color.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "culture"
+    ]
+  },
+  {
+    "id": "f-28ac671a",
+    "text": "The Romans used urine as a cleaning agent for its ammonia content, and Emperor Vespasian taxed public urinals because the collected urine had commercial value.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-e29ead2a",
+    "text": "The phrase \"mad as a hatter\" comes from real mercury poisoning, caused by the mercury compounds hat makers used in felt production.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-7149d9ee",
+    "text": "Britain's first speed limit, introduced in 1865, was 4 mph in the countryside and 2 mph in towns, and required every self-propelled vehicle to be preceded by a person carrying a red flag.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-f7fc30fc",
+    "text": "Ancient Romans sometimes brushed their teeth with powdered bones, oyster shells, charcoal, and ashes instead of toothpaste.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-46edf685",
+    "text": "During Prohibition, the U.S. government poisoned industrial alcohol to deter drinking, and thousands died after bootleggers illegally redistilled it anyway.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-afd5c20a",
+    "text": "Before alarm clocks were common, professional \"knocker-uppers\" walked through towns tapping on windows with long sticks to wake people for work.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-73352b09",
+    "text": "Lobster was once considered food for prisoners and the poor in colonial North America because it was so abundant that beaches were reportedly covered with them after storms.",
+    "categorySlug": "food",
+    "tags": [
+      "history",
+      "food"
+    ]
+  },
+  {
+    "id": "f-e6757703",
+    "text": "The chainsaw was originally invented in the late 18th century to assist with difficult childbirth procedures, not for cutting wood.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-8af283f2",
+    "text": "Workers who built the Egyptian pyramids were often paid in bread and beer, with beer considered a staple food rather than just a drink.",
+    "categorySlug": "food",
+    "tags": [
+      "history",
+      "food"
+    ]
+  },
+  {
+    "id": "f-330d7a7d",
+    "text": "The oldest known customer complaint is a nearly 3,800-year-old clay tablet, in which a Babylonian merchant named Nanni criticized the poor quality of copper he'd bought.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-5e06107f",
+    "text": "Julius Caesar was once kidnapped by pirates, joked that his ransom was too low, convinced them to raise it, then returned with a fleet and had them executed.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-43f18c20",
+    "text": "Medieval Europeans sometimes associated cats with witchcraft, leading to mass killings that some historians believe may have indirectly boosted rat populations during plague outbreaks, though the impact is debated.",
+    "categorySlug": "animals",
+    "tags": [
+      "history",
+      "animals"
+    ]
+  },
+  {
+    "id": "f-fd5d1ff6",
+    "text": "During WWII, British intelligence spread rumors that pilots' night vision came from eating carrots, helping conceal the real secret — airborne radar — while boosting carrot sales.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-9644ccb8",
+    "text": "The FBI kept a file on Albert Einstein running over 1,400 pages.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-167d8cc8",
+    "text": "The word \"deadline\" originally referred to a literal line in Civil War prison camps that captives could not cross without being shot.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-e3524c54",
+    "text": "Standardized time zones were essentially invented by British railway companies needing a single time reference, later formalized by the government.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-1648fb44",
+    "text": "One of history's largest financial bubbles was a Victorian-era mania over bicycle company stocks in the 1890s.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-3e23193b",
+    "text": "The U.S. Postal Service really did mail children via parcel post in the early 1900s, before regulations banned the practice.",
+    "categorySlug": "history",
+    "tags": [
+      "history",
+      "weird"
+    ]
+  },
+  {
+    "id": "f-c799cb0b",
+    "text": "The London Underground's iconic map is intentionally geographically inaccurate, designed for clarity of connections rather than real distances.",
+    "categorySlug": "geography",
+    "tags": [
+      "geography",
+      "history"
+    ]
+  },
+  {
+    "id": "f-5c329b23",
+    "text": "Athletes at the ancient Olympic Games competed completely naked.",
+    "categorySlug": "sports",
+    "tags": [
+      "history",
+      "sports"
+    ]
+  },
+  {
+    "id": "f-f719b524",
+    "text": "The Nobel Prize exists partly because Alfred Nobel once read his own prematurely published obituary, which condemned him as a \"merchant of death.\"",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-7e5dfcbc",
+    "text": "The Statue of Liberty was an officially functioning lighthouse from 1886 to 1902, using an electric light visible up to 24 miles away.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-c11056c3",
+    "text": "King Charles II briefly banned coffeehouses in England in 1675, though the order was reversed within days.",
+    "categorySlug": "history",
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "f-51448f29",
+    "text": "The phrase \"turn a blind eye\" comes from Admiral Nelson, who held his telescope to his blind eye to ignore a retreat signal at the Battle of Copenhagen.",
+    "categorySlug": "language",
+    "tags": [
+      "history",
+      "language"
+    ]
+  },
+  {
+    "id": "f-d3e93924",
+    "text": "The first successful vaccine trial was performed by Edward Jenner on an eight-year-old boy using cowpox to protect against smallpox.",
+    "categorySlug": "science",
+    "tags": [
+      "history",
+      "science"
+    ]
+  }
+]
