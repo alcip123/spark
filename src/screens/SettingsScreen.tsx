@@ -1,5 +1,6 @@
 import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import { HeartIcon } from '../components/icons/HeartIcon'
 import { PressableScale } from '../components/PressableScale'
 import { CategoryPicker } from '../components/CategoryPicker'
 import allFacts from '../data/facts.json'
@@ -112,7 +113,7 @@ export function SettingsScreen({ onClose }: SettingsScreenProps) {
                   accessibilityLabel="Remove from liked facts"
                   style={styles.likedItemRemoveButton}
                 >
-                  <Text style={styles.likedItemRemove}>♥︎</Text>
+                  <HeartIcon size={18} color={colors.accentPrimary} filled />
                 </PressableScale>
               </View>
             ))}
@@ -179,10 +180,6 @@ const styles = StyleSheet.create({
     height: 44,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  likedItemRemove: {
-    fontSize: 18,
-    color: colors.accentPrimary,
   },
   doneButton: {
     minHeight: 44,

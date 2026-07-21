@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import { PressableScale } from '../components/PressableScale'
 import { CategoryPicker } from '../components/CategoryPicker'
+import { SparkMark } from '../components/icons/SparkMark'
 import { useFeedStore } from '../store/feedStore'
 import { borders, colors, layout, radii, shadows, spacing, typography } from '../theme'
 
@@ -32,7 +33,7 @@ export function OnboardingScreen() {
             <View style={[styles.tintShape, styles.tintShapeBack]} />
             <View style={[styles.tintShape, styles.tintShapeFront]} />
             <View style={[styles.illustrationCard, borders.accent, shadows.card]}>
-              <Text style={styles.illustrationIcon}>S</Text>
+              <SparkMark size={40} color={colors.illustrationIcon} />
             </View>
           </View>
 
@@ -108,12 +109,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.bgAlt,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  illustrationIcon: {
-    ...typography.h1,
-    fontSize: 40,
-    lineHeight: 48,
-    color: colors.illustrationIcon,
   },
   headline: {
     textAlign: 'center',

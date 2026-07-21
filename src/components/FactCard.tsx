@@ -12,6 +12,8 @@ import Animated, {
 import { useFeedStore } from '../store/feedStore'
 import { colors, layout, shadows, spacing, typography } from '../theme'
 import type { Fact, TextSize } from '../types'
+import { HeartIcon } from './icons/HeartIcon'
+import { ShareIcon } from './icons/ShareIcon'
 import { PressableScale } from './PressableScale'
 import { SparkBurst } from './SparkBurst'
 
@@ -24,12 +26,6 @@ const TEXT_SIZE_PT: Record<TextSize, number> = {
 // Engagement points feeding the personalization weights in useFeed
 const POINTS_LIKE = 3
 const POINTS_SHARE = 2
-
-// ︎ forces text presentation so the filled heart renders as a tinted
-// glyph, never as the red emoji.
-const HEART_OUTLINE = '♡'
-const HEART_FILLED = '♥︎'
-const SHARE_ARROW = '↑'
 
 interface FactCardProps {
   fact: Fact
@@ -102,11 +98,9 @@ export const FactCard = memo(function FactCard({ fact, textSize }: FactCardProps
             accessibilityState={{ selected: liked }}
             style={[styles.actionButton, shadows.card]}
           >
-            <Animated.Text
-              style={[styles.actionGlyph, liked && { color: colors.accentPrimary }, heartStyle]}
-            >
-              {liked ? HEART_FILLED : HEART_OUTLINE}
-            </Animated.Text>
+            <Animated.View style={heartStyle}>
+              <HeartIcon size={22} color={liked ? colors.accentPrimary : colors.textPrimary} filled={liked} />
+            </Animated.View>
           </PressableScale>
         </View>
         <PressableScale
@@ -116,7 +110,7 @@ export const FactCard = memo(function FactCard({ fact, textSize }: FactCardProps
           accessibilityLabel="Share this fact"
           style={[styles.actionButton, shadows.card]}
         >
-          <Text style={styles.actionGlyph}>{SHARE_ARROW}</Text>
+          <ShareIcon size={22} color={colors.textPrimary} />
         </PressableScale>
       </View>
     </View>
@@ -156,9 +150,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: colors.bgAlt,
-  },
-  actionGlyph: {
-    fontSize: 22,
-    color: colors.textPrimary,
   },
 })

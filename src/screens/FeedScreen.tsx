@@ -10,6 +10,7 @@ import {
 } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { FactCard } from '../components/FactCard'
+import { GearIcon } from '../components/icons/GearIcon'
 import { PressableScale } from '../components/PressableScale'
 import { useFeed } from '../hooks/useFeed'
 import { useFeedStore } from '../store/feedStore'
@@ -21,9 +22,6 @@ import type { Fact } from '../types'
 // earns its category one engagement point in the personalization weights.
 const DWELL_THRESHOLD_MS = 4000
 const POINTS_DWELL = 1
-
-// ︎ forces text presentation — renders as a tinted glyph, not the emoji
-const GEAR_GLYPH = '⚙︎'
 
 interface FeedScreenProps {
   onOpenSettings: () => void
@@ -123,7 +121,7 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
         accessibilityRole="button"
         accessibilityLabel="Settings"
       >
-        <Text style={styles.circleGlyph}>{GEAR_GLYPH}</Text>
+        <GearIcon size={20} color={colors.textPrimary} />
       </PressableScale>
     </View>
   )
@@ -157,9 +155,5 @@ const styles = StyleSheet.create({
     backgroundColor: colors.bgAlt,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  circleGlyph: {
-    fontSize: 20,
-    color: colors.textPrimary,
   },
 })

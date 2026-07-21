@@ -20,15 +20,12 @@ export function CategoryPicker({ selected, onToggle }: CategoryPickerProps) {
             accessibilityRole="button"
             accessibilityLabel={category.name}
             accessibilityState={{ selected: isSelected }}
-            style={[
-              styles.chip,
-              isSelected ? { backgroundColor: category.colorHex + '1A', borderColor: category.colorHex } : borders.default,
-            ]}
+            style={[styles.chip, isSelected ? styles.chipSelected : borders.default]}
           >
             <Text
               style={[
                 typography.body,
-                { fontSize: 14, color: isSelected ? category.colorHex : colors.textPrimary },
+                { fontSize: 14, color: isSelected ? colors.accentText : colors.textPrimary },
               ]}
             >
               {category.name}
@@ -57,5 +54,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.md,
     borderRadius: radii.pill,
     backgroundColor: colors.bgAlt,
+  },
+  // Selected state uses the system's one accent color rather than a
+  // per-category hue — category identity here is name-only, not color-coded.
+  chipSelected: {
+    backgroundColor: colors.illustrationFill1,
+    borderWidth: 1.5,
+    borderColor: colors.accentPrimary,
   },
 })

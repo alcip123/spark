@@ -9,8 +9,6 @@ export interface Category {
   name: string
   slug: string
   description: string
-  icon: string
-  colorHex: string
 }
 
 export type TextSize = 'small' | 'medium' | 'large'

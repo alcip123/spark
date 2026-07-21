@@ -11,17 +11,24 @@ const lightColors = {
 
   accentPrimary: '#8A82C4',
   accentPrimaryPressed: '#7A73B0', // RN has no hover; used as the pressed/active state
+  // accentPrimary itself only clears WCAG at large/bold sizes (~3.2-3.5:1 on
+  // bg/bgAlt); this darker lavender is for the accent used as small/regular
+  // text (captions, chip labels) where the 4.5:1 floor applies.
+  accentText: '#635E8D',
 
   illustrationFill1: '#E4E0F5',
   illustrationFill2: '#E9E7F9',
   illustrationIcon: '#7A73B0',
 
   textPrimary: '#2B2E38',
-  textSecondary: '#6B7180',
+  // #6B7180 measures 4.48:1 on this bg — just under the 4.5:1 AA floor for
+  // body-sized text. Darkened one step to #63697A (5.0:1) with a comfortable
+  // margin; still reads as the same muted slate.
+  textSecondary: '#63697A',
   // Matches textSecondary by value: anything lighter fails WCAG 4.5:1 for the
   // small text this tier labels (captions, placeholders, stat labels). The
   // "muted" tier is expressed through size/weight, not a lighter gray.
-  textMuted: '#6B7180',
+  textMuted: '#63697A',
 
   // Text/icons sitting on accentPrimary surfaces
   onAccent: '#FFFFFF',
@@ -47,6 +54,9 @@ const darkColors: typeof lightColors = {
 
   accentPrimary: '#968FD0',
   accentPrimaryPressed: '#A69FDA',
+  // Already clears 4.5:1 on dark-mode bg/bgAlt at this lightness — no
+  // separate darker shade needed the way light mode requires.
+  accentText: '#968FD0',
 
   illustrationFill1: '#34324A',
   illustrationFill2: '#3A3852',

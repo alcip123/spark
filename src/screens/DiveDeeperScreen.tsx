@@ -9,12 +9,11 @@ import {
   View,
 } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import { SendIcon } from '../components/icons/SendIcon'
 import { PressableScale } from '../components/PressableScale'
 import { EMPTY_THREAD, useChatStore } from '../store/chatStore'
 import { useUiStore } from '../store/uiStore'
 import { borders, colors, layout, radii, shadows, spacing, typography } from '../theme'
-
-const SEND_ARROW = '↑'
 
 interface DiveDeeperScreenProps {
   onClose: () => void
@@ -121,7 +120,7 @@ export function DiveDeeperScreen({ onClose }: DiveDeeperScreenProps) {
         )}
         {status === 'error' && (
           <PressableScale onPress={() => retry(fact)} hitSlop={8} style={styles.retryButton}>
-            <Text style={[typography.caption, { color: colors.accentPrimary }]}>
+            <Text style={[typography.caption, { color: colors.accentText }]}>
               Couldn't get a response — tap to retry
             </Text>
           </PressableScale>
@@ -146,7 +145,7 @@ export function DiveDeeperScreen({ onClose }: DiveDeeperScreenProps) {
           accessibilityLabel="Send"
           style={[styles.sendButton, shadows.button]}
         >
-          <Text style={styles.sendGlyph}>{SEND_ARROW}</Text>
+          <SendIcon size={20} color={colors.onAccent} />
         </PressableScale>
       </View>
     </KeyboardAvoidingView>
@@ -265,9 +264,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: colors.accentPrimary,
-  },
-  sendGlyph: {
-    fontSize: 20,
-    color: colors.onAccent,
   },
 })
