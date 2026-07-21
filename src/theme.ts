@@ -15,6 +15,11 @@ const lightColors = {
   // bg/bgAlt); this darker lavender is for the accent used as small/regular
   // text (captions, chip labels) where the 4.5:1 floor applies.
   accentText: '#635E8D',
+  // For surfaces that carry plain-weight white text (segmented control's
+  // active pill, the chat bubble sent by the user) — white-on-accentPrimary
+  // is only ~3.5:1, which fails for regular-weight body text. One step
+  // darker clears 4.5:1 without reading as a different color.
+  accentSurface: '#746DA5',
 
   illustrationFill1: '#E4E0F5',
   illustrationFill2: '#E9E7F9',
@@ -57,6 +62,9 @@ const darkColors: typeof lightColors = {
   // Already clears 4.5:1 on dark-mode bg/bgAlt at this lightness — no
   // separate darker shade needed the way light mode requires.
   accentText: '#968FD0',
+  // Dark mode's onAccent is ink, not white, on this accent — already clears
+  // 4.5:1 as-is, so accentSurface is just accentPrimary here.
+  accentSurface: '#968FD0',
 
   illustrationFill1: '#34324A',
   illustrationFill2: '#3A3852',

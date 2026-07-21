@@ -159,7 +159,9 @@ const styles = StyleSheet.create({
     borderRadius: radii.pill,
   },
   segmentActive: {
-    backgroundColor: colors.accentPrimary,
+    // accentSurface (not accentPrimary): this pill carries regular-weight
+    // white text, which needs the darker shade to clear 4.5:1 contrast.
+    backgroundColor: colors.accentSurface,
   },
   likedList: {
     gap: spacing.sm,

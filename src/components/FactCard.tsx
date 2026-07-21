@@ -3,11 +3,15 @@ import { Share, StyleSheet, Text, View, useWindowDimensions } from 'react-native
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { DOCK_HEIGHT } from '../constants/layout'
 import Animated, {
+  Extrapolation,
   ReduceMotion,
+  interpolate,
   useAnimatedStyle,
+  useReducedMotion,
   useSharedValue,
   withSequence,
   withSpring,
+  type SharedValue,
 } from 'react-native-reanimated'
 import { useFeedStore } from '../store/feedStore'
 import { colors, layout, shadows, spacing, typography } from '../theme'
@@ -27,24 +31,45 @@ const TEXT_SIZE_PT: Record<TextSize, number> = {
 const POINTS_LIKE = 3
 const POINTS_SHARE = 2
 
+// How far (in card-heights) a card travels from center before it's fully
+// settled to its resting, receded state.
+const SETTLE_SCALE_FLOOR = 0.92
+const SETTLE_OPACITY_FLOOR = 0.35
+
 interface FactCardProps {
   fact: Fact
   textSize: TextSize
+  index: number
+  scrollY: SharedValue<number>
 }
 
 // Memoized: a like or store update must not re-render every mounted feed card,
 // only the one whose subscribed state changed.
-export const FactCard = memo(function FactCard({ fact, textSize }: FactCardProps) {
+export const FactCard = memo(function FactCard({ fact, textSize, index, scrollY }: FactCardProps) {
   const { height } = useWindowDimensions()
   const insets = useSafeAreaInsets()
   const liked = useFeedStore((s) => s.likedFactIds.includes(fact.id))
   const toggleLike = useFeedStore((s) => s.toggleLike)
   const recordEngagement = useFeedStore((s) => s.recordEngagement)
+  const reducedMotion = useReducedMotion()
 
   // Incremented on each like to fire the SparkBurst; unliking never bursts
   const [burstTrigger, setBurstTrigger] = useState(0)
   const heartScale = useSharedValue(1)
   const heartStyle = useAnimatedStyle(() => ({ transform: [{ scale: heartScale.value }] }))
+
+  // The fact settles to full size and full opacity as it centers, and gently
+  // recedes as it scrolls away — depth tied directly to scroll position
+  // rather than a timed animation, so it always tracks the finger exactly.
+  // Skipped under Reduce Motion: this is the kind of scroll-parallax effect
+  // that setting is specifically meant to suppress.
+  const settleStyle = useAnimatedStyle(() => {
+    if (reducedMotion) return { opacity: 1, transform: [{ scale: 1 }] }
+    const distance = Math.abs(scrollY.value - index * height)
+    const scale = interpolate(distance, [0, height], [1, SETTLE_SCALE_FLOOR], Extrapolation.CLAMP)
+    const opacity = interpolate(distance, [0, height], [1, SETTLE_OPACITY_FLOOR], Extrapolation.CLAMP)
+    return { opacity, transform: [{ scale }] }
+  })
 
   function handleLike() {
     // Liking earns points; unliking takes them back so toggling can't farm weight
@@ -67,7 +92,7 @@ export const FactCard = memo(function FactCard({ fact, textSize }: FactCardProps
   return (
     <View style={[styles.card, { height }]}>
       {/* The only in-flow child, so the fact centers within the full card height */}
-      <View style={styles.textWrap}>
+      <Animated.View style={[styles.textWrap, settleStyle]}>
         <Text
           // Capped so extreme system font scales can't blow a fact off screen;
           // the in-app text-size setting is the intended lever beyond this.
@@ -83,7 +108,7 @@ export const FactCard = memo(function FactCard({ fact, textSize }: FactCardProps
         >
           {fact.text}
         </Text>
-      </View>
+      </Animated.View>
 
       {/* Absolutely positioned so it doesn't affect the centering above;
           lifted clear of the bottom dock overlaying the card */}

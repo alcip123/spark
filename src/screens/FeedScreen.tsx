@@ -1,16 +1,10 @@
 import { useCallback, useRef } from 'react'
-import {
-  FlatList,
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  useWindowDimensions,
-  type ViewToken,
-} from 'react-native'
+import { Platform, StyleSheet, Text, View, useWindowDimensions, type ViewToken } from 'react-native'
+import Animated, { useAnimatedScrollHandler, useSharedValue } from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { FactCard } from '../components/FactCard'
 import { GearIcon } from '../components/icons/GearIcon'
+import { SparkMark } from '../components/icons/SparkMark'
 import { PressableScale } from '../components/PressableScale'
 import { useFeed } from '../hooks/useFeed'
 import { useFeedStore } from '../store/feedStore'
@@ -34,11 +28,20 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
   const textSize = useFeedStore((s) => s.textSize)
   const recordEngagement = useFeedStore((s) => s.recordEngagement)
 
+  // Drives each card's settle-in depth effect (see FactCard) — one shared
+  // scroll position, read by whichever cards are near the viewport.
+  const scrollY = useSharedValue(0)
+  const scrollHandler = useAnimatedScrollHandler((event) => {
+    scrollY.value = event.contentOffset.y
+  })
+
   // Stable renderItem so FactCard's memo isn't defeated by a fresh closure
   // on every FeedScreen render.
   const renderItem = useCallback(
-    ({ item }: { item: Fact }) => <FactCard fact={item} textSize={textSize} />,
-    [textSize]
+    ({ item, index }: { item: Fact; index: number }) => (
+      <FactCard fact={item} textSize={textSize} index={index} scrollY={scrollY} />
+    ),
+    [textSize, scrollY]
   )
 
   // Dwell tracking: when the visible fact changes, the previous one earns a
@@ -72,7 +75,8 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
   if (feed.length === 0) {
     return (
       <View style={[styles.emptyState, { height }]}>
-        <Text style={typography.h2}>You're all caught up</Text>
+        <SparkMark size={40} color={colors.borderAccent} />
+        <Text style={[typography.h2, { marginTop: spacing.lg }]}>You're all caught up</Text>
         <Text style={[typography.body, { color: colors.textSecondary, marginTop: spacing.sm }]}>
           You've seen every fact we have right now. Broaden your topics to keep going, or check
           back soon for more.
@@ -91,7 +95,7 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
 
   return (
     <View style={styles.container}>
-      <FlatList
+      <Animated.FlatList
         data={feed}
         keyExtractor={(item: Fact) => item.id}
         renderItem={renderItem}
@@ -110,6 +114,8 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
         getItemLayout={(_, index) => ({ length: height, offset: height * index, index })}
         onViewableItemsChanged={onViewableItemsChanged}
         viewabilityConfig={{ itemVisiblePercentThreshold: 80 }}
+        onScroll={scrollHandler}
+        scrollEventThrottle={16}
       />
 
       {/* Floating settings button, top-left per the reference layout; offset

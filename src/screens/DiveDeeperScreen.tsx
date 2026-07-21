@@ -10,6 +10,7 @@ import {
 } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { SendIcon } from '../components/icons/SendIcon'
+import { SparkMark } from '../components/icons/SparkMark'
 import { PressableScale } from '../components/PressableScale'
 import { EMPTY_THREAD, useChatStore } from '../store/chatStore'
 import { useUiStore } from '../store/uiStore'
@@ -31,7 +32,8 @@ export function DiveDeeperScreen({ onClose }: DiveDeeperScreenProps) {
   if (!fact) {
     return (
       <View style={[styles.emptyState, { paddingBottom: insets.bottom }]}>
-        <Text style={typography.h2}>Nothing to dive into yet</Text>
+        <SparkMark size={40} color={colors.borderAccent} />
+        <Text style={[typography.h2, { marginTop: spacing.lg }]}>Nothing to dive into yet</Text>
         <Text style={[typography.body, styles.emptySubline]}>
           Pick a fact from your feed and come back to go deeper on it.
         </Text>
@@ -226,11 +228,17 @@ const styles = StyleSheet.create({
   },
   userBubble: {
     alignSelf: 'flex-end',
-    backgroundColor: colors.accentPrimary,
+    // accentSurface: this bubble carries regular-weight white text, which
+    // needs the darker shade to clear 4.5:1 (accentPrimary alone is ~3.5:1).
+    backgroundColor: colors.accentSurface,
+    // Softer radius on the corner nearest the sender gives the bubble a
+    // sense of direction instead of reading as a generic rounded rectangle.
+    borderBottomRightRadius: 4,
   },
   assistantBubble: {
     alignSelf: 'flex-start',
     backgroundColor: colors.bgAlt,
+    borderBottomLeftRadius: 4,
     ...borders.default,
   },
   sendingIndicator: {

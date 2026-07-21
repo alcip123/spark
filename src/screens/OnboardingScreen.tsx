@@ -127,8 +127,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     alignItems: 'center',
   },
+  // Same button, dimmed — not a different gray button. Opacity applies to
+  // the whole subtree (fill + label together), matching how iOS dims a
+  // disabled control rather than swapping its color identity.
   ctaDisabled: {
-    backgroundColor: colors.textMuted,
+    opacity: 0.35,
     shadowOpacity: 0,
     elevation: 0,
   },
