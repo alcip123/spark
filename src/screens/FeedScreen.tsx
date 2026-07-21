@@ -6,10 +6,11 @@ import { FactCard } from '../components/FactCard'
 import { GearIcon } from '../components/icons/GearIcon'
 import { SparkMark } from '../components/icons/SparkMark'
 import { PressableScale } from '../components/PressableScale'
+import { PrimaryButton } from '../components/PrimaryButton'
 import { useFeed } from '../hooks/useFeed'
 import { useFeedStore } from '../store/feedStore'
 import { useUiStore } from '../store/uiStore'
-import { colors, radii, shadows, spacing, typography } from '../theme'
+import { colors, layout, shadows, spacing, typography } from '../theme'
 import type { Fact } from '../types'
 
 // A fact held on screen at least this long counts as genuine interest and
@@ -22,8 +23,13 @@ interface FeedScreenProps {
 }
 
 export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
-  const { height } = useWindowDimensions()
+  const { height, width } = useWindowDimensions()
   const insets = useSafeAreaInsets()
+  // On phone-width screens this resolves to spacing.lg unchanged (no
+  // regression there); on wide viewports/tablets it tracks the centered
+  // content column's edge instead of drifting off to the raw screen edge,
+  // where it visibly disconnects from the (also-centered) fact text.
+  const contentInset = Math.max(spacing.lg, (width - layout.maxReadingWidth) / 2 + spacing.lg)
   const { feed, loadMore, hasMore } = useFeed()
   const textSize = useFeedStore((s) => s.textSize)
   const recordEngagement = useFeedStore((s) => s.recordEngagement)
@@ -81,14 +87,9 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
           You've seen every fact we have right now. Broaden your topics to keep going, or check
           back soon for more.
         </Text>
-        <PressableScale
-          onPress={onOpenSettings}
-          accessibilityRole="button"
-          accessibilityLabel="Adjust topics"
-          style={[styles.emptyCta, shadows.button]}
-        >
-          <Text style={typography.button}>Adjust your topics</Text>
-        </PressableScale>
+        <View style={styles.emptyCtaWrap}>
+          <PrimaryButton label="Adjust your topics" onPress={onOpenSettings} accessibilityLabel="Adjust topics" />
+        </View>
       </View>
     )
   }
@@ -121,7 +122,7 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
       {/* Floating settings button, top-left per the reference layout; offset
           below the status bar / Dynamic Island via the live safe-area inset */}
       <PressableScale
-        style={[styles.circleButton, { top: insets.top + spacing.md }, shadows.card]}
+        style={[styles.circleButton, { top: insets.top + spacing.md, left: contentInset }, shadows.card]}
         onPress={onOpenSettings}
         hitSlop={12}
         accessibilityRole="button"
@@ -145,16 +146,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.xl,
     backgroundColor: colors.bg,
   },
-  emptyCta: {
+  emptyCtaWrap: {
     marginTop: spacing.lg,
-    backgroundColor: colors.accentPrimary,
-    borderRadius: radii.pill,
-    paddingVertical: spacing.md + 2,
-    paddingHorizontal: spacing.xl,
   },
   circleButton: {
     position: 'absolute',
-    left: spacing.lg,
     width: 44,
     height: 44,
     borderRadius: 22,

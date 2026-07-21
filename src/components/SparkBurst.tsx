@@ -9,12 +9,16 @@ import Animated, {
   withDelay,
   withTiming,
 } from 'react-native-reanimated'
+import { colors } from '../theme'
 
 // Miniature version of the launch burst, fired from behind the like button:
 // short rounded bars radiate outward and fade. Fires once each time `trigger`
 // increments past 0; idle (trigger 0) renders nothing visible.
 
-const LAVENDERS = ['#8A82C4', '#7A73B0', '#C7C2DE']
+// Theme colors, not hardcoded hex — this previously duplicated light-mode
+// lavender literals directly, so the burst ignored dark mode entirely even
+// though every other accent-colored surface in the app adapts to it.
+const LAVENDERS = [colors.accentPrimary, colors.accentPrimaryPressed, colors.borderAccent]
 
 const STROKE_COUNT = 8
 const BURST_MS = 450

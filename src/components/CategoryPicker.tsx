@@ -57,9 +57,12 @@ const styles = StyleSheet.create({
   },
   // Selected state uses the system's one accent color rather than a
   // per-category hue — category identity here is name-only, not color-coded.
+  // borders.accent (Lavender Hairline, #C7C2DE) rather than raw accentPrimary
+  // — DESIGN.md documents accent borders as this specific hairline shade
+  // everywhere else (e.g. the Dive Deeper fact card); accentPrimary directly
+  // would be a heavier, more saturated stroke than any other bordered surface.
   chipSelected: {
     backgroundColor: colors.illustrationFill1,
-    borderWidth: 1.5,
-    borderColor: colors.accentPrimary,
+    ...borders.accent,
   },
 })

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
-import { PressableScale } from '../components/PressableScale'
 import { CategoryPicker } from '../components/CategoryPicker'
 import { SparkMark } from '../components/icons/SparkMark'
+import { PrimaryButton } from '../components/PrimaryButton'
 import { useFeedStore } from '../store/feedStore'
 import { borders, colors, layout, radii, shadows, spacing, typography } from '../theme'
 
@@ -28,7 +28,10 @@ export function OnboardingScreen() {
   return (
     <View style={styles.page}>
       <View style={styles.sheet}>
-        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        {/* Indicator left on (unlike other scroll views in the app): 12 chips
+            can overflow the sheet's capped height, and this is the only
+            affordance telling a new user there's more to see below. */}
+        <ScrollView contentContainerStyle={styles.scrollContent}>
           <View style={styles.illustrationWrap}>
             <View style={[styles.tintShape, styles.tintShapeBack]} />
             <View style={[styles.tintShape, styles.tintShapeFront]} />
@@ -46,15 +49,13 @@ export function OnboardingScreen() {
           <CategoryPicker selected={selected} onToggle={toggle} />
         </ScrollView>
 
-        <PressableScale
-          onPress={handleContinue}
-          disabled={!canContinue}
-          style={[styles.cta, shadows.button, !canContinue && styles.ctaDisabled]}
-        >
-          <Text style={typography.button}>
-            {canContinue ? 'Continue' : `Pick ${MIN_CATEGORIES - selected.length} more`}
-          </Text>
-        </PressableScale>
+        <View style={styles.ctaWrap}>
+          <PrimaryButton
+            label={canContinue ? 'Continue' : `Pick ${MIN_CATEGORIES - selected.length} more`}
+            onPress={handleContinue}
+            disabled={!canContinue}
+          />
+        </View>
       </View>
     </View>
   )
@@ -119,20 +120,11 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginBottom: spacing.lg,
   },
-  cta: {
-    marginTop: spacing.md,
-    backgroundColor: colors.accentPrimary,
-    borderRadius: radii.pill,
-    paddingVertical: 18,
-    paddingHorizontal: spacing.lg,
-    alignItems: 'center',
-  },
-  // Same button, dimmed — not a different gray button. Opacity applies to
-  // the whole subtree (fill + label together), matching how iOS dims a
-  // disabled control rather than swapping its color identity.
-  ctaDisabled: {
-    opacity: 0.35,
-    shadowOpacity: 0,
-    elevation: 0,
+  // Standardized to spacing.lg to match the same gap used above the CTA in
+  // FeedScreen/DiveDeeperScreen's empty states (this one previously used
+  // spacing.md — a smaller, unexplained gap for the same button-above-content
+  // relationship elsewhere in the app).
+  ctaWrap: {
+    marginTop: spacing.lg,
   },
 })

@@ -1,17 +1,13 @@
 import type { ReactElement } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import { DOCK_PILL_BOTTOM_MARGIN, DOCK_PILL_HEIGHT } from '../constants/layout'
 import type { Tab } from '../store/uiStore'
 import { borders, colors, radii, shadows, spacing } from '../theme'
 import { PressableScale } from './PressableScale'
 import { DiscoverIcon } from './icons/DiscoverIcon'
 import { ProfileIcon } from './icons/ProfileIcon'
 import { SparkMark } from './icons/SparkMark'
-
-// Content height of the floating pill and its gap from the screen edge
-// (before the device's safe-area inset, which is added on top).
-const PILL_HEIGHT = 60
-const PILL_BOTTOM_MARGIN = 16
 
 const TABS: { tab: Tab; label: string; Icon: (props: { size?: number; color: string }) => ReactElement }[] = [
   { tab: 'home', label: 'Discover', Icon: DiscoverIcon },
@@ -29,7 +25,7 @@ export function BottomDock({ activeTab, onSelectTab, onDiveDeeper }: BottomDockP
   const insets = useSafeAreaInsets()
 
   return (
-    <View style={[styles.wrapper, { bottom: insets.bottom + PILL_BOTTOM_MARGIN }]}>
+    <View style={[styles.wrapper, { bottom: insets.bottom + DOCK_PILL_BOTTOM_MARGIN }]}>
       <View style={[styles.pill, borders.default, shadows.sheet]}>
         {TABS.map(({ tab, label, Icon }) => {
           // Dive Deeper opens a sheet rather than switching tabs, so it has no
@@ -73,7 +69,7 @@ const styles = StyleSheet.create({
   pill: {
     flexDirection: 'row',
     alignItems: 'center',
-    height: PILL_HEIGHT,
+    height: DOCK_PILL_HEIGHT,
     maxWidth: '90%',
     paddingHorizontal: spacing['2xl'],
     gap: spacing.xl,

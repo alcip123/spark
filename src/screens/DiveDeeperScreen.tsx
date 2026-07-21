@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import {
   KeyboardAvoidingView,
   Platform,
@@ -8,13 +8,51 @@ import {
   TextInput,
   View,
 } from 'react-native'
+import Animated, {
+  Easing,
+  ReduceMotion,
+  useAnimatedStyle,
+  useSharedValue,
+  withRepeat,
+  withSequence,
+  withTiming,
+} from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { SendIcon } from '../components/icons/SendIcon'
 import { SparkMark } from '../components/icons/SparkMark'
 import { PressableScale } from '../components/PressableScale'
+import { PrimaryButton } from '../components/PrimaryButton'
 import { EMPTY_THREAD, useChatStore } from '../store/chatStore'
 import { useUiStore } from '../store/uiStore'
 import { borders, colors, layout, radii, shadows, spacing, typography } from '../theme'
+
+// A static "…" gives an async wait almost no visibility of system status.
+// A slow, gentle pulse reads as "actively working" without competing for
+// attention the way a spinner or animated dots would.
+function SendingIndicator() {
+  const opacity = useSharedValue(0.35)
+
+  useEffect(() => {
+    opacity.value = withRepeat(
+      withSequence(
+        withTiming(1, { duration: 700, easing: Easing.inOut(Easing.sin), reduceMotion: ReduceMotion.System }),
+        withTiming(0.35, { duration: 700, easing: Easing.inOut(Easing.sin), reduceMotion: ReduceMotion.System })
+      ),
+      -1,
+      false,
+      undefined,
+      ReduceMotion.System
+    )
+  }, [opacity])
+
+  const style = useAnimatedStyle(() => ({ opacity: opacity.value }))
+
+  return (
+    <Animated.Text style={[typography.caption, styles.sendingIndicator, style]}>
+      Thinking…
+    </Animated.Text>
+  )
+}
 
 interface DiveDeeperScreenProps {
   onClose: () => void
@@ -37,14 +75,9 @@ export function DiveDeeperScreen({ onClose }: DiveDeeperScreenProps) {
         <Text style={[typography.body, styles.emptySubline]}>
           Pick a fact from your feed and come back to go deeper on it.
         </Text>
-        <PressableScale
-          onPress={onClose}
-          accessibilityRole="button"
-          accessibilityLabel="Browse facts"
-          style={[styles.emptyCta, shadows.button]}
-        >
-          <Text style={typography.button}>Browse facts</Text>
-        </PressableScale>
+        <View style={styles.emptyCtaWrap}>
+          <PrimaryButton label="Browse facts" onPress={onClose} />
+        </View>
       </View>
     )
   }
@@ -117,9 +150,7 @@ export function DiveDeeperScreen({ onClose }: DiveDeeperScreenProps) {
             </Text>
           </View>
         ))}
-        {status === 'sending' && (
-          <Text style={[typography.caption, styles.sendingIndicator]}>…</Text>
-        )}
+        {status === 'sending' && <SendingIndicator />}
         {status === 'error' && (
           <PressableScale onPress={() => retry(fact)} hitSlop={8} style={styles.retryButton}>
             <Text style={[typography.caption, { color: colors.accentText }]}>
@@ -171,12 +202,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: spacing.sm,
   },
-  emptyCta: {
+  emptyCtaWrap: {
     marginTop: spacing.lg,
-    backgroundColor: colors.accentPrimary,
-    borderRadius: radii.pill,
-    paddingVertical: spacing.md + 2,
-    paddingHorizontal: spacing.xl,
   },
   // Shared reading-measure cap so the chat column doesn't stretch edge to
   // edge on tablets/large windows.
@@ -245,10 +272,13 @@ const styles = StyleSheet.create({
     color: colors.textMuted,
     marginLeft: spacing.md,
   },
+  // minHeight (not just hitSlop) meets the 44pt touch-target floor outright —
+  // caption text + xs padding + hitSlop alone landed at ~41pt, just short.
   retryButton: {
     alignSelf: 'flex-start',
     marginLeft: spacing.md,
-    paddingVertical: spacing.xs,
+    minHeight: 44,
+    justifyContent: 'center',
   },
   inputRow: {
     flexDirection: 'row',
@@ -261,7 +291,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.bgAlt,
     borderRadius: radii.pill,
-    paddingVertical: spacing.md - 2,
+    // DESIGN.md's documented Input/Field spec is "18px 24px" padding; this
+    // had drifted to 14px vertical (spacing.md - 2). spacing.md + 2 matches
+    // the same "~18" idiom PrimaryButton now uses, instead of a bespoke value.
+    paddingVertical: spacing.md + 2,
     paddingHorizontal: spacing.lg,
     ...borders.default,
   },

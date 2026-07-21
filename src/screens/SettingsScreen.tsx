@@ -5,7 +5,7 @@ import { PressableScale } from '../components/PressableScale'
 import { CategoryPicker } from '../components/CategoryPicker'
 import allFacts from '../data/facts.json'
 import { useFeedStore } from '../store/feedStore'
-import { colors, radii, spacing, typography } from '../theme'
+import { colors, layout, radii, spacing, typography } from '../theme'
 import type { Fact, TextSize } from '../types'
 
 const TEXT_SIZES: TextSize[] = ['small', 'medium', 'large']
@@ -48,7 +48,7 @@ export function SettingsScreen({ onClose }: SettingsScreenProps) {
 
   return (
     <View style={[styles.page, { paddingTop: topInset }]}>
-      <View style={styles.header}>
+      <View style={[styles.header, styles.column]}>
         <Text style={typography.h2}>Settings</Text>
         <PressableScale
           onPress={onClose}
@@ -61,7 +61,11 @@ export function SettingsScreen({ onClose }: SettingsScreenProps) {
         </PressableScale>
       </View>
 
-      <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.column}
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+      >
         <Text style={[typography.caption, styles.sectionLabel]}>TEXT SIZE</Text>
         <View style={styles.segmentedControl}>
           {TEXT_SIZES.map((size) => {
@@ -135,6 +139,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     marginBottom: spacing.lg,
+  },
+  // Every other screen (FactCard, Onboarding's sheet, Dive Deeper's `column`)
+  // caps content at layout.maxReadingWidth on large windows; this screen was
+  // the one exception, and would stretch its segmented control, chips, and
+  // liked-facts list edge to edge on a wide viewport or tablet.
+  column: {
+    width: '100%',
+    maxWidth: layout.maxReadingWidth,
+    alignSelf: 'center',
   },
   content: {
     paddingBottom: spacing['2xl'],

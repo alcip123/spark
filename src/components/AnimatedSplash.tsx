@@ -11,8 +11,17 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated'
 import Svg, { G, Line, Path } from 'react-native-svg'
-import { SPARK_STROKES as STROKES, type StrokeSpec } from './icons/sparkGeometry'
+import { SPARK_STROKES as STROKES, type StrokeSpec, type StrokeTone } from './icons/sparkGeometry'
 import { colors } from '../theme'
+
+// Resolves each stroke's tone against the live (light/dark) theme, so the
+// splash's colors adapt exactly like the rest of the app rather than being
+// frozen to light-mode hex values.
+const TONE_COLOR: Record<StrokeTone, string> = {
+  primary: colors.accentPrimary,
+  pressed: colors.accentPrimaryPressed,
+  border: colors.borderAccent,
+}
 
 // Renders the launch splash: the spark mark sits exactly where the native
 // splash image shows it (same PNG composition — see assets/icon-source.svg),
@@ -85,9 +94,16 @@ function BurstStroke({ spec, index, ready }: { spec: StrokeSpec; index: number; 
         <G transform="translate(512 512) scale(42) translate(-11.22 -14.37)">
           <G transform="rotate(-35 13 12)" strokeLinecap="round">
             {spec.d ? (
-              <Path d={spec.d} stroke={spec.color} strokeWidth={spec.width} fill="none" />
+              <Path d={spec.d} stroke={TONE_COLOR[spec.tone]} strokeWidth={spec.width} fill="none" />
             ) : (
-              <Line x1={spec.x1} y1={spec.y1} x2={spec.x2} y2={spec.y2} stroke={spec.color} strokeWidth={spec.width} />
+              <Line
+                x1={spec.x1}
+                y1={spec.y1}
+                x2={spec.x2}
+                y2={spec.y2}
+                stroke={TONE_COLOR[spec.tone]}
+                strokeWidth={spec.width}
+              />
             )}
           </G>
         </G>
