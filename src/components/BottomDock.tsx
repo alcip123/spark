@@ -3,7 +3,8 @@ import { StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { DOCK_PILL_BOTTOM_MARGIN, DOCK_PILL_HEIGHT } from '../constants/layout'
 import type { Tab } from '../store/uiStore'
-import { borders, colors, radii, shadows, spacing } from '../theme'
+import { colors, radii, shadows, spacing } from '../theme'
+import { GlassSurface } from './GlassSurface'
 import { PressableScale } from './PressableScale'
 import { DiscoverIcon } from './icons/DiscoverIcon'
 import { ProfileIcon } from './icons/ProfileIcon'
@@ -31,7 +32,8 @@ export function BottomDock({ activeTab, onSelectTab, onDiveDeeper }: BottomDockP
 
   return (
     <View style={[styles.wrapper, { bottom: insets.bottom + DOCK_PILL_BOTTOM_MARGIN }]}>
-      <View style={[styles.pill, borders.default, shadows.sheet]}>
+      <View style={styles.pill}>
+        <GlassSurface variant="dock" radius={radii.pill} />
         {TABS.map(({ tab, label, size, Icon }) => {
           // Dive Deeper opens a sheet rather than switching tabs, so it has no
           // active state — the filled accent circle is its permanent look.
@@ -48,10 +50,16 @@ export function BottomDock({ activeTab, onSelectTab, onDiveDeeper }: BottomDockP
               accessibilityState={isDive ? undefined : { selected: isActive }}
               style={isDive ? [styles.tabButton, styles.diveButton, shadows.button] : styles.tabButton}
             >
-              <Icon
-                size={size ?? 24}
-                color={isDive ? colors.onAccent : isActive ? colors.accentPrimary : colors.textMuted}
-              />
+              {/* Inactive glyphs sit at reduced opacity against the glass pill,
+                  matching iOS's convention for inactive tab-bar icons — active/
+                  Dive Deeper stay full opacity so the one thing worth noticing
+                  still reads clearly. */}
+              <View style={{ opacity: isDive || isActive ? 1 : 0.5 }}>
+                <Icon
+                  size={size ?? 24}
+                  color={isDive ? colors.onAccent : isActive ? colors.accentPrimary : colors.textPrimary}
+                />
+              </View>
             </PressableScale>
           )
         })}
@@ -79,7 +87,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing['2xl'],
     gap: spacing.xl,
     borderRadius: radii.pill,
-    backgroundColor: colors.bgAlt,
   },
   tabButton: {
     width: 44,
