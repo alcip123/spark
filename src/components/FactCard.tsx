@@ -14,12 +14,13 @@ import Animated, {
   type SharedValue,
 } from 'react-native-reanimated'
 import { useFeedStore } from '../store/feedStore'
-import { colors, layout, shadows, spacing, typography } from '../theme'
+import { colors, layout, spacing, typography } from '../theme'
 import type { Fact, TextSize } from '../types'
 import { HeartIcon } from './icons/HeartIcon'
 import { ShareIcon } from './icons/ShareIcon'
 import { PressableScale } from './PressableScale'
 import { SparkBurst } from './SparkBurst'
+import { GlassSurface } from './GlassSurface'
 
 const TEXT_SIZE_PT: Record<TextSize, number> = {
   small: 20,
@@ -121,8 +122,9 @@ export const FactCard = memo(function FactCard({ fact, textSize, index, scrollY 
             accessibilityRole="button"
             accessibilityLabel="Like this fact"
             accessibilityState={{ selected: liked }}
-            style={[styles.actionButton, shadows.card]}
+            style={styles.actionButton}
           >
+            <GlassSurface variant="chrome" radius={26} />
             <Animated.View style={heartStyle}>
               <HeartIcon size={22} color={liked ? colors.accentPrimary : colors.textPrimary} filled={liked} />
             </Animated.View>
@@ -133,8 +135,9 @@ export const FactCard = memo(function FactCard({ fact, textSize, index, scrollY 
           hitSlop={12}
           accessibilityRole="button"
           accessibilityLabel="Share this fact"
-          style={[styles.actionButton, shadows.card]}
+          style={styles.actionButton}
         >
+          <GlassSurface variant="chrome" radius={26} />
           <ShareIcon size={22} color={colors.textPrimary} />
         </PressableScale>
       </View>
@@ -174,6 +177,5 @@ const styles = StyleSheet.create({
     borderRadius: 26,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.bgAlt,
   },
 })
