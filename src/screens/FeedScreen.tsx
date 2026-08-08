@@ -4,13 +4,14 @@ import Animated, { useAnimatedScrollHandler, useSharedValue } from 'react-native
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { FactCard } from '../components/FactCard'
 import { GearIcon } from '../components/icons/GearIcon'
+import { GlassSurface } from '../components/GlassSurface'
 import { SparkMark } from '../components/icons/SparkMark'
 import { PressableScale } from '../components/PressableScale'
 import { PrimaryButton } from '../components/PrimaryButton'
 import { useFeed } from '../hooks/useFeed'
 import { useFeedStore } from '../store/feedStore'
 import { useUiStore } from '../store/uiStore'
-import { colors, layout, shadows, spacing, typography } from '../theme'
+import { colors, layout, spacing, typography } from '../theme'
 import type { Fact } from '../types'
 
 // A fact held on screen at least this long counts as genuine interest and
@@ -122,12 +123,13 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
       {/* Floating settings button, top-left per the reference layout; offset
           below the status bar / Dynamic Island via the live safe-area inset */}
       <PressableScale
-        style={[styles.circleButton, { top: insets.top + spacing.md, left: contentInset }, shadows.card]}
+        style={[styles.circleButton, { top: insets.top + spacing.md, left: contentInset }]}
         onPress={onOpenSettings}
         hitSlop={12}
         accessibilityRole="button"
         accessibilityLabel="Settings"
       >
+        <GlassSurface variant="chrome" radius={22} />
         <GearIcon size={20} color={colors.textPrimary} />
       </PressableScale>
     </View>
@@ -154,7 +156,6 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: colors.bgAlt,
     alignItems: 'center',
     justifyContent: 'center',
   },
