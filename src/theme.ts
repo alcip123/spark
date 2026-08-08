@@ -177,19 +177,30 @@ export const shadows = {
 // shadows.sheet for those specific surfaces. Two tiers: a light touch for
 // small floating controls, a stronger blur for the dock's larger, more
 // grounded surface. `tint` matches expo-blur's BlurView prop and follows the
-// already-resolved colorScheme; `borderColor` is a translucent light-
-// catching edge rather than a flat gray stroke, closer to how iOS's own
-// glass surfaces read.
+// already-resolved colorScheme.
+//
+// Spark's feed background is a flat, uniform color with nothing scrolling
+// behind these surfaces — blurring a uniform color returns ~that same color,
+// so BlurView alone is nearly invisible here (unlike iOS's usual case of
+// blurring photo/content-rich backgrounds). `baseFill` is a translucent
+// bgAlt ("Card White") layer rendered underneath the blur to give the
+// surface actual presence; it's also what keeps these surfaces from
+// disappearing entirely on Android, where BlurView has no real blur (see the
+// Android note in GlassSurface.tsx). `borderColor` is a low-alpha hairline
+// off `textPrimary`/white (dark mode) rather than white-on-white, so the
+// edge stays visible against the now-lighter baseFill.
 export const glass = {
   chrome: {
     intensity: 30,
     tint: colorScheme,
-    borderColor: colorScheme === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.5)',
+    baseFill: colorScheme === 'dark' ? 'rgba(39,41,53,0.6)' : 'rgba(255,255,255,0.62)',
+    borderColor: colorScheme === 'dark' ? 'rgba(255,255,255,0.10)' : 'rgba(43,46,56,0.12)',
   },
   dock: {
     intensity: 50,
     tint: colorScheme,
-    borderColor: colorScheme === 'dark' ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.55)',
+    baseFill: colorScheme === 'dark' ? 'rgba(39,41,53,0.6)' : 'rgba(255,255,255,0.62)',
+    borderColor: colorScheme === 'dark' ? 'rgba(255,255,255,0.14)' : 'rgba(43,46,56,0.16)',
   },
 } as const
 

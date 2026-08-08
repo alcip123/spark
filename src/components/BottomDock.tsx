@@ -50,16 +50,18 @@ export function BottomDock({ activeTab, onSelectTab, onDiveDeeper }: BottomDockP
               accessibilityState={isDive ? undefined : { selected: isActive }}
               style={isDive ? [styles.tabButton, styles.diveButton, shadows.button] : styles.tabButton}
             >
-              {/* Inactive glyphs sit at reduced opacity against the glass pill,
-                  matching iOS's convention for inactive tab-bar icons — active/
-                  Dive Deeper stay full opacity so the one thing worth noticing
-                  still reads clearly. */}
-              <View style={{ opacity: isDive || isActive ? 1 : 0.5 }}>
-                <Icon
-                  size={size ?? 24}
-                  color={isDive ? colors.onAccent : isActive ? colors.accentPrimary : colors.textPrimary}
-                />
-              </View>
+              {/* Inactive icons use textMuted at full opacity rather than a
+                  lighter color plus reduced opacity — combining the two
+                  compounds into a contrast failure against the glass pill
+                  (textPrimary @ 0.5 measured ~2.9:1, below the 3:1 AA floor
+                  for icons). textMuted is already the deliberately-engineered
+                  "muted" tier (see its definition in theme.ts) — that alone
+                  is the dimming treatment. Active/Dive Deeper stay full
+                  opacity and their own colors, unchanged. */}
+              <Icon
+                size={size ?? 24}
+                color={isDive ? colors.onAccent : isActive ? colors.accentPrimary : colors.textMuted}
+              />
             </PressableScale>
           )
         })}
