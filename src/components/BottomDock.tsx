@@ -9,9 +9,14 @@ import { DiscoverIcon } from './icons/DiscoverIcon'
 import { ProfileIcon } from './icons/ProfileIcon'
 import { SparkMark } from './icons/SparkMark'
 
-const TABS: { tab: Tab; label: string; Icon: (props: { size?: number; color: string }) => ReactElement }[] = [
-  { tab: 'home', label: 'Discover', Icon: DiscoverIcon },
-  { tab: 'diveDeeper', label: 'Dive Deeper', Icon: SparkMark },
+const TABS: { tab: Tab; label: string; size?: number; Icon: (props: { size?: number; color: string }) => ReactElement }[] = [
+  // Discover renders larger than its siblings (30pt vs 24pt) to anchor it as
+  // the dock's primary tab — same size value feeds both active and inactive
+  // renders, so the two states can't visibly drift apart.
+  { tab: 'home', label: 'Discover', size: 30, Icon: DiscoverIcon },
+  // Scaled with the 44pt -> 58pt Dive Deeper button so the mark keeps the
+  // same proportion inside its circle.
+  { tab: 'diveDeeper', label: 'Dive Deeper', size: 34, Icon: SparkMark },
   { tab: 'profile', label: 'Profile', Icon: ProfileIcon },
 ]
 
@@ -27,7 +32,7 @@ export function BottomDock({ activeTab, onSelectTab, onDiveDeeper }: BottomDockP
   return (
     <View style={[styles.wrapper, { bottom: insets.bottom + DOCK_PILL_BOTTOM_MARGIN }]}>
       <View style={[styles.pill, borders.default, shadows.sheet]}>
-        {TABS.map(({ tab, label, Icon }) => {
+        {TABS.map(({ tab, label, size, Icon }) => {
           // Dive Deeper opens a sheet rather than switching tabs, so it has no
           // active state — the filled accent circle is its permanent look.
           const isDive = tab === 'diveDeeper'
@@ -44,7 +49,7 @@ export function BottomDock({ activeTab, onSelectTab, onDiveDeeper }: BottomDockP
               style={isDive ? [styles.tabButton, styles.diveButton, shadows.button] : styles.tabButton}
             >
               <Icon
-                size={24}
+                size={size ?? 24}
                 color={isDive ? colors.onAccent : isActive ? colors.accentPrimary : colors.textMuted}
               />
             </PressableScale>
@@ -83,6 +88,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   diveButton: {
+    width: 58,
+    height: 58,
     borderRadius: radii.pill,
     backgroundColor: colors.accentPrimary,
   },

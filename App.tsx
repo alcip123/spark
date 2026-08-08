@@ -17,7 +17,10 @@ import { DiveDeeperScreen } from './src/screens/DiveDeeperScreen'
 import { FeedScreen } from './src/screens/FeedScreen'
 import { OnboardingScreen } from './src/screens/OnboardingScreen'
 import { ProfileScreen } from './src/screens/ProfileScreen'
+import { ScreenTransition } from './src/components/ScreenTransition'
 import { SettingsScreen } from './src/screens/SettingsScreen'
+import { SignUpScreen } from './src/screens/SignUpScreen'
+import { WelcomeScreen } from './src/screens/WelcomeScreen'
 import { useFeedStore } from './src/store/feedStore'
 import { useUiStore } from './src/store/uiStore'
 import { colors, colorScheme } from './src/theme'
@@ -41,6 +44,10 @@ export default function App() {
   const [settingsVisible, setSettingsVisible] = useState(false)
   const [diveDeeperVisible, setDiveDeeperVisible] = useState(false)
   const [splashDone, setSplashDone] = useState(false)
+  // TEMPORARY / provisional: the new onboarding flow being built step by
+  // step. Just gates the existing category-picker onboarding for now so each
+  // new screen is viewable; will change shape as later screens are added.
+  const [step, setStep] = useState<'welcome' | 'signup' | 'onboarding'>('welcome')
 
   // Two independent async-readiness checks (font loading + Zustand/AsyncStorage
   // hydration) gate the first real render. Rendering before hydration finishes
@@ -88,8 +95,18 @@ export default function App() {
                   }}
                 />
               </>
+            ) : step === 'welcome' ? (
+              <WelcomeScreen onContinue={() => setStep('signup')} />
+            ) : step === 'signup' ? (
+              // ScreenTransition plays the forward slide-and-fade for
+              // whichever screen follows Welcome.
+              <ScreenTransition>
+                <SignUpScreen onContinue={() => setStep('onboarding')} />
+              </ScreenTransition>
             ) : (
-              <OnboardingScreen />
+              <ScreenTransition>
+                <OnboardingScreen />
+              </ScreenTransition>
             )}
           </Animated.View>
         )}
