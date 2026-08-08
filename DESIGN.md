@@ -226,7 +226,7 @@ Every interactive surface in Spark is soft and quiet: rounded to a pill or gener
 ### Do:
 - **Do** keep Periwinkle Lavender (`#8A82C4`) as the only saturated accent color on any screen — everything else is a neutral or a lavender-tinted neutral.
 - **Do** use ambient, heavily-diffused shadows (Card/Sheet/Button vocabulary above) for any new elevated surface — never a hard offset shadow.
-- **Do** reserve Georgia/serif for content the user reads (facts, headlines, stat numbers) and Manrope/sans for everything the user operates (buttons, labels, controls).
+- **Do** use the System/Inter typeface at the weight the tier specifies (see §3) — hierarchy comes from size and weight now, not from switching typeface. (Superseded: this used to be a Georgia-serif/Manrope-sans split — see §3's Named Rules.)
 - **Do** build new icons as plain styled-`Text` glyphs consistent with the existing heart/share/gear glyphs — this app has no icon library and shouldn't introduce one for a handful of icons.
 - **Do** keep borders thin (1–1.5px) and low-contrast; separation comes from tonal shifts and soft shadow, not stroke weight.
 
