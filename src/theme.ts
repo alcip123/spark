@@ -118,26 +118,30 @@ export const borders = {
   accent: { borderWidth: 1.5, borderColor: colors.borderAccent },
 } as const
 
-// Baskerville is a real bundled system font on iOS/macOS, but doesn't exist
-// on Android or most Windows/Linux installs. Android keeps the generic
-// 'serif' family alias (a legitimate fallback, not a placeholder); web gets a
-// CSS-style font stack so react-native-web degrades to Georgia, then any
-// generic serif, on platforms that don't have Baskerville installed.
-const fontSerif = Platform.select({
-  ios: 'Baskerville',
-  android: 'serif',
-  default: 'Baskerville, Georgia, serif',
-})
+// Inter is the Android/web substitute for San Francisco — same grotesque-
+// sans geometry family (tall x-height, rounded terminals), the standard
+// stand-in apps use since Apple doesn't license SF Pro off-platform. Loaded
+// per-weight like Manrope was: RN can't synthesize weight from one custom
+// font file, only from the 'System' family, which resolves to true San
+// Francisco on iOS and supports RN's fontWeight prop directly there.
+const interWeights = {
+  regular: 'Inter_400Regular',
+  medium: 'Inter_500Medium',
+  semiBold: 'Inter_600SemiBold',
+  bold: 'Inter_700Bold',
+} as const
 
-// Manrope needs distinct family names per weight in RN — it cannot synthesize
-// weights from a single loaded file the way CSS font-weight does. These names
-// match the exports of @expo-google-fonts/manrope and must be loaded via
-// useFonts before any of these text styles are rendered.
-const manrope = {
-  regular: 'Manrope_400Regular',
-  medium: 'Manrope_500Medium',
-  semiBold: 'Manrope_600SemiBold',
-  bold: 'Manrope_700Bold',
+const systemWeightNumeric: Record<keyof typeof interWeights, '400' | '500' | '600' | '700'> = {
+  regular: '400',
+  medium: '500',
+  semiBold: '600',
+  bold: '700',
+}
+
+function systemFont(weight: keyof typeof interWeights) {
+  return Platform.OS === 'ios'
+    ? { fontFamily: 'System', fontWeight: systemWeightNumeric[weight] }
+    : { fontFamily: interWeights[weight] }
 }
 
 // RN shadow props (iOS) + elevation (Android). Android's elevation shadow is
@@ -168,18 +172,37 @@ export const shadows = {
   },
 } as const
 
+// Blur-based "glass" materials for floating chrome — Feed's settings/like/
+// share buttons and the bottom dock — replacing solid bgAlt + shadows.card/
+// shadows.sheet for those specific surfaces. Two tiers: a light touch for
+// small floating controls, a stronger blur for the dock's larger, more
+// grounded surface. `tint` matches expo-blur's BlurView prop and follows the
+// already-resolved colorScheme; `borderColor` is a translucent light-
+// catching edge rather than a flat gray stroke, closer to how iOS's own
+// glass surfaces read.
+export const glass = {
+  chrome: {
+    intensity: 30,
+    tint: colorScheme,
+    borderColor: colorScheme === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.5)',
+  },
+  dock: {
+    intensity: 50,
+    tint: colorScheme,
+    borderColor: colorScheme === 'dark' ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.55)',
+  },
+} as const
+
 export const typography = {
-  display: { fontFamily: fontSerif, fontWeight: '600' as const, fontSize: 44, lineHeight: 44 * 1.1, color: colors.textPrimary },
-  h1: { fontFamily: fontSerif, fontWeight: '600' as const, fontSize: 32, lineHeight: 32 * 1.15, color: colors.textPrimary },
-  h2: { fontFamily: fontSerif, fontWeight: '600' as const, fontSize: 24, lineHeight: 24 * 1.2, color: colors.textPrimary },
-  bodyLg: { fontFamily: manrope.medium, fontSize: 18, lineHeight: 18 * 1.5, color: colors.textPrimary },
-  body: { fontFamily: manrope.medium, fontSize: 16, lineHeight: 16 * 1.5, color: colors.textPrimary },
-  button: { fontFamily: manrope.bold, fontSize: 17, lineHeight: 17, color: colors.onAccent },
-  statNum: { fontFamily: fontSerif, fontWeight: '600' as const, fontSize: 20, lineHeight: 20, color: colors.textPrimary },
-  statLabel: { fontFamily: manrope.semiBold, fontSize: 11, lineHeight: 11 * 1.3, color: colors.textMuted },
-  // Extra convenience style used for the fact card's category label, not in
-  // the original token doc but follows the same sans/muted pattern.
-  caption: { fontFamily: manrope.semiBold, fontSize: 13, lineHeight: 13 * 1.3, color: colors.textSecondary },
+  display: { ...systemFont('semiBold'), fontSize: 44, lineHeight: 44 * 1.1, color: colors.textPrimary },
+  h1: { ...systemFont('semiBold'), fontSize: 32, lineHeight: 32 * 1.15, color: colors.textPrimary },
+  h2: { ...systemFont('semiBold'), fontSize: 24, lineHeight: 24 * 1.2, color: colors.textPrimary },
+  bodyLg: { ...systemFont('medium'), fontSize: 18, lineHeight: 18 * 1.5, color: colors.textPrimary },
+  body: { ...systemFont('medium'), fontSize: 16, lineHeight: 16 * 1.5, color: colors.textPrimary },
+  button: { ...systemFont('bold'), fontSize: 17, lineHeight: 17, color: colors.onAccent },
+  statNum: { ...systemFont('semiBold'), fontSize: 20, lineHeight: 20, color: colors.textPrimary },
+  statLabel: { ...systemFont('semiBold'), fontSize: 11, lineHeight: 11 * 1.3, color: colors.textMuted },
+  caption: { ...systemFont('semiBold'), fontSize: 13, lineHeight: 13 * 1.3, color: colors.textSecondary },
 } as const
 
 export const layout = {
@@ -188,5 +211,3 @@ export const layout = {
   // line length in a comfortable range instead of stretching edge to edge.
   maxReadingWidth: 600,
 } as const
-
-export const manropeWeights = manrope
