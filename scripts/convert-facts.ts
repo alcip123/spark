@@ -1,6 +1,6 @@
-// One-off conversion script: spark_facts.txt -> spark/src/data/facts.json
+// One-off conversion script: content/spark_facts.txt -> spark/src/data/facts.json
 //
-// spark_facts.txt lives at the repo root (one level above spark/) and is
+// spark_facts.txt lives in content/ (one level above spark/) and is
 // hand-curated by the user, not regenerated automatically. If more facts are
 // appended there later, rerun this script (`npx tsx scripts/convert-facts.ts`
 // from inside spark/) and commit the regenerated facts.json.
@@ -9,7 +9,7 @@ import * as path from 'node:path'
 import type { Fact } from '../src/types'
 import { mapTagsToCategory } from './tagCategoryMap'
 
-const SOURCE_PATH = path.join(__dirname, '..', '..', 'spark_facts.txt')
+const SOURCE_PATH = path.join(__dirname, '..', '..', 'content', 'spark_facts.txt')
 const OUTPUT_PATH = path.join(__dirname, '..', 'src', 'data', 'facts.json')
 
 // Simple stable hash (djb2) so fact IDs survive reordering/insertion in the

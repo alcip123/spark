@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { postChatMessage, type ChatMessage } from '../lib/api'
+import { postChatMessage, postSuggestions, type ChatMessage } from '../lib/api'
 import type { Fact } from '../types'
 
 export type ChatStatus = 'idle' | 'sending' | 'error'
@@ -12,6 +12,15 @@ export interface ChatThread {
 
 export const EMPTY_THREAD: ChatThread = { messages: [], status: 'idle', draft: '' }
 
+export type SuggestionsStatus = 'idle' | 'loading' | 'error'
+
+export interface SuggestionsState {
+  items: string[]
+  status: SuggestionsStatus
+}
+
+export const EMPTY_SUGGESTIONS: SuggestionsState = { items: [], status: 'idle' }
+
 // Threads live here (not in component state) so a conversation survives tab
 // switches. Keyed by fact id: coming back to the same fact resumes the thread,
 // a different fact starts its own. Deliberately not persisted — conversations
@@ -20,9 +29,11 @@ interface ChatStore {
   threads: Record<string, ChatThread>
   // The payload of the last failed send per fact, so retry re-sends exactly it
   pendingRetry: Record<string, { history: ChatMessage[]; message: string } | undefined>
+  suggestions: Record<string, SuggestionsState>
   send: (fact: Fact, message: string) => void
   retry: (fact: Fact) => void
   setDraft: (factId: string, draft: string) => void
+  fetchSuggestions: (fact: Fact, history: ChatMessage[]) => void
 }
 
 export const useChatStore = create<ChatStore>()((set, get) => {
@@ -63,9 +74,19 @@ export const useChatStore = create<ChatStore>()((set, get) => {
     }
   }
 
+  function patchSuggestions(factId: string, patch: Partial<SuggestionsState>) {
+    set((s) => ({
+      suggestions: {
+        ...s.suggestions,
+        [factId]: { ...(s.suggestions[factId] ?? EMPTY_SUGGESTIONS), ...patch },
+      },
+    }))
+  }
+
   return {
     threads: {},
     pendingRetry: {},
+    suggestions: {},
 
     send: (fact, message) => {
       const text = message.trim()
@@ -89,5 +110,18 @@ export const useChatStore = create<ChatStore>()((set, get) => {
     },
 
     setDraft: (factId, draft) => patchThread(factId, { draft }),
+
+    fetchSuggestions: async (fact, history) => {
+      patchSuggestions(fact.id, { status: 'loading' })
+      try {
+        const items = await postSuggestions({
+          fact: { text: fact.text, categorySlug: fact.categorySlug },
+          history,
+        })
+        patchSuggestions(fact.id, { items, status: 'idle' })
+      } catch {
+        patchSuggestions(fact.id, { items: [], status: 'error' })
+      }
+    },
   }
 })

@@ -42,3 +42,33 @@ export async function postChatMessage(params: {
     clearTimeout(timeout)
   }
 }
+
+export async function postSuggestions(params: {
+  fact: Pick<Fact, 'text' | 'categorySlug'>
+  history: ChatMessage[]
+}): Promise<string[]> {
+  if (!API_BASE_URL) {
+    throw new Error('EXPO_PUBLIC_API_BASE_URL is not configured')
+  }
+
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS)
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/suggestions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(params),
+      signal: controller.signal,
+    })
+    if (!res.ok) {
+      throw new Error(`Suggestions request failed (${res.status})`)
+    }
+    const data = (await res.json()) as { suggestions?: unknown }
+    if (!Array.isArray(data.suggestions)) {
+      throw new Error('Malformed suggestions response')
+    }
+    return data.suggestions.filter((s): s is string => typeof s === 'string')
+  } finally {
+    clearTimeout(timeout)
+  }
+}
