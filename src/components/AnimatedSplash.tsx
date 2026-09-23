@@ -152,7 +152,7 @@ export function AnimatedSplash({ ready: readyProp, onDone }: { ready: boolean; o
 
 const styles = StyleSheet.create({
   center: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     alignItems: 'center',
     justifyContent: 'center',
   },

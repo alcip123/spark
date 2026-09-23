@@ -12,8 +12,10 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
 // feels identical everywhere. Press-in is stiff and quick (must track the
 // finger); release is softer so the pop-back overshoots a touch. When the
 // system Reduce Motion setting is on, the scale snaps instead of springing.
-const PRESS_IN = { damping: 22, stiffness: 420, reduceMotion: ReduceMotion.System }
-const RELEASE = { damping: 13, stiffness: 320, reduceMotion: ReduceMotion.System }
+// Exported so surfaces that animate something other than themselves (a card
+// scaled by a pressable layer behind it) still share this exact feel.
+export const PRESS_IN = { damping: 22, stiffness: 420, reduceMotion: ReduceMotion.System }
+export const RELEASE = { damping: 13, stiffness: 320, reduceMotion: ReduceMotion.System }
 const PRESSED_SCALE = 0.93
 
 type PressableScaleProps = Omit<PressableProps, 'style'> & {

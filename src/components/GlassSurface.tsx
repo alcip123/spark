@@ -41,7 +41,7 @@ export function GlassSurface({ variant, radius, style }: GlassSurfaceProps) {
         tint={config.tint}
         style={StyleSheet.absoluteFill}
         // expo-blur's BlurView has no real blur on Android by default
-        // (`experimentalBlurMethod` defaults to 'none', rendering a flat
+        // (`blurMethod` defaults to 'none', rendering a flat
         // translucent overlay instead). 'dimezisBlurView' enables true blur
         // there via a maintained third-party implementation expo-blur
         // bundles support for. If it ever regresses (it's still marked
@@ -49,7 +49,7 @@ export function GlassSurface({ variant, radius, style }: GlassSurfaceProps) {
         // with `baseFill` above now in place, that degrades gracefully to
         // "translucent surface, no blur" rather than "invisible surface",
         // so this is an accepted platform tradeoff either way, not a bug.
-        experimentalBlurMethod="dimezisBlurView"
+        blurMethod="dimezisBlurView"
       />
     </View>
   )

@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { track } from '../lib/analytics'
 import { postChatMessage, postSuggestions, type ChatMessage } from '../lib/api'
 import type { Fact } from '../types'
 
@@ -12,7 +13,11 @@ export interface ChatThread {
 
 export const EMPTY_THREAD: ChatThread = { messages: [], status: 'idle', draft: '' }
 
-export type SuggestionsStatus = 'idle' | 'loading' | 'error'
+// 'dismissed' is terminal for a fact: once the reader has taken one of the
+// suggested questions, the chips stay gone for that conversation rather than a
+// fresh set appearing after every reply. Asking one question is the signal
+// that they're engaged and can carry the conversation themselves.
+export type SuggestionsStatus = 'idle' | 'loading' | 'error' | 'dismissed'
 
 export interface SuggestionsState {
   items: string[]
@@ -34,6 +39,7 @@ interface ChatStore {
   retry: (fact: Fact) => void
   setDraft: (factId: string, draft: string) => void
   fetchSuggestions: (fact: Fact, history: ChatMessage[]) => void
+  dismissSuggestions: (factId: string) => void
 }
 
 export const useChatStore = create<ChatStore>()((set, get) => {
@@ -48,6 +54,9 @@ export const useChatStore = create<ChatStore>()((set, get) => {
 
   async function dispatch(fact: Fact, history: ChatMessage[], message: string) {
     patchThread(fact.id, { status: 'sending' })
+    // turn_number is what §8.3's cost model needs: history is resent every
+    // turn, so cost per conversation grows with depth, not just count.
+    track('dive_deeper_message', { fact_id: fact.id, turn_number: history.length / 2 + 1 })
     try {
       const reply = await postChatMessage({
         fact: { text: fact.text, categorySlug: fact.categorySlug },
@@ -112,16 +121,25 @@ export const useChatStore = create<ChatStore>()((set, get) => {
     setDraft: (factId, draft) => patchThread(factId, { draft }),
 
     fetchSuggestions: async (fact, history) => {
+      // A dismissal outlives any in-flight or future fetch for this fact.
+      if (get().suggestions[fact.id]?.status === 'dismissed') return
       patchSuggestions(fact.id, { status: 'loading' })
       try {
         const items = await postSuggestions({
           fact: { text: fact.text, categorySlug: fact.categorySlug },
           history,
         })
+        // Re-checked after the await: the reader can tap a chip while this
+        // request is still in flight, and the reply landing must not put a
+        // fresh set of chips back on screen.
+        if (get().suggestions[fact.id]?.status === 'dismissed') return
         patchSuggestions(fact.id, { items, status: 'idle' })
       } catch {
+        if (get().suggestions[fact.id]?.status === 'dismissed') return
         patchSuggestions(fact.id, { items: [], status: 'error' })
       }
     },
+
+    dismissSuggestions: (factId) => patchSuggestions(factId, { items: [], status: 'dismissed' }),
   }
 })

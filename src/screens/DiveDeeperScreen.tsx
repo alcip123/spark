@@ -58,7 +58,7 @@ function GlassPanel({
 }) {
   return (
     <View style={[styles.glassPanel, style]}>
-      <BlurView intensity={65} tint="dark" style={StyleSheet.absoluteFill} experimentalBlurMethod="dimezisBlurView" />
+      <BlurView intensity={65} tint="dark" style={StyleSheet.absoluteFill} blurMethod="dimezisBlurView" />
       <View style={styles.glassSpecular} />
       <View style={styles.glassContent}>{children}</View>
     </View>
@@ -79,6 +79,7 @@ export function DiveDeeperScreen({ onClose }: DiveDeeperScreenProps) {
   const retry = useChatStore((s) => s.retry)
   const setDraft = useChatStore((s) => s.setDraft)
   const fetchSuggestions = useChatStore((s) => s.fetchSuggestions)
+  const dismissSuggestions = useChatStore((s) => s.dismissSuggestions)
   const scrollRef = useRef<ScrollView>(null)
 
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 })
@@ -258,7 +259,15 @@ export function DiveDeeperScreen({ onClose }: DiveDeeperScreenProps) {
             <View style={styles.suggestionRow}>
               {suggestions.items.map((question, i) => (
                 <Animated.View key={question} entering={FadeIn.duration(320).delay(i * SUGGESTION_STAGGER_MS)}>
-                  <PressableScale onPress={() => send(fact, question)} hitSlop={4}>
+                  <PressableScale
+                    onPress={() => {
+                      // Dismiss first: send() triggers the reply, and the
+                      // effect that re-fetches suggestions runs when it lands.
+                      dismissSuggestions(fact.id)
+                      send(fact, question)
+                    }}
+                    hitSlop={4}
+                  >
                     <GlassPanel style={styles.suggestionChip}>
                       <Text style={diveDeeperTypography.caption}>{question}</Text>
                     </GlassPanel>

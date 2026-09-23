@@ -85,7 +85,7 @@ export function SparkBurst({ trigger }: { trigger: number }) {
 
 const styles = StyleSheet.create({
   container: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     alignItems: 'center',
     justifyContent: 'center',
     overflow: 'visible',

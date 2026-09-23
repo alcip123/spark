@@ -11,8 +11,10 @@ import { useEffect, useState } from 'react'
 import { BackHandler, Modal, View } from 'react-native'
 import Animated, { FadeInUp, ReduceMotion } from 'react-native-reanimated'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { initAnalytics } from './src/lib/analytics'
 import { AnimatedSplash, REVEAL_DELAY_MS } from './src/components/AnimatedSplash'
 import { BottomDock } from './src/components/BottomDock'
+import { ExpandedFact } from './src/components/ExpandedFact'
 import { DiveDeeperScreen } from './src/screens/DiveDeeperScreen'
 import { FeedScreen } from './src/screens/FeedScreen'
 import { OnboardingScreen } from './src/screens/OnboardingScreen'
@@ -40,9 +42,13 @@ export default function App() {
   const onboardingComplete = useFeedStore((s) => s.onboardingComplete)
   const activeTab = useUiStore((s) => s.activeTab)
   const setActiveTab = useUiStore((s) => s.setActiveTab)
+  const diveDeeperVisible = useUiStore((s) => s.diveDeeperVisible)
+  const closeDiveDeeper = useUiStore((s) => s.closeDiveDeeper)
   const openDiveDeeper = useUiStore((s) => s.openDiveDeeper)
+  const expandedFact = useUiStore((s) => s.expandedFact)
+  const setExpandedFact = useUiStore((s) => s.setExpandedFact)
+  const setCurrentVisibleFact = useUiStore((s) => s.setCurrentVisibleFact)
   const [settingsVisible, setSettingsVisible] = useState(false)
-  const [diveDeeperVisible, setDiveDeeperVisible] = useState(false)
   const [splashDone, setSplashDone] = useState(false)
   // TEMPORARY / provisional: the new onboarding flow being built step by
   // step. Just gates the existing category-picker onboarding for now so each
@@ -55,6 +61,12 @@ export default function App() {
   // hasn't loaded from storage yet. While loading, AnimatedSplash holds the
   // static logo; once ready it bursts and reveals the screen mounting beneath.
   const ready = fontsLoaded && hasHydrated
+
+  // Anonymous, self-hosted analytics. Started once, as early as possible, so
+  // first-launch behaviour (the session that decides retention) is captured.
+  useEffect(() => {
+    initAnalytics()
+  }, [])
 
   // Android system Back: step back to Home from other tabs instead of exiting
   // the app. (The Settings and Dive Deeper modals already handle Back via
@@ -85,15 +97,25 @@ export default function App() {
                 <View style={{ flex: 1, display: activeTab === 'home' ? 'flex' : 'none' }}>
                   <FeedScreen onOpenSettings={() => setSettingsVisible(true)} />
                 </View>
-                {activeTab === 'profile' && <ProfileScreen />}
-                <BottomDock
-                  activeTab={activeTab}
-                  onSelectTab={setActiveTab}
-                  onDiveDeeper={() => {
-                    openDiveDeeper()
-                    setDiveDeeperVisible(true)
-                  }}
-                />
+                {activeTab === 'profile' && (
+                  <ProfileScreen onOpenSettings={() => setSettingsVisible(true)} />
+                )}
+                <BottomDock activeTab={activeTab} onSelectTab={setActiveTab} />
+                {/* After the dock so it paints above the floating pill */}
+                {expandedFact && (
+                  <ExpandedFact
+                    fact={expandedFact}
+                    onClose={() => setExpandedFact(null)}
+                    onDiveDeeper={(fact) => {
+                      // Pin the chat to the fact that was opened, not whatever
+                      // the feed's viewability callback last reported — with
+                      // several cards visible those can differ.
+                      setCurrentVisibleFact(fact)
+                      openDiveDeeper()
+                      setExpandedFact(null)
+                    }}
+                  />
+                )}
               </>
             ) : step === 'welcome' ? (
               <WelcomeScreen onContinue={() => setStep('signup')} />
@@ -122,9 +144,9 @@ export default function App() {
           visible={diveDeeperVisible}
           animationType="slide"
           presentationStyle="pageSheet"
-          onRequestClose={() => setDiveDeeperVisible(false)}
+          onRequestClose={closeDiveDeeper}
         >
-          <DiveDeeperScreen onClose={() => setDiveDeeperVisible(false)} />
+          <DiveDeeperScreen onClose={closeDiveDeeper} />
         </Modal>
         {!splashDone && <AnimatedSplash ready={ready} onDone={() => setSplashDone(true)} />}
         {/* Status bar icons contrast against the scheme's background */}
