@@ -41,6 +41,9 @@ const DWELL_PER_WORD_MS = 260
 const DWELL_MIN_MS = 3000
 const DWELL_MAX_MS = 8000
 const POINTS_DWELL = 1
+// A dwell well past the threshold earns more than one that barely cleared it,
+// capped low — dwell stays the weakest signal relative to POINTS_LIKE/POINTS_SHARE.
+const DWELL_MULT_CAP = 2
 
 function dwellThresholdMs(text: string): number {
   const words = text.trim().split(/\s+/).length
@@ -109,7 +112,7 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
   // The threshold is captured on entry, not exit — once a fact has scrolled
   // away its text is no longer in hand to measure.
   const visible = useRef(
-    new Map<string, { slug: string; since: number; thresholdMs: number }>()
+    new Map<string, { slug: string; tags: string[]; since: number; thresholdMs: number }>()
   )
   const dwellCredited = useRef(new Set<string>())
   // The three pages stay mounted side by side, so an off-screen list still
@@ -142,7 +145,8 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
         })
         if (dwellMs >= entry.thresholdMs && !dwellCredited.current.has(id)) {
           dwellCredited.current.add(id)
-          recordEngagement(entry.slug, POINTS_DWELL)
+          const dwellPoints = POINTS_DWELL * Math.min(dwellMs / entry.thresholdMs, DWELL_MULT_CAP)
+          recordEngagement({ categorySlug: entry.slug, tags: entry.tags }, dwellPoints)
         }
         visible.current.delete(id)
       }
@@ -152,6 +156,7 @@ export function FeedScreen({ onOpenSettings }: FeedScreenProps) {
         if (visible.current.has(fact.id)) continue
         visible.current.set(fact.id, {
           slug: fact.categorySlug,
+          tags: fact.tags,
           since: now,
           thresholdMs: dwellThresholdMs(fact.text),
         })

@@ -68,7 +68,7 @@ export function ExpandedFact({ fact, onClose, onDiveDeeper }: ExpandedFactProps)
   }))
 
   function handleLike() {
-    recordEngagement(fact.categorySlug, liked ? -POINTS_LIKE : POINTS_LIKE)
+    recordEngagement(fact, liked ? -POINTS_LIKE : POINTS_LIKE)
     track(liked ? 'fact_unliked' : 'fact_liked', { fact_id: fact.id, category: fact.categorySlug })
     if (!liked) {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {})
@@ -82,7 +82,7 @@ export function ExpandedFact({ fact, onClose, onDiveDeeper }: ExpandedFactProps)
   }
 
   function handleShare() {
-    recordEngagement(fact.categorySlug, POINTS_SHARE)
+    recordEngagement(fact, POINTS_SHARE)
     track('fact_shared', { fact_id: fact.id, category: fact.categorySlug })
     Share.share({ message: fact.text })
   }

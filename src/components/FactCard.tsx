@@ -58,7 +58,7 @@ export const FactCard = memo(function FactCard({ fact, textSize, onPress }: Fact
 
   function handleLike() {
     // Liking earns points; unliking takes them back so toggling can't farm weight
-    recordEngagement(fact.categorySlug, liked ? -POINTS_LIKE : POINTS_LIKE)
+    recordEngagement(fact, liked ? -POINTS_LIKE : POINTS_LIKE)
     track(liked ? 'fact_unliked' : 'fact_liked', {
       fact_id: fact.id,
       category: fact.categorySlug,
@@ -77,7 +77,7 @@ export const FactCard = memo(function FactCard({ fact, textSize, onPress }: Fact
   }
 
   function handleShare() {
-    recordEngagement(fact.categorySlug, POINTS_SHARE)
+    recordEngagement(fact, POINTS_SHARE)
     track('fact_shared', { fact_id: fact.id, category: fact.categorySlug })
     Share.share({ message: fact.text })
   }

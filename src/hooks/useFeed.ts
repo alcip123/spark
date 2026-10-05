@@ -33,17 +33,22 @@ export function recencyFactor(lastSeenAt: number | undefined, now: number): numb
   return Math.min(Math.max(ramped, RESURFACE_FLOOR), RESURFACE_CEILING)
 }
 
-function factWeight(
+export function factWeight(
   fact: Fact,
   preferred: string[],
   engagement: Record<string, number>,
+  tagEngagement: Record<string, number>,
   seenAt: Record<string, number>,
   now: number
 ): number {
   const base = 1
   const prefBoost = preferred.includes(fact.categorySlug) ? PREFERRED_BOOST : 0
   const engBoost = Math.min(engagement[fact.categorySlug] ?? 0, ENGAGEMENT_CAP) / ENGAGEMENT_SCALE
-  return (base + prefBoost + engBoost) * recencyFactor(seenAt[fact.id], now)
+  // Summed across the fact's tags, then capped once — so a fact with several
+  // hot tags can't stack past what one hot category already caps out at.
+  const tagPoints = fact.tags.reduce((sum, tag) => sum + (tagEngagement[tag] ?? 0), 0)
+  const tagBoost = Math.min(tagPoints, ENGAGEMENT_CAP) / ENGAGEMENT_SCALE
+  return (base + prefBoost + engBoost + tagBoost) * recencyFactor(seenAt[fact.id], now)
 }
 
 // Weighted sampling without replacement (Efraimidis-Spirakis): each item gets
@@ -54,13 +59,17 @@ function weightedSample(
   count: number,
   preferred: string[],
   engagement: Record<string, number>,
+  tagEngagement: Record<string, number>,
   seenAt: Record<string, number>,
   now: number
 ): Fact[] {
   return pool
     .map((fact) => ({
       fact,
-      key: Math.pow(Math.random(), 1 / factWeight(fact, preferred, engagement, seenAt, now)),
+      key: Math.pow(
+        Math.random(),
+        1 / factWeight(fact, preferred, engagement, tagEngagement, seenAt, now)
+      ),
     }))
     .sort((a, b) => b.key - a.key)
     .slice(0, count)
@@ -85,8 +94,17 @@ export function useFeed() {
     // Engagement and view history are read at draw time (not subscribed) so a
     // like, share, or fact just scrolled past influences the next batch without
     // rebuilding the feed.
-    const { engagementByCategory: engagement, seenAt } = useFeedStore.getState()
-    const batch = weightedSample(pool, BATCH_SIZE, preferredCategories, engagement, seenAt, Date.now())
+    const { engagementByCategory: engagement, engagementByTag: tagEngagement, seenAt } =
+      useFeedStore.getState()
+    const batch = weightedSample(
+      pool,
+      BATCH_SIZE,
+      preferredCategories,
+      engagement,
+      tagEngagement,
+      seenAt,
+      Date.now()
+    )
     batch.forEach((f) => seen.current.add(f.id))
     setFeed((prev) => [...prev, ...batch])
   }, [preferredCategories])
