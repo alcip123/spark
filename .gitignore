@@ -44,3 +44,6 @@ yarn-error.*
 # local tool session state
 .impeccable/
 .superpowers/
+
+# generated QR for Expo Go (dev only)
+expo-qr.png

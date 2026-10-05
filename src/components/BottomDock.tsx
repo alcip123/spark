@@ -1,80 +1,105 @@
 import type { ReactElement } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { DOCK_HEIGHT } from '../constants/layout'
+import { DOCK_PILL_BOTTOM_MARGIN, DOCK_PILL_HEIGHT } from '../constants/layout'
 import type { Tab } from '../store/uiStore'
-import { colors, spacing, typography } from '../theme'
+import { colors, radii, shadows, spacing } from '../theme'
+import { GlassSurface } from './GlassSurface'
 import { PressableScale } from './PressableScale'
 import { DiscoverIcon } from './icons/DiscoverIcon'
 import { ProfileIcon } from './icons/ProfileIcon'
+import { SparkMark } from './icons/SparkMark'
 
-// Dive Deeper used to sit here as a filled centre button. It now lives inside
-// an opened fact, where it can be unambiguously about that one fact — with
-// several cards visible at once, "the fact you're looking at" stopped having a
-// single answer.
-const TABS: { tab: Tab; label: string; Icon: (props: { size?: number; color: string }) => ReactElement }[] = [
-  { tab: 'home', label: 'Discover', Icon: DiscoverIcon },
+const TABS: { tab: Tab; label: string; size?: number; Icon: (props: { size?: number; color: string }) => ReactElement }[] = [
+  // Discover renders larger than its siblings (30pt vs 24pt) to anchor it as
+  // the dock's primary tab — same size value feeds both active and inactive
+  // renders, so the two states can't visibly drift apart.
+  { tab: 'home', label: 'Discover', size: 30, Icon: DiscoverIcon },
+  // Scaled with the 44pt -> 58pt Dive Deeper button so the mark keeps the
+  // same proportion inside its circle.
+  { tab: 'diveDeeper', label: 'Dive Deeper', size: 34, Icon: SparkMark },
   { tab: 'profile', label: 'Profile', Icon: ProfileIcon },
 ]
 
 interface BottomDockProps {
   activeTab: Tab
   onSelectTab: (tab: Tab) => void
+  onDiveDeeper: () => void
 }
 
-export function BottomDock({ activeTab, onSelectTab }: BottomDockProps) {
+export function BottomDock({ activeTab, onSelectTab, onDiveDeeper }: BottomDockProps) {
   const insets = useSafeAreaInsets()
 
   return (
-    // Full-width tab bar rather than a floating pill: edge to edge, opaque,
-    // with a hairline above it and a text label under each icon.
-    <View style={[styles.bar, { height: DOCK_HEIGHT + insets.bottom, paddingBottom: insets.bottom }]}>
-      {TABS.map(({ tab, label, Icon }) => {
-        const isActive = activeTab === tab
-        return (
-          <PressableScale
-            key={tab}
-            onPress={() => onSelectTab(tab)}
-            accessibilityRole="button"
-            accessibilityLabel={label}
-            accessibilityState={{ selected: isActive }}
-            style={styles.tabButton}
-          >
-            {/* Inactive icons use textMuted at full opacity rather than a
-                lighter color plus reduced opacity — combining the two
-                compounds into a contrast failure. textMuted is already the
-                deliberately-engineered "muted" tier (see theme.ts). */}
-            <Icon size={24} color={isActive ? colors.accentPrimary : colors.textMuted} />
-            <Text
-              style={[
-                typography.statLabel,
-                { color: isActive ? colors.accentPrimary : colors.textMuted },
-              ]}
+    <View style={[styles.wrapper, { bottom: insets.bottom + DOCK_PILL_BOTTOM_MARGIN }]}>
+      <View style={styles.pill}>
+        <GlassSurface variant="dock" radius={radii.pill} />
+        {TABS.map(({ tab, label, size, Icon }) => {
+          // Dive Deeper opens a sheet rather than switching tabs, so it has no
+          // active state — the filled accent circle is its permanent look.
+          const isDive = tab === 'diveDeeper'
+          const isActive = !isDive && activeTab === tab
+          return (
+            <PressableScale
+              key={tab}
+              onPress={() => (isDive ? onDiveDeeper() : onSelectTab(tab))}
+              // 44pt buttons + 4 slop = 48dp effective target on Android
+              hitSlop={4}
+              accessibilityRole="button"
+              accessibilityLabel={label}
+              accessibilityState={isDive ? undefined : { selected: isActive }}
+              style={isDive ? [styles.tabButton, styles.diveButton, shadows.button] : styles.tabButton}
             >
-              {label}
-            </Text>
-          </PressableScale>
-        )
-      })}
+              {/* Inactive icons use textMuted at full opacity rather than a
+                  lighter color plus reduced opacity — combining the two
+                  compounds into a contrast failure against the glass pill
+                  (textPrimary @ 0.5 measured ~2.9:1, below the 3:1 AA floor
+                  for icons). textMuted is already the deliberately-engineered
+                  "muted" tier (see its definition in theme.ts) — that alone
+                  is the dimming treatment. Active/Dive Deeper stay full
+                  opacity and their own colors, unchanged. */}
+              <Icon
+                size={size ?? 24}
+                color={isDive ? colors.onAccent : isActive ? colors.accentPrimary : colors.textMuted}
+              />
+            </PressableScale>
+          )
+        })}
+      </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  bar: {
+  // Full-width, non-interactive positioning shell — centers the intrinsic-
+  // width pill without stretching it. Plain Views don't intercept touches in
+  // RN, so the empty space flanking the pill stays tappable to whatever is
+  // beneath it.
+  wrapper: {
     position: 'absolute',
     left: 0,
     right: 0,
-    bottom: 0,
+    alignItems: 'center',
+  },
+  pill: {
     flexDirection: 'row',
-    backgroundColor: colors.bgAlt,
-    borderTopWidth: 1,
-    borderTopColor: colors.border,
+    alignItems: 'center',
+    height: DOCK_PILL_HEIGHT,
+    maxWidth: '90%',
+    paddingHorizontal: spacing['2xl'],
+    gap: spacing.xl,
+    borderRadius: radii.pill,
   },
   tabButton: {
-    flex: 1,
+    width: 44,
+    height: 44,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: spacing.xs,
+  },
+  diveButton: {
+    width: 58,
+    height: 58,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentPrimary,
   },
 })

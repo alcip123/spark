@@ -25,6 +25,8 @@ export type EventName =
   | 'dive_deeper_message'
   | 'feed_exhausted'
   | 'session_end'
+  | 'welcome_screen_viewed'
+  | 'welcome_get_started_pressed'
 
 type Props = Record<string, string | number | boolean | null>
 

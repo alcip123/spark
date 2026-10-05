@@ -27,6 +27,7 @@ export function SettingsScreen({ onClose }: SettingsScreenProps) {
   const setTextSize = useFeedStore((s) => s.setTextSize)
   const likedFactIds = useFeedStore((s) => s.likedFactIds)
   const toggleLike = useFeedStore((s) => s.toggleLike)
+  const setOnboardingComplete = useFeedStore((s) => s.setOnboardingComplete)
 
   function toggleCategory(slug: string) {
     setPreferredCategories(
@@ -123,6 +124,23 @@ export function SettingsScreen({ onClose }: SettingsScreenProps) {
             ))}
           </View>
         )}
+
+        {__DEV__ && (
+          <>
+            <Text style={[typography.caption, styles.sectionLabel]}>DEVELOPER</Text>
+            <PressableScale
+              onPress={() => {
+                setOnboardingComplete(false)
+                onClose()
+              }}
+              accessibilityRole="button"
+              accessibilityLabel="Reset onboarding"
+              style={styles.devButton}
+            >
+              <Text style={[typography.button, { color: colors.accentPrimary }]}>Reset onboarding</Text>
+            </PressableScale>
+          </>
+        )}
       </ScrollView>
     </View>
   )
@@ -194,6 +212,10 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
     alignItems: 'center',
+    justifyContent: 'center',
+  },
+  devButton: {
+    minHeight: 44,
     justifyContent: 'center',
   },
   doneButton: {

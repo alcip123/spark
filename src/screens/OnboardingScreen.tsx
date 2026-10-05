@@ -1,61 +1,70 @@
 import { useState } from 'react'
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { CategoryPicker } from '../components/CategoryPicker'
-import { SparkMark } from '../components/icons/SparkMark'
 import { PrimaryButton } from '../components/PrimaryButton'
+import { lightImpact } from '../onboarding/haptics'
 import { useFeedStore } from '../store/feedStore'
-import { borders, colors, layout, radii, shadows, spacing, typography } from '../theme'
+import { layout, onboarding, spacing, typography } from '../theme'
 
 const MIN_CATEGORIES = 3
 
-export function OnboardingScreen() {
-  const [selected, setSelected] = useState<string[]>([])
+interface OnboardingScreenProps {
+  /** Space reserved above the picker for Rook (moved aside) and the heading. */
+  topInset: number
+  onContinue: () => void
+}
+
+// Topic selection — Rook's answer-the-question step. Rendered as foreground UI
+// over the persistent onboarding room (see src/onboarding/OnboardingScene.tsx),
+// not as a screen of its own: no sheet or modal card, cream only where
+// legibility needs it (the chips), and the dimmed room stays visible around it.
+// Layout is a placeholder to revisit once the production room art exists.
+export function OnboardingScreen({ topInset, onContinue }: OnboardingScreenProps) {
+  const insets = useSafeAreaInsets()
+  const savedCategories = useFeedStore((s) => s.preferredCategories)
   const setPreferredCategories = useFeedStore((s) => s.setPreferredCategories)
-  const setOnboardingComplete = useFeedStore((s) => s.setOnboardingComplete)
+  // Pre-selected from the store so re-entering the flow keeps earlier choices.
+  const [selected, setSelected] = useState<string[]>(savedCategories)
 
   const canContinue = selected.length >= MIN_CATEGORIES
 
   function toggle(slug: string) {
+    lightImpact()
     setSelected((prev) => (prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]))
   }
 
   function handleContinue() {
     if (!canContinue) return
+    // Persist now, so the choices survive whatever happens during Sign Up.
+    // Completing onboarding is Sign Up's job, not this step's.
     setPreferredCategories(selected)
-    setOnboardingComplete(true)
+    onContinue()
   }
 
   return (
-    <View style={styles.page}>
-      <View style={styles.sheet}>
-        {/* Indicator left on (unlike other scroll views in the app): 12 chips
-            can overflow the sheet's capped height, and this is the only
-            affordance telling a new user there's more to see below. */}
-        <ScrollView contentContainerStyle={styles.scrollContent}>
-          <View style={styles.illustrationWrap}>
-            <View style={[styles.tintShape, styles.tintShapeBack]} />
-            <View style={[styles.tintShape, styles.tintShapeFront]} />
-            <View style={[styles.illustrationCard, borders.accent, shadows.card]}>
-              <SparkMark size={40} color={colors.illustrationIcon} />
-            </View>
-          </View>
+    <View style={[styles.page, { paddingTop: topInset }]}>
+      <View style={styles.column}>
+        <Text style={[typography.h1, styles.headline]}>What are you curious about?</Text>
+        <Text style={[typography.body, styles.subline]}>
+          Pick at least {MIN_CATEGORIES}. Your feed still mixes in everything — it learns as you scroll.
+        </Text>
+      </View>
 
-          <Text style={[typography.h1, styles.headline]}>What sparks your curiosity?</Text>
-          <Text style={[typography.body, styles.subline]}>
-            Pick at least {MIN_CATEGORIES} topics to start with. Your feed will still mix in everything — it
-            learns what you love as you scroll.
-          </Text>
+      <ScrollView
+        style={styles.column}
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        <CategoryPicker selected={selected} onToggle={toggle} />
+      </ScrollView>
 
-          <CategoryPicker selected={selected} onToggle={toggle} />
-        </ScrollView>
-
-        <View style={styles.ctaWrap}>
-          <PrimaryButton
-            label={canContinue ? 'Continue' : `Pick ${MIN_CATEGORIES - selected.length} more`}
-            onPress={handleContinue}
-            disabled={!canContinue}
-          />
-        </View>
+      <View style={[styles.column, { paddingBottom: insets.bottom + spacing.lg, paddingTop: spacing.md }]}>
+        <PrimaryButton
+          label={canContinue ? 'Continue' : `Pick ${MIN_CATEGORIES - selected.length} more`}
+          onPress={handleContinue}
+          disabled={!canContinue}
+        />
       </View>
     </View>
   )
@@ -64,67 +73,25 @@ export function OnboardingScreen() {
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: colors.bg,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: spacing.md,
+    paddingHorizontal: spacing.lg,
   },
-  sheet: {
+  column: {
     width: '100%',
-    maxWidth: layout.maxContentWidth,
-    maxHeight: '90%',
-    backgroundColor: colors.bgAlt,
-    borderRadius: radii.sheet,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: spacing.lg,
-    ...shadows.sheet,
-  },
-  scrollContent: {
-    paddingBottom: spacing.lg,
-  },
-  illustrationWrap: {
-    height: 140,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: spacing.lg,
-  },
-  tintShape: {
-    position: 'absolute',
-    width: 120,
-    height: 120,
-    borderRadius: 32,
-  },
-  tintShapeBack: {
-    backgroundColor: colors.illustrationFill1,
-    transform: [{ rotate: '12deg' }, { translateX: 10 }, { translateY: 6 }],
-  },
-  tintShapeFront: {
-    backgroundColor: colors.illustrationFill2,
-    transform: [{ rotate: '-8deg' }, { translateX: -8 }, { translateY: -4 }],
-  },
-  illustrationCard: {
-    width: 88,
-    height: 88,
-    borderRadius: radii.card,
-    backgroundColor: colors.bgAlt,
-    alignItems: 'center',
-    justifyContent: 'center',
+    maxWidth: layout.maxReadingWidth,
+    alignSelf: 'center',
   },
   headline: {
     textAlign: 'center',
+    color: onboarding.onRoom,
     marginBottom: spacing.sm,
   },
   subline: {
     textAlign: 'center',
-    color: colors.textSecondary,
-    marginBottom: spacing.lg,
+    color: onboarding.onRoom,
+    opacity: 0.85,
+    marginBottom: spacing.md,
   },
-  // Standardized to spacing.lg to match the same gap used above the CTA in
-  // FeedScreen/DiveDeeperScreen's empty states (this one previously used
-  // spacing.md — a smaller, unexplained gap for the same button-above-content
-  // relationship elsewhere in the app).
-  ctaWrap: {
-    marginTop: spacing.lg,
+  scrollContent: {
+    paddingBottom: spacing.md,
   },
 })

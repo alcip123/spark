@@ -222,3 +222,29 @@ export const layout = {
   // line length in a comfortable range instead of stretching edge to edge.
   maxReadingWidth: 600,
 } as const
+
+// Onboarding scene palette (portal / Rook welcome flow). Deliberately separate
+// from the app's cool-modern scheme — a one-off creative direction for the
+// onboarding scene, not a global retheme. Starting values: `paper` in
+// particular must be re-tested against the final portal artwork.
+export const onboarding = {
+  paper: '#F7F2E8', // warm wall outside the portal
+  room: '#2B1C36', // fills behind the room layers so a gap never shows cream
+  frame: '#382644', // portal frame (aubergine, never black)
+  frameHighlight: '#6E4F7E',
+  buttonFill: '#523669',
+  buttonText: '#FFF8E9',
+  headline: '#2D2431',
+  onRoom: '#FFF8E9', // text sitting directly on the dimmed room
+  bubble: '#FFF9EE',
+  bubbleText: '#35213F',
+} as const
+
+// "Spark." display face. Georgia Bold is a PLACEHOLDER matching the previous
+// welcome screen — it is not the approved Spark display typeface. Keep every
+// use going through this token so the final type system can replace it in one
+// place.
+export const displayType = {
+  fontFamily: Platform.OS === 'ios' ? 'Georgia' : 'serif',
+  fontWeight: '700',
+} as const

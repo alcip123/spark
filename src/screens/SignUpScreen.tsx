@@ -8,18 +8,21 @@ import { colors, layout, spacing, typography } from '../theme'
 
 interface SignUpScreenProps {
   onContinue: () => void
+  // Rendered as a foreground state over the onboarding room: transparent so the
+  // (washed-out) room stays present behind it.
+  overScene?: boolean
 }
 
-// Screen 2 of the new onboarding flow: headline centered above a stack of
-// three sign-in options. All three currently just advance to the next step —
-// the actual Apple/Facebook/email auth flows aren't wired up yet.
+// Final step of onboarding (after the topic picker): headline centered above a
+// stack of three sign-in options. All three currently just complete onboarding
+// — the actual Apple/Facebook/email auth flows aren't wired up yet.
 const FACEBOOK_BLUE = '#1877F2'
 
-export function SignUpScreen({ onContinue }: SignUpScreenProps) {
+export function SignUpScreen({ onContinue, overScene = false }: SignUpScreenProps) {
   const insets = useSafeAreaInsets()
 
   return (
-    <View style={styles.page}>
+    <View style={[styles.page, overScene && styles.pageOverScene]}>
       <View style={styles.headlineArea}>
         <Text style={[typography.h1, styles.headline]}>
           Sign in to access all of Spark's features
@@ -60,6 +63,9 @@ const styles = StyleSheet.create({
   page: {
     flex: 1,
     backgroundColor: colors.bg,
+  },
+  pageOverScene: {
+    backgroundColor: 'transparent',
   },
   headlineArea: {
     flex: 1,

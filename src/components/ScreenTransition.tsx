@@ -1,3 +1,6 @@
+// @deprecated — the horizontal slide is no longer used in onboarding (the new
+// flow is foreground states over one persistent scene). Kept until the new
+// onboarding is approved on-device, then delete.
 import type { ReactNode } from 'react'
 import { useEffect } from 'react'
 import { StyleSheet } from 'react-native'

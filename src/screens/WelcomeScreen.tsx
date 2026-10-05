@@ -1,3 +1,6 @@
+// @deprecated — superseded by src/onboarding/OnboardingScene.tsx (the portal /
+// Rook scene). No longer imported anywhere; kept until the new onboarding is
+// approved on-device, then delete.
 import { Image, Platform, StyleSheet, Text, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import Svg, { Defs, LinearGradient, Path, Rect, Stop } from 'react-native-svg'
